@@ -1,0 +1,195 @@
+---
+title: "Statistical Arbtriage"
+subtitle: '<font size = 6 color = "white"> &#x1F4C8; Pitting one book against the other &#x1F4B0;</font>'
+author: '<font size = 5 color = "white"> Jacob Martin </font>'
+date: '<font color = "white" size = 4> Prepared for<br> </font> <br> <font color = "#3FDECE" size = 6> STA553: Data Visualization </font>'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer01.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("pander")) {
+   install.packages("pander")
+   library(pander)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("ggplot2")) { 
+   install.packages("ggplot2")
+   library(ggplot2)
+}
+
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#054146",
+  secondary_color = "#885F26",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+class:inverse4, top
+<h1 align="center">
+  Table of Contents
+</h1>
+<p align="left">
+<font size="18">
+  1. Overview <br/>
+  2. Definitions<br/>
+  3. Sports Betting Application<br/>
+  4. System Design <br />
+  5. Architecture Documentation<br />
+  6. Results<br/>
+  7. Conclusion <br/>
+</font>
+</p>
+---
+name: overview
+
+class:inverse4, top
+## Overview
+<p style="text-indent: 50px;">
+<font size="6">
+In the world of finance, statistical arbitrage is a complex strategy that combines mathematics and data analysis. There are many applications to arbitrage including trading, sports betting, and other zero-sum games. In this presentation, a self-developed sports betting application will be explained, including its key components. First, the reader should understand what arbitrage is, and how it is practically & mathematically defined. From there, we can visit the high level system design. Furthermore, the results section will reveal the system's performance during the first 10 weeks running. To conclude, learned insights along the way will be discussed. Let's delve into the world of statistical arbitrage.
+</font>
+</p>
+---
+class:inverse4
+name: definition
+
+## Practical Definition
+While there are many similar definitions of arbitrage out on the web, the one I find to be most straightforward is this: <br />
+
+<p style="text-indent: 25px;">
+<i>"An arbitrage opportunity exists when you can make a series of transactions such that you incur no negative net cash flow at any probabilistic state and a positive cash flow in at least one state."</i>
+</p>
+
+Simply put, an arbitrage opportunity arises where there is potential to create risk-less profit.
+
+<img src="img/profit.jpg" style="display: block; margin: 0 auto;"/>
+
+---
+class:inverse4, center
+name: definition_math
+
+## Mathematical Definition
+
+#### In the world of sports betting, unbiased* arbitrage can be written as the following:
+
+$$  \omega_1 =  \Omega \div (\frac{\sigma_1}{\sigma_2} + 1)  $$
+$$  \omega_2 =  \Omega \div (\frac{\sigma_2}{\sigma_1} + 1)  $$
+where: <br /><br />
+$\sigma_1$ = The best available odds for outcome 1 <br />
+$\sigma_2$ = The best available odds for outcome 2 <br />
+$\omega_1$ = The wager on outcome 1 <br />
+$\omega_2$ = The wager on outcome 2 <br />
+$\Omega$ = your total wager on the market, which equals $w_1 + w_2$ <br />
+
+<i>*unbiased arbitrage</i> is when, in either outcome, profit is achieved
+
+---
+class: inverse, left
+## Sports Betting Application
+
+Consider the following baseball game and odds data given by two different sports books at the same time: 
+
+- New York Yankees vs Boston RedSox 
+- On Book A, the Yankees have a 2.5 ( $\sigma_1$ ) to 1 payout
+- On Book B, the RedSox have a 2.0 ( $\sigma_2$ ) to 1 payout
+
+Using the previous definition, let's determine the appropriate bet sizes that allow this opportunity exist.<br/> For simplicity sake, allow our total capital invested across both bets to be $2 ( $\Omega$ ). Given the scenario above, $\sigma_1$ = 2.5, $\sigma_2$ = 2.0, and $\Omega$ = 2. Thus,
+
+\begin{equation}
+\omega_1 = 2 / (\frac{2.5}{2.0} + 1) = $0.89,
+  \quad
+\omega_2 = 2 / (\frac{2.0}{2.5} + 1) = $1.11
+\end{equation}
+
+Assuming we place both bets for those amounts on the appropriate book, if the Yankees win, we will receive $2.22 total, or <b> $0.22 </b> in profit. Similarly, if the RedSox win, we will receive $2.22, or <b> $0.22 </b> in profit.
+
+By definition, this is an unbiased arbitrage opportunity.
+
+---
+class: inverse
+## System Design
+To further capitalize on these opportunities, a system was made which performs real-time data aggregation against all legal sportsbooks for the state of PA. The overall sports betting system is comprised of four main subsystems. All subsystems require constant communication with each other so that an individual arbitrage opportunity can be capitalized on.
+
+.pull-left[
+- <b>Data Management</b>
+  - Poll for real time odds data and matches data from 12 different sportsbooks
+  - Transform 3rd party API data to custom in memory models
+  - Perform any and all database CRUD operations
+- <b>Capital Management</b>
+  - Strictly maintain all finances in all individual betting accounts
+  - Calculate various financial metrics per account
+]
+
+.pull-right[
+- <b>Strategy Orchestration</b>
+  - Detect any current arbitrage opportunities
+  - Perform various math calculations
+  - Responsible for finding a bet amount which can be hidden from the casino
+- <b>Bet Execution</b>
+  - Given a signal from strategy orchestration, perform browser automation to place bets
+  - Runs as a browser extension
+]
+
+---
+class:center
+## Results
+
+```{r table_example, echo=FALSE}
+betting_results <- read.csv("data/betting_results.csv")
+knitr::kable(betting_results)
+```
+
+---
+class:center
+## Results
+```{r, echo=FALSE}
+library(ggplot2)
+betting_results <- read.csv("data/betting_results.csv")
+betting_results$cumulative_profit <- cumsum(betting_results$Total_net_profit)
+
+plot <- ggplot(betting_results, aes(x = Week, y = cumulative_profit)) +
+            geom_line() + 
+            labs(x = "Week", y = "Cumulative Profit in %", title = "Cumulative Profit by Week in %")
+
+print(plot)
+```
+
+---
+class:inverse4, top
+## Conclusion
+<font size=5>
+Building an automated, full fledged statistical arbitrage system is not a simple task. Once both bets are locked in, the opportunity as a whole is capitalized on, the real difficulty lies within every process which leads up to that point. The main risk I have ran into has been, when locking in a bet on book A, book B odds can change before locking in the other side. When this occurs, it is very typical for the opportunity to disappear entirely, and now what remains is a gamble with a hedged bet. As a whole, the system that was built has seen great success, gaining ~1% a week in profit on $20,000 initial capital. The edge the system provides is not necessarily due to one single subsystem. Each and every system has to be refined so that the interactions between all systems can function with speed and efficiency. As with any software system, there is still room for improvement, and as time continues, the system will gain enhancements.
+</font>
+
+
+
+

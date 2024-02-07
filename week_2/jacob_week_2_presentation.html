@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Statistical Arbtriage</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=" Jacob Martin " />
+    <script src="jacob_week_2_presentation_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer01.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Statistical Arbtriage
+]
+.subtitle[
+## <font size = 6 color = "white"> 📈 Pitting one book against the other 💰</font>
+]
+.author[
+### <font size = 5 color = "white"> Jacob Martin </font>
+]
+.date[
+### <font color = "white" size = 4> Prepared for<br> </font> <br> <font color = "#3FDECE" size = 6> STA553: Data Visualization </font>
+]
+
+---
+
+
+
+
+
+
+class:inverse4, top
+&lt;h1 align="center"&gt;
+  Table of Contents
+&lt;/h1&gt;
+&lt;p align="left"&gt;
+&lt;font size="18"&gt;
+  1. Overview &lt;br/&gt;
+  2. Definitions&lt;br/&gt;
+  3. Sports Betting Application&lt;br/&gt;
+  4. System Design &lt;br /&gt;
+  5. Architecture Documentation&lt;br /&gt;
+  6. Results&lt;br/&gt;
+  7. Conclusion &lt;br/&gt;
+&lt;/font&gt;
+&lt;/p&gt;
+---
+name: overview
+
+class:inverse4, top
+## Overview
+&lt;p style="text-indent: 50px;"&gt;
+&lt;font size="6"&gt;
+In the world of finance, statistical arbitrage is a complex strategy that combines mathematics and data analysis. There are many applications to arbitrage including trading, sports betting, and other zero-sum games. In this presentation, a self-developed sports betting application will be explained, including its key components. First, the reader should understand what arbitrage is, and how it is practically &amp; mathematically defined. From there, we can visit the high level system design. Furthermore, the results section will reveal the system's performance during the first 10 weeks running. To conclude, learned insights along the way will be discussed. Let's delve into the world of statistical arbitrage.
+&lt;/font&gt;
+&lt;/p&gt;
+---
+class:inverse4
+name: definition
+
+## Practical Definition
+While there are many similar definitions of arbitrage out on the web, the one I find to be most straightforward is this: &lt;br /&gt;
+
+&lt;p style="text-indent: 25px;"&gt;
+&lt;i&gt;"An arbitrage opportunity exists when you can make a series of transactions such that you incur no negative net cash flow at any probabilistic state and a positive cash flow in at least one state."&lt;/i&gt;
+&lt;/p&gt;
+
+Simply put, an arbitrage opportunity arises where there is potential to create risk-less profit.
+
+&lt;img src="img/profit.jpg" style="display: block; margin: 0 auto;"/&gt;
+
+---
+class:inverse4, center
+name: definition_math
+
+## Mathematical Definition
+
+#### In the world of sports betting, unbiased* arbitrage can be written as the following:
+
+$$  \omega_1 =  \Omega \div (\frac{\sigma_1}{\sigma_2} + 1)  $$
+$$  \omega_2 =  \Omega \div (\frac{\sigma_2}{\sigma_1} + 1)  $$
+where: &lt;br /&gt;&lt;br /&gt;
+`\(\sigma_1\)` = The best available odds for outcome 1 &lt;br /&gt;
+`\(\sigma_2\)` = The best available odds for outcome 2 &lt;br /&gt;
+`\(\omega_1\)` = The wager on outcome 1 &lt;br /&gt;
+`\(\omega_2\)` = The wager on outcome 2 &lt;br /&gt;
+`\(\Omega\)` = your total wager on the market, which equals `\(w_1 + w_2\)` &lt;br /&gt;
+
+&lt;i&gt;*unbiased arbitrage&lt;/i&gt; is when, in either outcome, profit is achieved
+
+---
+class: inverse, left
+## Sports Betting Application
+
+Consider the following baseball game and odds data given by two different sports books at the same time: 
+
+- New York Yankees vs Boston RedSox 
+- On Book A, the Yankees have a 2.5 ( `\(\sigma_1\)` ) to 1 payout
+- On Book B, the RedSox have a 2.0 ( `\(\sigma_2\)` ) to 1 payout
+
+Using the previous definition, let's determine the appropriate bet sizes that allow this opportunity exist.&lt;br/&gt; For simplicity sake, allow our total capital invested across both bets to be $2 ( `\(\Omega\)` ). Given the scenario above, `\(\sigma_1\)` = 2.5, `\(\sigma_2\)` = 2.0, and `\(\Omega\)` = 2. Thus,
+
+`\begin{equation}
+\omega_1 = 2 / (\frac{2.5}{2.0} + 1) = $0.89,
+  \quad
+\omega_2 = 2 / (\frac{2.0}{2.5} + 1) = $1.11
+\end{equation}`
+
+Assuming we place both bets for those amounts on the appropriate book, if the Yankees win, we will receive $2.22 total, or &lt;b&gt; $0.22 &lt;/b&gt; in profit. Similarly, if the RedSox win, we will receive $2.22, or &lt;b&gt; $0.22 &lt;/b&gt; in profit.
+
+By definition, this is an unbiased arbitrage opportunity.
+
+---
+class: inverse
+## System Design
+To further capitalize on these opportunities, a system was made which performs real-time data aggregation against all legal sportsbooks for the state of PA. The overall sports betting system is comprised of four main subsystems. All subsystems require constant communication with each other so that an individual arbitrage opportunity can be capitalized on.
+
+.pull-left[
+- &lt;b&gt;Data Management&lt;/b&gt;
+  - Poll for real time odds data and matches data from 12 different sportsbooks
+  - Transform 3rd party API data to custom in memory models
+  - Perform any and all database CRUD operations
+- &lt;b&gt;Capital Management&lt;/b&gt;
+  - Strictly maintain all finances in all individual betting accounts
+  - Calculate various financial metrics per account
+]
+
+.pull-right[
+- &lt;b&gt;Strategy Orchestration&lt;/b&gt;
+  - Detect any current arbitrage opportunities
+  - Perform various math calculations
+  - Responsible for finding a bet amount which can be hidden from the casino
+- &lt;b&gt;Bet Execution&lt;/b&gt;
+  - Given a signal from strategy orchestration, perform browser automation to place bets
+  - Runs as a browser extension
+]
+
+---
+class:center
+## Results
+
+
+| Week| Opportunities_detected| Opportunities_taken| Total_net_profit|
+|----:|----------------------:|-------------------:|----------------:|
+|    1|                     76|                   7|             1.41|
+|    2|                     80|                  10|             0.98|
+|    3|                     75|                   4|             0.51|
+|    4|                     70|                  17|             2.04|
+|    5|                     88|                   6|             1.21|
+|    6|                     84|                  12|             1.67|
+|    7|                     79|                  10|             1.20|
+|    8|                     76|                   4|             0.26|
+|    9|                     77|                   7|             0.31|
+|   10|                     70|                   6|             0.70|
+
+---
+class:center
+## Results
+&lt;img src="jacob_week_2_presentation_files/figure-html/unnamed-chunk-1-1.png" width="100%" /&gt;
+
+---
+class:inverse4, top
+## Conclusion
+&lt;font size=5&gt;
+Building an automated, full fledged statistical arbitrage system is not a simple task. Once both bets are locked in, the opportunity as a whole is capitalized on, the real difficulty lies within every process which leads up to that point. The main risk I have ran into has been, when locking in a bet on book A, book B odds can change before locking in the other side. When this occurs, it is very typical for the opportunity to disappear entirely, and now what remains is a gamble with a hedged bet. As a whole, the system that was built has seen great success, gaining ~1% a week in profit on $20,000 initial capital. The edge the system provides is not necessarily due to one single subsystem. Each and every system has to be refined so that the interactions between all systems can function with speed and efficiency. As with any software system, there is still room for improvement, and as time continues, the system will gain enhancements.
+&lt;/font&gt;
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
