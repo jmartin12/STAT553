@@ -1,0 +1,72 @@
+---
+title: "jacob_martin_w03_assignment"
+output: html_document
+date: "2024-02-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning= FALSE, echo = TRUE)
+```
+
+## Scatter Plot - An Overview
+
+
+The following graph shows the differences in flipper length vs bill length, based off the species of a given penguin.
+
+```{r penguin_data_no_overlay, echo=TRUE}
+# External Libs.
+library(ggplot2)
+library(jpeg)
+
+# Read in required metadata.
+data <- read.csv('W03-Penguins.csv')
+img <- readJPEG('penguin.jpeg')
+
+# Plot 
+gg <- ggplot(data, aes(x = bill_length_mm, y = flipper_length_mm, color = species, size = body_mass_g)) +
+  # As Scatter
+  geom_point() +
+  # Label Accordingly,
+  labs(x = "Bill Length (MM)", y ="Flipper Length (MM)", title="Penguin Species with Flipper Length vs. Bill Length and Body Size") +
+  # Set the colors based off species
+  scale_color_manual(values = c("Adelie" = "blue", "Gentoo"="green","Chinstrap" = "red")) + 
+  # Scale literal data point based off body mass
+  scale_size_continuous(range = c(0, 3)) +
+  guides(color = guide_legend(title = "Species"), size = guide_legend(title = "Body Mass (g)"))
+
+print(gg)
+```
+
+Notice how the Adelie species has consistently the smallest bills and flipper size. While the Chinstrap species lands as the the second largest bills and flippers, and lastly the Gentoo has consistently the largest bills and flippers. It's also worth noting that the Gentoo have the largest body mass indicated by the size of the data point on the graph. 
+
+## Scatter Plot - Img Overlay
+
+Below is a scatterplot which has an image overlay on it. 
+
+```{r penguin_data, echo=FALSE}
+# External Libs.
+library(ggplot2)
+library(jpeg)
+
+# Read in required metadata.
+data <- read.csv('W03-Penguins.csv')
+img <- readJPEG('penguin.jpeg')
+
+# Plot 
+gg <- ggplot(data, aes(x = bill_length_mm, y = flipper_length_mm, color = species, size = body_mass_g)) +
+  # Add a background image
+  ggpubr::background_image(img) +
+  # As Scatter
+  geom_point() +
+  # Label Accordingly,
+  labs(x = "Bill Length (MM)", y ="Flipper Length (MM)", title="Penguin Species with Flipper Length vs. Bill Length and Body Size") +
+  # Set the colors based off species
+  scale_color_manual(values = c("Adelie" = "blue", "Gentoo"="green","Chinstrap" = "red")) + 
+  # Scale literal data point based off body mass
+  scale_size_continuous(range = c(0, 3)) +
+  guides(color = guide_legend(title = "Species"), size = guide_legend(title = "Body Mass (g)"))
+
+print(gg)
+```
+
+While the values of the data between the two grahps are the same, this one depicts how we can utilize an image overlay when graphing some data.
