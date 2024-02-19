@@ -1,0 +1,260 @@
+---
+title: "Data Manipulation Techniques"
+output: html_document
+date: "2024-02-19"
+---
+
+<style type="text/css">
+
+/* Table of content - navigation */
+div#TOC li {
+    list-style:none;
+    background-color:skyblue;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}
+
+h1.title {
+  font-size: 24px;
+  color: DarkRed;
+  text-align: center;
+}
+
+h4.author { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h3 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+</style>
+
+
+```{r setup, include=FALSE}
+# code chunk specifies whether the R code, warnings, and output 
+# will be included in the output files.
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("stringr")) {
+   install.packages("stringr", dependencies = TRUE)
+   library(stringr)
+}
+
+if (!require("tm")) {
+   install.packages("tm", dependencies = TRUE)
+   library(tm)
+}
+
+if (!require("wordcloud")) {
+   install.packages("wordcloud", dependencies = TRUE)
+   library(wordcloud)
+}
+
+if (!require("RCurl")) {
+   install.packages("RCurl", dependencies = TRUE)
+   library(RCurl)
+}
+
+if (!require("XML")) {
+   install.packages("XML", dependencies = TRUE)
+   library(XML)
+}
+
+
+if (!require("SnowballC")) {
+   install.packages("SnowballC", dependencies = TRUE)
+   library(SnowballC)
+}
+
+if (!require("RColorBrewer")) {
+   install.packages("RColorBrewer", dependencies = TRUE)
+   library(RColorBrewer)
+}
+
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+```
+
+## In this excercise, various data manipulation techniques are displayed. We then use this refined data to perform a plot.
+
+
+```{html echo=FALSE}
+  <br />
+```
+
+<font size=1><b>NOTE</b>: <i>When viewing table metadata, only the first few rows are printed.</i></font>
+
+```{html echo=FALSE}
+  <br />
+  <br />
+  <br />
+  <br />
+```
+
+To start, let's consider the following data surrounding penguins, loaded into memory from a CSV.
+```{r collapse=TRUE}
+peng_data <- read.csv('W04-Penguins.csv')
+knitr::kable(head(peng_data), caption = "Raw Penguins Data")
+```
+It is often the case that a data set needs to be curated. This can include searching for rows with empty values and removing them. While many libraries perform this "under-the-hood", here is an example of how we can manually remove all rows with any missing value.
+
+```{r collapse=TRUE}
+peng_clean <- peng_data[complete.cases(peng_data),]
+knitr::kable(head(peng_clean), caption = "Cleaned Penguin Data", row.names = FALSE)
+```
+
+Notice how <b>row 4</b> from the first CSV is now removed!
+```{html echo=FALSE}
+  <br />
+```
+Moving forward, let's filter the clean data based off values in the `species` column.
+
+```{r collapse=TRUE}
+peng_species <- peng_clean[peng_clean$species %in% c("Adelie", "Gentoo"), ]
+```
+
+In the above it is shown how the data set can be filtered to only species called `Adelie` and `Gentoo`. 
+Since the first rows of the last two data sets are the same, let's look at the length of the cleaned data vs the filtered data to validate anything happened.
+
+Clean data size:
+```{r echo=FALSE}
+nrow(peng_clean)
+```
+
+Filtered data size:
+```{r echo=FALSE}
+nrow(peng_species)
+```
+
+Success! We have removed some rows from the cleaned data set.
+
+
+```{html echo=FALSE}
+  <br />
+  <br />
+```
+
+
+Let's further remove rows to only include penguins from the `Biscoe` and `Torgersen` islands.
+
+```{r collapse=TRUE}
+peng_islands <- peng_species[peng_species$island %in% c("Biscoe", "Torgersen"), ]
+```
+
+Newly filtered data set size is:
+```{r echo=FALSE}
+nrow(peng_islands)
+```
+
+Success! We have further filtered our data set to be 210 rows compared to the previous 265.
+
+```{html echo=FALSE}
+  <br />
+  <br />
+```
+
+Furthermore, let's refine our data to only include penguins with `body_mass_g` <b>less than 5000</b> grams but <b>more than 3500</b> grams. For this, we will use a library called `dplyr`.
+
+```{r}
+in_shape_pengs <- peng_islands %>% filter(body_mass_g > 3500 & body_mass_g < 5000)
+knitr::kable(head(in_shape_pengs), caption = "Body Mass Penguin Data", row.names = FALSE)
+```
+
+We can now see some example rows from the further filtered data. It looks to have successfully filtered out based off the value of `body_mass_g`.
+
+```{html echo=FALSE}
+ <br />
+```
+
+Let's perform some basic math operations on the `body_mass_g` column, while also renaming it to reflect the updated data.
+
+```{r}
+mutated_data <- in_shape_pengs %>%
+  mutate(BMI = body_mass_g / 4000) %>%
+  select(-body_mass_g) %>%
+  select(-X) %>%
+  select(-sex) %>%
+  select(-year)
+
+knitr::kable(head(mutated_data), caption = "Shortend BMI Penguin Data", row.names = FALSE)
+```
+
+Now BMI is displayed instead of `body_bass_g`, and in addition to that, we have dropped the `sex`, `year`, and `observation_id (X)` columns!
+
+<h3>
+Thoughts
+</h3>
+
+To recap data manipulation, we have shown examples of extensive filtering based off various parameters. We can also see examples of how to handle the empty row results from a technical standpoint. However, we must remember that blatantly disregarding rows without carefully considering the impact on what your overall data set is attempting to convey could lead to misinformation.
+
+
+## Data visualization
+
+The following graph shows the flipper length vs bill length. We will use our most filtered dataset in the previous section to display these. The different species will be different colors, while the size of the individual data point is meant to be proportional to the `BMI` value.
+
+```{r filtered_peng_data, echo=TRUE}
+library(ggplot2)
+
+# Plot 
+gg <- ggplot(mutated_data, aes(x = bill_length_mm, y = flipper_length_mm, color = species, size = BMI)) +
+  # As Scatter
+  geom_point() +
+  # With regression lines
+  geom_smooth(method = "lm", se = FALSE, aes(group = species)) +
+  # Label Accordingly +
+  labs(x = "Bill Length (MM)", y ="Flipper Length (MM)", title="Flipper Length vs Bill Length, Proportional BMI") +
+  # Set the colors based off species
+  scale_color_manual(values = c("Adelie" = "#cdb4db", "Gentoo"="#a2d2ff")) + 
+  # Don't allow the scale to be too large.
+  scale_size_continuous(range = c(0, 3)) +
+  guides(color = guide_legend(title = "Species"), size = guide_legend(title = "BMI"))
+
+print(gg)
+```
+
+## Observations
+
+Notice how the Adelie species has consistently the smallest bills and flipper size. While the Gentoo species has higher sizes for their bills and flippers. It's also worth noting that the Gentoo are the bigger of the species based off the BMI scale. This correlation makes sense as it is basically indicating that the Adelie are smaller penguins than the Gentoo. 
