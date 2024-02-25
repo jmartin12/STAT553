@@ -1,0 +1,492 @@
+---
+title: "Week 5 - Data Transformation and Visualization"
+author: "Jacob Martin"
+date: "West Chester University "
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    fig_width: 6
+    number_sections: yes
+    toc_collapsed: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: true
+    theme: readable
+    fig_height: 4
+---
+
+```{=html}
+<style type="text/css">
+
+div#TOC li {
+    list-style:none;
+    background-color:lightgray;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #780c0c;
+}
+
+/* mouse over link */
+div#TOC a:hover {
+  color: red;
+}
+
+/* unvisited link */
+div#TOC a:link {
+  color: blue;
+}
+
+
+
+h1.title {
+  font-size: 24px;
+  color: Darkblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant-caps: normal;
+}
+h4.author { 
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { 
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h3 { 
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+</style>
+```
+```{r setup, include=FALSE}
+# code chunk specifies whether the R code, warnings, and output 
+# will be included in the output files.
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("cowplot")) {
+   install.packages("cowplot")
+   library(cowplot)
+}
+if (!require("latex2exp")) {
+   install.packages("latex2exp")
+   library(latex2exp)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("gapminder")) {
+   install.packages("gapminder")
+   library(gapminder)
+}
+if (!require("png")) {
+    install.packages("png")             # Install png package
+    library("png")
+}
+if (!require("RCurl")) {
+    install.packages("RCurl")           # Install RCurl package
+    library("RCurl")
+}
+if (!require("colourpicker")) {
+    install.packages("colourpicker")              
+    library("colourpicker")
+}
+if (!require("gifski")) {
+    install.packages("gifski")              
+    library("gifski")
+}
+if (!require("magick")) {
+    install.packages("magick")              
+    library("magick")
+}
+if (!require("grDevices")) {
+    install.packages("grDevices")              
+    library("grDevices")
+}
+### ggplot and extensions
+if (!require("ggplot2")) {
+    install.packages("ggplot2")              
+    library("ggplot2")
+}
+if (!require("gganimate")) {
+    install.packages("gganimate")              
+    library("gganimate")
+}
+if (!require("ggridges")) {
+    install.packages("ggridges")              
+    library("ggridges")
+}
+if (!require("graphics")) {
+    install.packages("graphics")              
+    library("graphics")
+}
+if (!require("tidyr")) {
+   install.packages("tidyr", dependencies = TRUE)
+   library(tidyr)
+}
+if (!require("reshape2")) {
+   install.packages("reshape2", dependencies = TRUE)
+   library(reshape2)
+}
+
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+```
+
+## Overview
+
+In this weeks exercise, we will demonstrate how to manipulate data that is given in a format that is not ideal. It will be shown how to reshape various data sets, and then join those datasets based off specific columns. Let's jump in.
+
+## Wide Data to Long Data
+
+### Income Transformation
+
+Let's start by analyzing the first row of a data set that is in the "wide format". This data set represents the income made per person, for a country on a given year. 
+
+```{r}
+income_pp_wide <- read.csv("income_per_person.csv", header = FALSE)
+head(income_pp_wide, 1)
+```
+
+Ugh, what an ugly looking data set. It is clear that this data is large, but also structured strange. In the above dataset, the first column is the `Country`. The first row is `Year`. All other entries are the values for the aforementioned columns & rows.
+ 
+The objective is to transform this data into a data frame that is longitudinal format. The resulting data set should have three columns: 
+
+- Country
+- Year
+- Income Per Person
+
+First, let's extract the year, country, and income from the original data set into separate variables.
+```{r}
+
+# Extract the year values from the header row.
+years <- income_pp_wide[1,-1]
+# Extract the countries.
+countries <- income_pp_wide[-1,1]
+# Extract the income.
+income <- income_pp_wide[-1,-1]
+```
+
+Let's explain what the parameters are doing in this breakdown:
+
+For the `years`, we are taking only the first row, while also dropping the first column and row value in the original data set. This is because that value is literally `geo`, which we can ignore.
+\
+\
+For the `countries` we are taking all values in the first column, while also dropping the first column and row value in the original data set. This is because that value is literally `geo`, which we can ignore.
+\
+\
+For the `income`, we ignore the first row and the first column entirely, while all remaining row & column values are kept.
+
+Furthermore, we can combine the three extracted sets of data and reshape them into a format that is longtitudal. 
+
+
+```{r}
+# Add years as a column.
+colnames(income) <- as.character(t(years))
+
+# Make a new dataframe to store everything in.
+income_df <- as.data.frame(income)
+
+# Add the countries into the new data frame.
+income_df$Country <- countries
+
+# Transform dataframe using `reshape2`.
+income_data_long <- reshape2::melt(income_df, id.vars = "Country", variable.name = "Year", value.name = "Income")
+```
+
+
+In the previous code block, the first operation adds year as a column to the income data set. When doing this it is imperative to transpose the `years` as it is in row format.
+\
+\
+From there, we transform the type to an actual data frame. \
+Next, the countries and their values are added in as a column to the data frame.
+
+Lastly, a package called `reshape2` it utilized to transform the dataframe into the format we want.
+
+From here we can see the resulting dataset, visualized:
+
+```{r echo=FALSE}
+head(income_data_long)
+```
+
+Success! We have transformed the dataset into a structure that is much more common and easy to work with.
+
+
+### Life Expectancy Transformation
+
+From here, we want to perform the same operations on a different data set. The original dataset is structured in an identical manner, but the data itself represents the life expectancy of a person for a given year and country.
+\
+\
+Our transformation process will be identical to the last, so most of the code will look similar. The final output should be a table with the following columns: 
+
+- `Country`
+- `Year`
+- `Life_Expectancy`
+
+
+```{r}
+life_expectancy_wide <- read.csv("life_expectancy_years.csv", header = FALSE)
+# Extract the year values from the header row.
+years <- life_expectancy_wide[1,-1]
+# Extract the countries.
+countries <- life_expectancy_wide[-1,1]
+# Extract the life expectancy.
+le <- life_expectancy_wide[-1,-1]
+
+# Add years as a column.
+colnames(le) <- as.character(t(years))
+# Get a dataframe type to work with.
+le_df <- as.data.frame(le)
+# Add the countries into the data frame.
+le_df$Country <- countries
+
+# Make a table in the format we want.
+le_data_long <- reshape2::melt(le_df, id.vars = "Country", variable.name = "Year", value.name = "life_expectancy")
+
+# Print the first few rows of the new dataframe
+head(le_data_long)
+```
+Success! We have our data organized in the format we want.
+
+### Merging Two Datasets
+
+Now that we have two data sets which contain common values in the `country` and `year` columns, we can demonstrate how to join these sets based off their columns and values.
+
+``` {r}
+# Merge the income and life_expect data frames
+lifexp_income <- merge(income_data_long, le_data_long, by = c("Country", "Year"), all = TRUE)
+```
+
+In the above code, we can see the `merge` function takes in 4 arguments.
+\
+The first two are the data sets that were previously transformed.
+\
+The third parameter is about specifying the column(s) we want to join on. 
+\
+The the last is how much data we want to take from each set.
+
+```{r echo=FALSE}
+# Print the first few rows of the merged data frame
+head(lifexp_income)
+```
+
+Success! Now we have a combined dataset which contains both the income and life expectancy.
+
+### Region Data Merging
+
+To further expand on our previous combined dataset, we want to add region information. 
+
+Consider a new raw dataset:
+```{r echo=FALSE}
+region_data <- read.csv("countries_total.csv", header = TRUE)
+head(region_data)
+```
+While there are many columns, the dataset comes in longitudinal format. There is no need to perform the transformation we demonstrated earlier.
+
+\
+
+Our objective is to add a `region` column to the previous data set which contains the `income` and `life expectancy`. See the code block below:
+
+```{r}
+lifexp_income_region <- merge(lifexp_income, region_data[, c("name", "region")], by.x = "Country", by.y = "name", all.x = TRUE)
+```
+It's important to point out a couple of subtle differences between this merge and the previous merge. 
+\
+First, the region data set has `name` as it's columnar representation of `country`. This is a column we want join on. However, since the names are not identical across both sets, it must be explicitely stated to the function which columns should be joined upon. 
+\
+Furthermore, we only want the `region` column to be contained in the new set when joining, so we reduce our region dataset to just `name` and `region` before merging.
+
+The resulting merge is as follows:
+```{r echo=FALSE}
+
+head(lifexp_income_region)
+```
+Success! We have now added region.
+
+### Population Transformation
+
+This section starts with a new raw dataset that is in a format which is similar to how the original `income` and the original `life expectancy` datasets were in. 
+
+In the code block below, the population dataset is loaded into memory, transformed into longitudinal format, and then merged with our previous cleaned data set to include the `population` metadata. We have displayed how to do each of these steps individually, so all of the steps are condensed into one block.
+```{r}
+pop_wide <- read.csv("population_total.csv", header = FALSE)
+# Extract the year values from the header row.
+years <- pop_wide[1,-1]
+# Extract the countries.
+countries <- pop_wide[-1,1]
+# Extract the population.
+pop_raw <- pop_wide[-1,-1]
+
+# Add years as a column.
+colnames(pop_raw) <- as.character(t(years))
+# Create a new dataframe.
+pop_df <- as.data.frame(pop_raw)
+# Add the countries into the data frame.
+pop_df$Country <- countries
+
+# Reshape the data into longitudinal format.
+pop_df_long <- reshape2::melt(pop_df, id.vars = "Country", variable.name = "Year", value.name = "population")
+
+# Merge the population with the cleaned dataset.
+final_data_set <- merge(lifexp_income_region, pop_df_long, by = c("Country", "Year"), all = TRUE)
+
+# Print the first few rows of the merged data frame.
+head(final_data_set)
+``` 
+Success! The final data set has a very nice structure to it, populated with correct values!
+\
+\
+
+### Variables and Observations
+To determine how many variables and observations we have, we can simply look at the dimensions of our final data frame. 
+
+```{r echo=FALSE}
+print(dim(final_data_set))
+```
+
+There are 6 variables (columns!) and 42924 observations (rows!).
+
+### Saving Data
+Here is a short demonstration of how to pick all rows where `year >= 2000`, and write them to a file.
+```{r}
+# Convert the Year column to numeric
+final_data_set$Year <- as.numeric(as.character(final_data_set$Year))
+
+# Subset the dataframe to include only rows where Year >= 2000
+new_df <- final_data_set[final_data_set$Year >= 2000, ]
+
+write.csv(new_df, "2000data.csv", row.names = FALSE)
+```
+
+### Transformation Summary
+In this section we have seen how to work with strange data structures, and turn them into something that is workable and neat.
+\
+There are various means to do transformations, what was shown is here is simply one way to do it. You are encouraged to find your own ways to do transformations so that the conceptual learning process solidifies into a concrete skill.
+
+## Graphing using GGPlot
+
+In this section, we will show a scatter plot based off two numerical variables:
+
+- Income
+- Life Expectancy
+
+The size of the points will be based off the population size.
+\
+The color of the points will be based off the region using `Wongs` colorblind palette.
+
+```{r}
+data = read.csv("2000data.csv", header = TRUE)
+# Plot 
+gg <- ggplot(data, aes(x = Income, y = life_expectancy, color = region, size = population)) +
+  # As Scatter
+  geom_point() +
+  # Label Accordingly +
+  labs(x = "Income", y ="Life Expectancy", title="Income, Life Expectancy, Population Size by Region.") + 
+    # Set the colors based off species
+  scale_color_manual(values = c("Africa" = "#000000", "Americas"="#E69F00", "Asia"="#56B4E9", "Europe"="#009E73", "Oceania"="#CC79A7")) + 
+  # Don't allow the scale to be too large.
+  scale_size_continuous(range = c(0, 10)) +
+  guides(color = guide_legend(title = "Region"), size = guide_legend(title = "Population"))
+
+print(gg)
+
+```
+
+### Narrative
+
+Based off the above plot, it is shown that the Asian and European regions consistently have the highest life expectancy, while quite a few Asian countries make a lot of income per person. 
+\
+\
+The income variable itself does seem to be correlated to the life expectancy in the very simple sense that the older people become, the higher the chance they will make more money then someone who is younger. 
+\
+\
+The population size implies that smaller counties have a higher chance to live higher. I would be hesitant to believe this. Reason being with smaller population sizes, the data is more easily skewed than a country with a higher population. 
+\
+
+I.e., <i>small sample sizes could be biasing the experiment.</i>
+\
+\
+It's also interesting to note that, while Africa does have a good size population and consistent income, their life expectancy is much lower than the other regions.
+\
+\
+There are a few outliers on the right hand side of the graph which make the visualization harder to analyze. If this were a real world presentation, I would remove those data points and document that I did so because those data points don't seem to influence any correlation (aside to the obvious -- that some people from the Asia region make a lot of money).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

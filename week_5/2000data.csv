@@ -1,0 +1,3725 @@
+"Country","Year","Income","life_expectancy","region","population"
+"Afghanistan",2000,972,51.6,"Asia",20100000
+"Afghanistan",2001,871,51.7,"Asia",21000000
+"Afghanistan",2002,1060,52.4,"Asia",22000000
+"Afghanistan",2003,1100,53,"Asia",23100000
+"Afghanistan",2004,1060,53.5,"Asia",24100000
+"Afghanistan",2005,1140,53.9,"Asia",25100000
+"Afghanistan",2006,1160,54.1,"Asia",25900000
+"Afghanistan",2007,1290,54.6,"Asia",26600000
+"Afghanistan",2008,1300,55.2,"Asia",27300000
+"Afghanistan",2009,1530,55.7,"Asia",28000000
+"Afghanistan",2010,1610,56.2,"Asia",28800000
+"Afghanistan",2011,1660,56.7,"Asia",29700000
+"Afghanistan",2012,1840,57.2,"Asia",30700000
+"Afghanistan",2013,1810,57.7,"Asia",31700000
+"Afghanistan",2014,1780,57.8,"Asia",32800000
+"Afghanistan",2015,1750,57.9,"Asia",33700000
+"Afghanistan",2016,1740,58,"Asia",34700000
+"Afghanistan",2017,1800,58.4,"Asia",35500000
+"Afghanistan",2018,1870,58.7,"Asia",36400000
+"Albania",2000,5470,74.4,"Europe",3120000
+"Albania",2001,5960,74.5,"Europe",3120000
+"Albania",2002,6230,74.5,"Europe",3120000
+"Albania",2003,6620,74.6,"Europe",3110000
+"Albania",2004,7020,74.7,"Europe",3100000
+"Albania",2005,7460,74.9,"Europe",3080000
+"Albania",2006,7920,75.2,"Europe",3050000
+"Albania",2007,8450,75.4,"Europe",3020000
+"Albania",2008,9150,75.6,"Europe",2990000
+"Albania",2009,9530,75.9,"Europe",2960000
+"Albania",2010,9930,76.3,"Europe",2940000
+"Albania",2011,10200,76.7,"Europe",2930000
+"Albania",2012,10400,77,"Europe",2920000
+"Albania",2013,10500,77.2,"Europe",2920000
+"Albania",2014,10700,77.4,"Europe",2920000
+"Albania",2015,11000,77.6,"Europe",2920000
+"Albania",2016,11400,77.7,"Europe",2930000
+"Albania",2017,11900,77.9,"Europe",2930000
+"Albania",2018,12400,78,"Europe",2930000
+"Algeria",2000,10200,73.9,"Africa",31200000
+"Algeria",2001,10400,74.1,"Africa",31600000
+"Algeria",2002,10800,74.4,"Africa",32000000
+"Algeria",2003,11500,74.5,"Africa",32400000
+"Algeria",2004,11800,75.1,"Africa",32800000
+"Algeria",2005,12300,75.4,"Africa",33300000
+"Algeria",2006,12300,75.6,"Africa",33800000
+"Algeria",2007,12600,75.9,"Africa",34300000
+"Algeria",2008,12700,76.1,"Africa",34900000
+"Algeria",2009,12600,76.3,"Africa",35500000
+"Algeria",2010,12900,76.5,"Africa",36100000
+"Algeria",2011,13000,76.7,"Africa",36800000
+"Algeria",2012,13200,76.8,"Africa",37600000
+"Algeria",2013,13300,77,"Africa",38300000
+"Algeria",2014,13500,77.1,"Africa",39100000
+"Algeria",2015,13700,77.3,"Africa",39900000
+"Algeria",2016,14000,77.4,"Africa",40600000
+"Algeria",2017,13800,77.6,"Africa",41300000
+"Algeria",2018,13700,77.9,"Africa",42000000
+"Andorra",2000,31700,81.8,"Europe",65400
+"Andorra",2001,31800,82,"Europe",67300
+"Andorra",2002,31900,82.3,"Europe",70000
+"Andorra",2003,34500,82.4,"Europe",73200
+"Andorra",2004,36300,82.3,"Europe",76200
+"Andorra",2005,39800,82.5,"Europe",78900
+"Andorra",2006,42700,82.5,"Europe",81000
+"Andorra",2007,43400,82.7,"Europe",82700
+"Andorra",2008,41400,82.7,"Europe",83900
+"Andorra",2009,41700,82.7,"Europe",84500
+"Andorra",2010,39000,82.7,"Europe",84400
+"Andorra",2011,42000,82.6,"Europe",83800
+"Andorra",2012,41900,82.6,"Europe",82400
+"Andorra",2013,43700,82.6,"Europe",80800
+"Andorra",2014,44900,82.6,"Europe",79200
+"Andorra",2015,46600,82.5,"Europe",78000
+"Andorra",2016,48200,82.5,"Europe",77300
+"Andorra",2017,49800,NA,"Europe",77000
+"Andorra",2018,51500,NA,"Europe",77000
+"Angola",2000,3510,53.4,"Africa",16400000
+"Angola",2001,3540,53.6,"Africa",17000000
+"Angola",2002,3180,54.5,"Africa",17600000
+"Angola",2003,3240,55.1,"Africa",18200000
+"Angola",2004,3460,55.7,"Africa",18900000
+"Angola",2005,3950,56.5,"Africa",19600000
+"Angola",2006,4600,57,"Africa",20300000
+"Angola",2007,5440,57.8,"Africa",21000000
+"Angola",2008,5980,58.6,"Africa",21800000
+"Angola",2009,5910,59.3,"Africa",22500000
+"Angola",2010,5900,60.1,"Africa",23400000
+"Angola",2011,5910,60.9,"Africa",24200000
+"Angola",2012,6000,61.7,"Africa",25100000
+"Angola",2013,6190,62.5,"Africa",26000000
+"Angola",2014,6260,63.3,"Africa",26900000
+"Angola",2015,6230,64,"Africa",27900000
+"Angola",2016,6030,64.7,"Africa",28800000
+"Angola",2017,5940,64.9,"Africa",29800000
+"Angola",2018,5850,65.2,"Africa",30800000
+"Antigua and Barbuda",2000,18800,74.7,"Americas",83600
+"Antigua and Barbuda",2001,17500,75.1,"Americas",85100
+"Antigua and Barbuda",2002,17500,75.3,"Americas",86300
+"Antigua and Barbuda",2003,18300,75.5,"Americas",87300
+"Antigua and Barbuda",2004,19200,75.7,"Americas",88300
+"Antigua and Barbuda",2005,20100,75.9,"Americas",89300
+"Antigua and Barbuda",2006,22500,76,"Americas",90300
+"Antigua and Barbuda",2007,24200,76.4,"Americas",91400
+"Antigua and Barbuda",2008,24000,76.6,"Americas",92500
+"Antigua and Barbuda",2009,20800,76.9,"Americas",93600
+"Antigua and Barbuda",2010,19100,76.8,"Americas",94700
+"Antigua and Barbuda",2011,18600,76.9,"Americas",95700
+"Antigua and Barbuda",2012,19100,77,"Americas",96800
+"Antigua and Barbuda",2013,18900,77.3,"Americas",97800
+"Antigua and Barbuda",2014,19500,77.1,"Americas",98900
+"Antigua and Barbuda",2015,20100,77.2,"Americas",99900
+"Antigua and Barbuda",2016,20800,77.3,"Americas",101000
+"Antigua and Barbuda",2017,20900,77.4,"Americas",102000
+"Antigua and Barbuda",2018,21000,77.6,"Americas",103000
+"Argentina",2000,14900,74.2,"Americas",37100000
+"Argentina",2001,14100,74.4,"Americas",37500000
+"Argentina",2002,12400,74.5,"Americas",37900000
+"Argentina",2003,13400,74.6,"Americas",38300000
+"Argentina",2004,14400,74.9,"Americas",38700000
+"Argentina",2005,15500,75.2,"Americas",39100000
+"Argentina",2006,16600,75.3,"Americas",39600000
+"Argentina",2007,17900,75.3,"Americas",40000000
+"Argentina",2008,18400,75.5,"Americas",40400000
+"Argentina",2009,17200,75.7,"Americas",40800000
+"Argentina",2010,18700,75.8,"Americas",41200000
+"Argentina",2011,19600,76,"Americas",41700000
+"Argentina",2012,19200,76.1,"Americas",42100000
+"Argentina",2013,19500,76.2,"Americas",42500000
+"Argentina",2014,18800,76.4,"Americas",43000000
+"Argentina",2015,19100,76.5,"Americas",43400000
+"Argentina",2016,18500,76.7,"Americas",43800000
+"Argentina",2017,18700,76.8,"Americas",44300000
+"Argentina",2018,18900,77,"Americas",44700000
+"Armenia",2000,2930,71.8,"Asia",3070000
+"Armenia",2001,3220,72.1,"Asia",3050000
+"Armenia",2002,3670,72.5,"Asia",3030000
+"Armenia",2003,4210,72.5,"Asia",3020000
+"Armenia",2004,4670,72.7,"Asia",3000000
+"Armenia",2005,5360,72.5,"Asia",2980000
+"Armenia",2006,6110,72.5,"Asia",2960000
+"Armenia",2007,7010,72.9,"Asia",2930000
+"Armenia",2008,7560,72.8,"Asia",2910000
+"Armenia",2009,6530,73,"Asia",2890000
+"Armenia",2010,6700,73.3,"Asia",2880000
+"Armenia",2011,7020,73.8,"Asia",2880000
+"Armenia",2012,7510,74.3,"Asia",2880000
+"Armenia",2013,7730,75,"Asia",2890000
+"Armenia",2014,7970,75.4,"Asia",2910000
+"Armenia",2015,8180,75.4,"Asia",2920000
+"Armenia",2016,8170,75.7,"Asia",2920000
+"Armenia",2017,8410,75.8,"Asia",2930000
+"Armenia",2018,8660,76,"Asia",2930000
+"Australia",2000,35300,79.7,"Oceania",19100000
+"Australia",2001,35500,80,"Oceania",19300000
+"Australia",2002,36400,80.2,"Oceania",19500000
+"Australia",2003,37100,80.5,"Oceania",19700000
+"Australia",2004,38100,80.8,"Oceania",19900000
+"Australia",2005,38900,81.1,"Oceania",20200000
+"Australia",2006,39400,81.3,"Oceania",20600000
+"Australia",2007,40700,81.4,"Oceania",20900000
+"Australia",2008,41300,81.6,"Oceania",21300000
+"Australia",2009,41200,81.8,"Oceania",21700000
+"Australia",2010,41400,82,"Oceania",22100000
+"Australia",2011,41800,82.2,"Oceania",22500000
+"Australia",2012,42600,82.3,"Oceania",22800000
+"Australia",2013,42900,82.5,"Oceania",23200000
+"Australia",2014,43400,82.6,"Oceania",23500000
+"Australia",2015,43800,82.6,"Oceania",23800000
+"Australia",2016,44400,82.5,"Oceania",24100000
+"Australia",2017,45100,82.7,"Oceania",24500000
+"Australia",2018,45800,82.9,"Oceania",24800000
+"Austria",2000,38800,78.1,"Europe",8070000
+"Austria",2001,39200,78.5,"Europe",8100000
+"Austria",2002,39600,78.7,"Europe",8130000
+"Austria",2003,39700,78.9,"Europe",8180000
+"Austria",2004,40600,79.2,"Europe",8220000
+"Austria",2005,41200,79.5,"Europe",8250000
+"Austria",2006,42300,79.8,"Europe",8280000
+"Austria",2007,43700,80,"Europe",8310000
+"Austria",2008,44300,80.2,"Europe",8340000
+"Austria",2009,42500,80.3,"Europe",8370000
+"Austria",2010,43200,80.5,"Europe",8410000
+"Austria",2011,44200,80.7,"Europe",8460000
+"Austria",2012,44400,80.9,"Europe",8520000
+"Austria",2013,44200,81.1,"Europe",8580000
+"Austria",2014,44100,81.3,"Europe",8630000
+"Austria",2015,44100,81.4,"Europe",8680000
+"Austria",2016,44100,81.5,"Europe",8710000
+"Austria",2017,44400,81.7,"Europe",8740000
+"Austria",2018,44600,81.8,"Europe",8750000
+"Azerbaijan",2000,4460,66.6,"Asia",8120000
+"Azerbaijan",2001,4860,67.2,"Asia",8200000
+"Azerbaijan",2002,5340,67.5,"Asia",8280000
+"Azerbaijan",2003,5890,67.3,"Asia",8360000
+"Azerbaijan",2004,6440,67.4,"Asia",8450000
+"Azerbaijan",2005,8050,67.6,"Asia",8540000
+"Azerbaijan",2006,10700,68,"Asia",8630000
+"Azerbaijan",2007,13200,68.3,"Asia",8720000
+"Azerbaijan",2008,14400,68.4,"Asia",8820000
+"Azerbaijan",2009,15400,68.8,"Asia",8920000
+"Azerbaijan",2010,16000,69.1,"Asia",9030000
+"Azerbaijan",2011,15800,69.9,"Asia",9150000
+"Azerbaijan",2012,15900,70.2,"Asia",9260000
+"Azerbaijan",2013,16600,71,"Asia",9390000
+"Azerbaijan",2014,16700,71.5,"Asia",9500000
+"Azerbaijan",2015,16700,71.8,"Asia",9620000
+"Azerbaijan",2016,16000,72.1,"Asia",9730000
+"Azerbaijan",2017,16200,72.2,"Asia",9830000
+"Azerbaijan",2018,16600,72.3,"Asia",9920000
+"Bahamas",2000,25800,71.3,"Americas",298000
+"Bahamas",2001,26100,71.5,"Americas",303000
+"Bahamas",2002,26300,71.6,"Americas",309000
+"Bahamas",2003,25400,72.2,"Americas",316000
+"Bahamas",2004,25100,72.7,"Americas",323000
+"Bahamas",2005,25400,73,"Americas",329000
+"Bahamas",2006,25500,73.3,"Americas",336000
+"Bahamas",2007,25400,73.6,"Americas",342000
+"Bahamas",2008,24400,73.7,"Americas",349000
+"Bahamas",2009,22900,73.8,"Americas",355000
+"Bahamas",2010,22900,73.8,"Americas",361000
+"Bahamas",2011,22700,73.8,"Americas",367000
+"Bahamas",2012,23000,73.7,"Americas",372000
+"Bahamas",2013,22700,73.7,"Americas",377000
+"Bahamas",2014,22300,73.8,"Americas",382000
+"Bahamas",2015,21700,73.6,"Americas",387000
+"Bahamas",2016,21500,73.8,"Americas",391000
+"Bahamas",2017,21700,74,"Americas",395000
+"Bahamas",2018,21900,74.1,"Americas",399000
+"Bahrain",2000,45500,71.7,"Asia",665000
+"Bahrain",2001,44500,72.3,"Asia",698000
+"Bahrain",2002,43700,72.6,"Asia",735000
+"Bahrain",2003,43800,72.9,"Asia",779000
+"Bahrain",2004,43900,73.1,"Asia",830000
+"Bahrain",2005,43800,73.6,"Asia",889000
+"Bahrain",2006,43200,73.8,"Asia",958000
+"Bahrain",2007,43300,74.6,"Asia",1040000
+"Bahrain",2008,42800,75.2,"Asia",1110000
+"Bahrain",2009,41300,75.7,"Asia",1190000
+"Bahrain",2010,41100,76,"Asia",1240000
+"Bahrain",2011,40700,76.2,"Asia",1280000
+"Bahrain",2012,41500,76.3,"Asia",1300000
+"Bahrain",2013,43200,76.6,"Asia",1320000
+"Bahrain",2014,44400,76.7,"Asia",1340000
+"Bahrain",2015,44500,76.8,"Asia",1370000
+"Bahrain",2016,44600,76.9,"Asia",1430000
+"Bahrain",2017,44500,77,"Asia",1490000
+"Bahrain",2018,44300,77.2,"Asia",1570000
+"Bangladesh",2000,1640,65.5,"Asia",132000000
+"Bangladesh",2001,1690,66,"Asia",134000000
+"Bangladesh",2002,1730,66.5,"Asia",137000000
+"Bangladesh",2003,1780,67.1,"Asia",139000000
+"Bangladesh",2004,1840,67.6,"Asia",141000000
+"Bangladesh",2005,1930,68,"Asia",143000000
+"Bangladesh",2006,2030,68.5,"Asia",145000000
+"Bangladesh",2007,2150,68.9,"Asia",147000000
+"Bangladesh",2008,2250,69.5,"Asia",149000000
+"Bangladesh",2009,2340,70.1,"Asia",150000000
+"Bangladesh",2010,2440,70.4,"Asia",152000000
+"Bangladesh",2011,2570,71,"Asia",154000000
+"Bangladesh",2012,2710,71.3,"Asia",156000000
+"Bangladesh",2013,2840,71.6,"Asia",158000000
+"Bangladesh",2014,2970,72,"Asia",159000000
+"Bangladesh",2015,3130,72.4,"Asia",161000000
+"Bangladesh",2016,3320,72.8,"Asia",163000000
+"Bangladesh",2017,3520,73.1,"Asia",165000000
+"Bangladesh",2018,3720,73.4,"Asia",166000000
+"Barbados",2000,14400,74.9,"Americas",270000
+"Barbados",2001,14100,75.3,"Americas",271000
+"Barbados",2002,14100,75.5,"Americas",271000
+"Barbados",2003,14400,75.7,"Americas",272000
+"Barbados",2004,14500,75.8,"Americas",273000
+"Barbados",2005,15100,75.9,"Americas",274000
+"Barbados",2006,15900,76,"Americas",275000
+"Barbados",2007,16100,76.2,"Americas",276000
+"Barbados",2008,16100,76.5,"Americas",277000
+"Barbados",2009,15400,76.6,"Americas",278000
+"Barbados",2010,15300,76.7,"Americas",280000
+"Barbados",2011,15400,76.7,"Americas",281000
+"Barbados",2012,15400,76.8,"Americas",282000
+"Barbados",2013,15300,76.8,"Americas",283000
+"Barbados",2014,15300,76.7,"Americas",283000
+"Barbados",2015,15400,76.6,"Americas",284000
+"Barbados",2016,15600,76.5,"Americas",285000
+"Barbados",2017,15800,76.7,"Americas",286000
+"Barbados",2018,16000,76.8,"Americas",286000
+"Belarus",2000,7560,68.5,"Europe",9930000
+"Belarus",2001,7960,68.3,"Europe",9870000
+"Belarus",2002,8420,68.1,"Europe",9810000
+"Belarus",2003,9070,68.5,"Europe",9740000
+"Belarus",2004,10200,68.7,"Europe",9680000
+"Belarus",2005,11200,68.9,"Europe",9620000
+"Belarus",2006,12400,69.4,"Europe",9580000
+"Belarus",2007,13500,69.9,"Europe",9540000
+"Belarus",2008,15000,70.2,"Europe",9510000
+"Belarus",2009,15000,70.3,"Europe",9490000
+"Belarus",2010,16200,70.4,"Europe",9470000
+"Belarus",2011,17200,70.7,"Europe",9470000
+"Belarus",2012,17500,71.8,"Europe",9470000
+"Belarus",2013,17700,72.4,"Europe",9480000
+"Belarus",2014,17900,73,"Europe",9480000
+"Belarus",2015,17200,73.3,"Europe",9490000
+"Belarus",2016,16700,73.5,"Europe",9480000
+"Belarus",2017,16900,73.6,"Europe",9470000
+"Belarus",2018,17200,73.8,"Europe",9450000
+"Belgium",2000,37300,77.8,"Europe",10300000
+"Belgium",2001,37400,78,"Europe",10300000
+"Belgium",2002,37900,78.2,"Europe",10400000
+"Belgium",2003,38100,78.5,"Europe",10400000
+"Belgium",2004,39300,78.8,"Europe",10500000
+"Belgium",2005,39900,79.1,"Europe",10500000
+"Belgium",2006,40600,79.4,"Europe",10600000
+"Belgium",2007,41700,79.5,"Europe",10700000
+"Belgium",2008,41700,79.6,"Europe",10800000
+"Belgium",2009,40400,79.8,"Europe",10900000
+"Belgium",2010,41100,80,"Europe",10900000
+"Belgium",2011,41200,80.2,"Europe",11000000
+"Belgium",2012,41000,80.3,"Europe",11100000
+"Belgium",2013,40800,80.5,"Europe",11200000
+"Belgium",2014,41400,80.9,"Europe",11200000
+"Belgium",2015,41700,80.9,"Europe",11300000
+"Belgium",2016,41900,80.9,"Europe",11400000
+"Belgium",2017,42400,81.1,"Europe",11400000
+"Belgium",2018,42800,81.2,"Europe",11500000
+"Belize",2000,6960,68.9,"Americas",247000
+"Belize",2001,7090,68.7,"Americas",255000
+"Belize",2002,7250,69.2,"Americas",262000
+"Belize",2003,7720,69.4,"Americas",269000
+"Belize",2004,7870,69.7,"Americas",276000
+"Belize",2005,7870,70,"Americas",283000
+"Belize",2006,8020,70.3,"Americas",291000
+"Belize",2007,7900,70.7,"Americas",298000
+"Belize",2008,7950,70.9,"Americas",306000
+"Belize",2009,7810,71.1,"Americas",314000
+"Belize",2010,7880,71.4,"Americas",322000
+"Belize",2011,7860,71.5,"Americas",329000
+"Belize",2012,7970,71.6,"Americas",337000
+"Belize",2013,7900,71.7,"Americas",344000
+"Belize",2014,8050,71.8,"Americas",352000
+"Belize",2015,8060,71.9,"Americas",359000
+"Belize",2016,7830,72,"Americas",367000
+"Belize",2017,7780,72.2,"Americas",375000
+"Belize",2018,7710,72.5,"Americas",382000
+"Benin",2000,1670,57.6,"Africa",6870000
+"Benin",2001,1700,57.8,"Africa",7080000
+"Benin",2002,1730,58.2,"Africa",7300000
+"Benin",2003,1740,58.6,"Africa",7520000
+"Benin",2004,1760,59,"Africa",7750000
+"Benin",2005,1740,59.5,"Africa",7980000
+"Benin",2006,1750,59.9,"Africa",8220000
+"Benin",2007,1810,60.3,"Africa",8450000
+"Benin",2008,1840,60.8,"Africa",8700000
+"Benin",2009,1830,61.4,"Africa",8940000
+"Benin",2010,1820,61.8,"Africa",9200000
+"Benin",2011,1820,62.2,"Africa",9460000
+"Benin",2012,1860,62.6,"Africa",9730000
+"Benin",2013,1940,63,"Africa",10000000
+"Benin",2014,2000,63.4,"Africa",10300000
+"Benin",2015,1990,63.9,"Africa",10600000
+"Benin",2016,2010,64.4,"Africa",10900000
+"Benin",2017,2080,64.7,"Africa",11200000
+"Benin",2018,2170,65,"Africa",11500000
+"Bhutan",2000,3540,65.6,"Asia",573000
+"Bhutan",2001,3720,67.2,"Asia",590000
+"Bhutan",2002,4010,68,"Asia",606000
+"Bhutan",2003,4200,68.5,"Asia",623000
+"Bhutan",2004,4330,69.1,"Asia",640000
+"Bhutan",2005,4520,69.6,"Asia",657000
+"Bhutan",2006,4720,70.2,"Asia",672000
+"Bhutan",2007,5450,70.7,"Asia",687000
+"Bhutan",2008,5590,71.3,"Asia",701000
+"Bhutan",2009,5850,71.6,"Asia",714000
+"Bhutan",2010,6420,72.1,"Asia",728000
+"Bhutan",2011,6810,72.5,"Asia",741000
+"Bhutan",2012,7030,72.9,"Asia",753000
+"Bhutan",2013,7070,73.2,"Asia",765000
+"Bhutan",2014,7370,73.5,"Asia",776000
+"Bhutan",2015,7740,73.8,"Asia",787000
+"Bhutan",2016,8110,74.1,"Asia",798000
+"Bhutan",2017,8870,74.5,"Asia",808000
+"Bhutan",2018,9930,74.8,"Asia",817000
+"Bolivia",2000,4410,67.7,NA,8340000
+"Bolivia",2001,4400,68.3,NA,8500000
+"Bolivia",2002,4430,68.8,NA,8650000
+"Bolivia",2003,4470,69.3,NA,8810000
+"Bolivia",2004,4580,69.7,NA,8970000
+"Bolivia",2005,4700,70.1,NA,9130000
+"Bolivia",2006,4840,70.5,NA,9280000
+"Bolivia",2007,4970,70.7,NA,9440000
+"Bolivia",2008,5190,71,NA,9600000
+"Bolivia",2009,5280,71.3,NA,9760000
+"Bolivia",2010,5410,71.6,NA,9920000
+"Bolivia",2011,5600,71.9,NA,10100000
+"Bolivia",2012,5790,72.2,NA,10200000
+"Bolivia",2013,6090,72.5,NA,10400000
+"Bolivia",2014,6330,72.7,NA,10600000
+"Bolivia",2015,6530,73,NA,10700000
+"Bolivia",2016,6710,73.3,NA,10900000
+"Bolivia",2017,6850,73.6,NA,11100000
+"Bolivia",2018,6980,74,NA,11200000
+"Bosnia and Herzegovina",2000,6330,74.8,"Europe",3770000
+"Bosnia and Herzegovina",2001,6600,75.1,"Europe",3770000
+"Bosnia and Herzegovina",2002,6940,75.3,"Europe",3780000
+"Bosnia and Herzegovina",2003,7210,75.4,"Europe",3780000
+"Bosnia and Herzegovina",2004,7650,75.6,"Europe",3780000
+"Bosnia and Herzegovina",2005,8320,75.7,"Europe",3780000
+"Bosnia and Herzegovina",2006,8770,75.9,"Europe",3780000
+"Bosnia and Herzegovina",2007,9280,76.1,"Europe",3770000
+"Bosnia and Herzegovina",2008,9820,76.3,"Europe",3760000
+"Bosnia and Herzegovina",2009,9580,76.6,"Europe",3750000
+"Bosnia and Herzegovina",2010,9720,76.8,"Europe",3720000
+"Bosnia and Herzegovina",2011,9890,76.9,"Europe",3690000
+"Bosnia and Herzegovina",2012,9910,77,"Europe",3650000
+"Bosnia and Herzegovina",2013,10300,77.2,"Europe",3600000
+"Bosnia and Herzegovina",2014,10500,77.2,"Europe",3570000
+"Bosnia and Herzegovina",2015,10900,77.4,"Europe",3540000
+"Bosnia and Herzegovina",2016,11200,77.6,"Europe",3520000
+"Bosnia and Herzegovina",2017,11600,77.8,"Europe",3510000
+"Bosnia and Herzegovina",2018,12100,77.9,"Europe",3500000
+"Botswana",2000,10400,46.7,"Africa",1730000
+"Botswana",2001,10300,45.8,"Africa",1750000
+"Botswana",2002,10700,45.2,"Africa",1780000
+"Botswana",2003,11100,45.3,"Africa",1800000
+"Botswana",2004,11200,46.1,"Africa",1830000
+"Botswana",2005,11600,47.8,"Africa",1860000
+"Botswana",2006,12400,49.5,"Africa",1880000
+"Botswana",2007,13200,51.1,"Africa",1910000
+"Botswana",2008,13800,52.8,"Africa",1950000
+"Botswana",2009,12500,54.9,"Africa",1980000
+"Botswana",2010,13300,57.1,"Africa",2010000
+"Botswana",2011,13900,58.9,"Africa",2050000
+"Botswana",2012,14200,60.5,"Africa",2090000
+"Botswana",2013,15600,62.4,"Africa",2130000
+"Botswana",2014,15900,63.7,"Africa",2170000
+"Botswana",2015,15400,64.6,"Africa",2210000
+"Botswana",2016,15500,65.5,"Africa",2250000
+"Botswana",2017,16000,66.3,"Africa",2290000
+"Botswana",2018,16500,66.9,"Africa",2330000
+"Brazil",2000,11400,71.4,"Americas",175000000
+"Brazil",2001,11400,71.8,"Americas",178000000
+"Brazil",2002,11600,72.1,"Americas",180000000
+"Brazil",2003,11500,72.4,"Americas",182000000
+"Brazil",2004,12100,72.7,"Americas",185000000
+"Brazil",2005,12300,73,"Americas",187000000
+"Brazil",2006,12600,73.3,"Americas",189000000
+"Brazil",2007,13300,73.5,"Americas",191000000
+"Brazil",2008,13800,73.8,"Americas",193000000
+"Brazil",2009,13700,74,"Americas",195000000
+"Brazil",2010,14500,74.2,"Americas",197000000
+"Brazil",2011,15000,74.4,"Americas",199000000
+"Brazil",2012,15100,74.7,"Americas",201000000
+"Brazil",2013,15400,74.9,"Americas",202000000
+"Brazil",2014,15400,75,"Americas",204000000
+"Brazil",2015,14700,75.2,"Americas",206000000
+"Brazil",2016,14000,75.3,"Americas",208000000
+"Brazil",2017,14200,75.5,"Americas",209000000
+"Brazil",2018,14300,75.7,"Americas",211000000
+"Brunei",2000,82100,76,NA,333000
+"Brunei",2001,82600,76.3,NA,340000
+"Brunei",2002,84100,76.5,NA,347000
+"Brunei",2003,85000,76.7,NA,353000
+"Brunei",2004,83900,76.8,NA,360000
+"Brunei",2005,83000,76.8,NA,365000
+"Brunei",2006,85400,76.8,NA,370000
+"Brunei",2007,84500,76.8,NA,375000
+"Brunei",2008,81900,76.9,NA,379000
+"Brunei",2009,79500,76.9,NA,384000
+"Brunei",2010,80600,77.1,NA,389000
+"Brunei",2011,82400,77,NA,394000
+"Brunei",2012,82000,76.9,NA,400000
+"Brunei",2013,79100,76.9,NA,406000
+"Brunei",2014,76100,76.9,NA,412000
+"Brunei",2015,74600,76.9,NA,418000
+"Brunei",2016,71800,77,NA,423000
+"Brunei",2017,71300,77.2,NA,429000
+"Brunei",2018,76900,77.4,NA,434000
+"Bulgaria",2000,8960,71.8,"Europe",8000000
+"Bulgaria",2001,9530,72,"Europe",7930000
+"Bulgaria",2002,10300,72.3,"Europe",7870000
+"Bulgaria",2003,10900,72.5,"Europe",7800000
+"Bulgaria",2004,11700,72.6,"Europe",7740000
+"Bulgaria",2005,12700,72.7,"Europe",7680000
+"Bulgaria",2006,13600,72.8,"Europe",7620000
+"Bulgaria",2007,14800,73.1,"Europe",7570000
+"Bulgaria",2008,15700,73.3,"Europe",7510000
+"Bulgaria",2009,15200,73.6,"Europe",7460000
+"Bulgaria",2010,15300,73.9,"Europe",7400000
+"Bulgaria",2011,15700,74.3,"Europe",7360000
+"Bulgaria",2012,15800,74.7,"Europe",7310000
+"Bulgaria",2013,16000,74.9,"Europe",7270000
+"Bulgaria",2014,16300,75,"Europe",7220000
+"Bulgaria",2015,17000,75,"Europe",7180000
+"Bulgaria",2016,17700,75.1,"Europe",7130000
+"Bulgaria",2017,18300,75.2,"Europe",7080000
+"Bulgaria",2018,18900,75.3,"Europe",7040000
+"Burkina Faso",2000,1050,52.2,"Africa",11600000
+"Burkina Faso",2001,1080,52.6,"Africa",11900000
+"Burkina Faso",2002,1100,53.1,"Africa",12300000
+"Burkina Faso",2003,1150,53.8,"Africa",12700000
+"Burkina Faso",2004,1170,54.4,"Africa",13000000
+"Burkina Faso",2005,1230,55.1,"Africa",13400000
+"Burkina Faso",2006,1270,55.6,"Africa",13800000
+"Burkina Faso",2007,1300,56.2,"Africa",14300000
+"Burkina Faso",2008,1360,56.9,"Africa",14700000
+"Burkina Faso",2009,1350,57.4,"Africa",15100000
+"Burkina Faso",2010,1430,57.9,"Africa",15600000
+"Burkina Faso",2011,1470,58.4,"Africa",16100000
+"Burkina Faso",2012,1520,58.9,"Africa",16600000
+"Burkina Faso",2013,1520,59.4,"Africa",17100000
+"Burkina Faso",2014,1540,59.8,"Africa",17600000
+"Burkina Faso",2015,1550,60.3,"Africa",18100000
+"Burkina Faso",2016,1600,60.8,"Africa",18600000
+"Burkina Faso",2017,1650,61.2,"Africa",19200000
+"Burkina Faso",2018,1710,61.6,"Africa",19800000
+"Burundi",2000,754,47.9,"Africa",6400000
+"Burundi",2001,751,49,"Africa",6560000
+"Burundi",2002,763,49.9,"Africa",6740000
+"Burundi",2003,731,50.9,"Africa",6950000
+"Burundi",2004,742,52,"Africa",7180000
+"Burundi",2005,724,53.1,"Africa",7420000
+"Burundi",2006,738,54.3,"Africa",7680000
+"Burundi",2007,748,55.4,"Africa",7940000
+"Burundi",2008,759,56.3,"Africa",8210000
+"Burundi",2009,760,57.1,"Africa",8490000
+"Burundi",2010,764,57.7,"Africa",8770000
+"Burundi",2011,772,58.2,"Africa",9040000
+"Burundi",2012,779,58.8,"Africa",9320000
+"Burundi",2013,791,59.2,"Africa",9600000
+"Burundi",2014,803,59.6,"Africa",9890000
+"Burundi",2015,749,60,"Africa",10200000
+"Burundi",2016,721,60.4,"Africa",10500000
+"Burundi",2017,705,60.8,"Africa",10900000
+"Burundi",2018,691,61.1,"Africa",11200000
+"Cambodia",2000,1380,59.5,"Asia",12200000
+"Cambodia",2001,1460,60.1,"Asia",12400000
+"Cambodia",2002,1530,60.7,"Asia",12600000
+"Cambodia",2003,1630,61.3,"Asia",12900000
+"Cambodia",2004,1770,62,"Asia",13100000
+"Cambodia",2005,1970,62.9,"Asia",13300000
+"Cambodia",2006,2150,63.8,"Asia",13500000
+"Cambodia",2007,2330,64.5,"Asia",13700000
+"Cambodia",2008,2450,65.2,"Asia",13900000
+"Cambodia",2009,2420,65.7,"Asia",14100000
+"Cambodia",2010,2520,66.1,"Asia",14300000
+"Cambodia",2011,2660,66.6,"Asia",14500000
+"Cambodia",2012,2810,67.2,"Asia",14800000
+"Cambodia",2013,2970,67.6,"Asia",15000000
+"Cambodia",2014,3120,68,"Asia",15300000
+"Cambodia",2015,3290,68.3,"Asia",15500000
+"Cambodia",2016,3460,68.7,"Asia",15800000
+"Cambodia",2017,3640,69,"Asia",16000000
+"Cambodia",2018,3830,69.3,"Asia",16200000
+"Cameroon",2000,2510,54.5,"Africa",15300000
+"Cameroon",2001,2550,54.4,"Africa",15700000
+"Cameroon",2002,2590,54.5,"Africa",16100000
+"Cameroon",2003,2620,54.5,"Africa",16500000
+"Cameroon",2004,2650,54.6,"Africa",17000000
+"Cameroon",2005,2640,54.9,"Africa",17400000
+"Cameroon",2006,2650,55.3,"Africa",17900000
+"Cameroon",2007,2660,55.6,"Africa",18400000
+"Cameroon",2008,2660,56.2,"Africa",18900000
+"Cameroon",2009,2640,56.8,"Africa",19400000
+"Cameroon",2010,2660,57.3,"Africa",20000000
+"Cameroon",2011,2690,57.7,"Africa",20500000
+"Cameroon",2012,2740,58.3,"Africa",21100000
+"Cameroon",2013,2820,58.8,"Africa",21700000
+"Cameroon",2014,2900,59.2,"Africa",22200000
+"Cameroon",2015,2990,59.7,"Africa",22800000
+"Cameroon",2016,3050,60.2,"Africa",23400000
+"Cameroon",2017,3100,60.7,"Africa",24100000
+"Cameroon",2018,3170,61.2,"Africa",24700000
+"Canada",2000,37400,79.2,"Americas",30700000
+"Canada",2001,37700,79.4,"Americas",31000000
+"Canada",2002,38500,79.6,"Americas",31300000
+"Canada",2003,38800,79.8,"Americas",31600000
+"Canada",2004,39600,80,"Americas",31900000
+"Canada",2005,40500,80.2,"Americas",32300000
+"Canada",2006,41200,80.4,"Americas",32600000
+"Canada",2007,41600,80.6,"Americas",33000000
+"Canada",2008,41600,80.8,"Americas",33400000
+"Canada",2009,39900,81.1,"Americas",33800000
+"Canada",2010,40700,81.3,"Americas",34200000
+"Canada",2011,41600,81.5,"Americas",34500000
+"Canada",2012,41800,81.6,"Americas",34900000
+"Canada",2013,42300,81.7,"Americas",35300000
+"Canada",2014,42900,81.8,"Americas",35600000
+"Canada",2015,43000,81.7,"Americas",35900000
+"Canada",2016,43100,81.8,"Americas",36300000
+"Canada",2017,43500,82,"Americas",36600000
+"Canada",2018,43800,82.2,"Americas",37000000
+"Cape Verde",2000,3840,69.8,NA,435000
+"Cape Verde",2001,3850,70,NA,444000
+"Cape Verde",2002,3970,70.3,NA,452000
+"Cape Verde",2003,4070,70.6,NA,460000
+"Cape Verde",2004,4410,70.8,NA,468000
+"Cape Verde",2005,4640,71.1,NA,475000
+"Cape Verde",2006,4950,71.4,NA,481000
+"Cape Verde",2007,5630,71.4,NA,486000
+"Cape Verde",2008,5940,72,NA,492000
+"Cape Verde",2009,5810,72.2,NA,497000
+"Cape Verde",2010,5830,72.5,NA,502000
+"Cape Verde",2011,5990,72.7,NA,508000
+"Cape Verde",2012,5990,72.8,NA,514000
+"Cape Verde",2013,5960,73,NA,520000
+"Cape Verde",2014,5930,73.3,NA,526000
+"Cape Verde",2015,5920,73.4,NA,533000
+"Cape Verde",2016,6080,73.7,NA,540000
+"Cape Verde",2017,6240,73.8,NA,546000
+"Cape Verde",2018,6420,74.1,NA,553000
+"Central African Republic",2000,819,44.5,"Africa",3750000
+"Central African Republic",2001,839,44.4,"Africa",3830000
+"Central African Republic",2002,852,44.5,"Africa",3910000
+"Central African Republic",2003,791,44.6,"Africa",3980000
+"Central African Republic",2004,824,44.8,"Africa",4060000
+"Central African Republic",2005,816,45,"Africa",4130000
+"Central African Republic",2006,840,45.3,"Africa",4200000
+"Central African Republic",2007,864,45.7,"Africa",4280000
+"Central African Republic",2008,867,46.3,"Africa",4350000
+"Central African Republic",2009,870,47,"Africa",4400000
+"Central African Republic",2010,888,47.5,"Africa",4450000
+"Central African Republic",2011,912,48,"Africa",4480000
+"Central African Republic",2012,946,48.6,"Africa",4490000
+"Central African Republic",2013,598,48,"Africa",4500000
+"Central African Republic",2014,602,48.4,"Africa",4520000
+"Central African Republic",2015,626,49.7,"Africa",4550000
+"Central African Republic",2016,648,50.3,"Africa",4590000
+"Central African Republic",2017,668,50.9,"Africa",4660000
+"Central African Republic",2018,689,51.6,"Africa",4740000
+"Chad",2000,993,52.2,"Africa",8340000
+"Chad",2001,1070,52.4,"Africa",8660000
+"Chad",2002,1120,52.6,"Africa",9000000
+"Chad",2003,1230,52.8,"Africa",9350000
+"Chad",2004,1590,53.1,"Africa",9710000
+"Chad",2005,1790,53.9,"Africa",10100000
+"Chad",2006,1740,54.1,"Africa",10400000
+"Chad",2007,1740,54.9,"Africa",10800000
+"Chad",2008,1740,55.2,"Africa",11100000
+"Chad",2009,1750,55.9,"Africa",11500000
+"Chad",2010,1930,56.5,"Africa",11900000
+"Chad",2011,1860,57,"Africa",12300000
+"Chad",2012,1960,57.5,"Africa",12700000
+"Chad",2013,2010,58.2,"Africa",13100000
+"Chad",2014,2080,58.7,"Africa",13600000
+"Chad",2015,2050,59.2,"Africa",14000000
+"Chad",2016,1850,59.8,"Africa",14500000
+"Chad",2017,1850,60.2,"Africa",14900000
+"Chad",2018,1860,60.5,"Africa",15400000
+"Chile",2000,14300,77.2,"Americas",15300000
+"Chile",2001,14600,77.4,"Americas",15400000
+"Chile",2002,14900,77.7,"Americas",15600000
+"Chile",2003,15300,77.9,"Americas",15800000
+"Chile",2004,16300,78.1,"Americas",16000000
+"Chile",2005,17000,78.4,"Americas",16100000
+"Chile",2006,17900,78.7,"Americas",16300000
+"Chile",2007,18600,78.9,"Americas",16500000
+"Chile",2008,19000,79.2,"Americas",16700000
+"Chile",2009,18500,79.2,"Americas",16800000
+"Chile",2010,19400,79.1,"Americas",17000000
+"Chile",2011,20400,79.5,"Americas",17200000
+"Chile",2012,21300,79.6,"Americas",17300000
+"Chile",2013,22000,79.8,"Americas",17500000
+"Chile",2014,22200,80,"Americas",17600000
+"Chile",2015,22500,80.1,"Americas",17800000
+"Chile",2016,22700,80.2,"Americas",17900000
+"Chile",2017,23000,80.5,"Americas",18100000
+"Chile",2018,23400,80.7,"Americas",18200000
+"China",2000,3700,70,"Asia",1280000000
+"China",2001,3980,70.3,"Asia",1290000000
+"China",2002,4320,70.7,"Asia",1300000000
+"China",2003,4720,71.3,"Asia",1310000000
+"China",2004,5170,71.9,"Asia",1310000000
+"China",2005,5720,72.4,"Asia",1320000000
+"China",2006,6410,73,"Asia",1330000000
+"China",2007,7290,73.5,"Asia",1340000000
+"China",2008,7950,73.8,"Asia",1340000000
+"China",2009,8650,74.3,"Asia",1350000000
+"China",2010,9530,74.6,"Asia",1360000000
+"China",2011,10400,75.1,"Asia",1370000000
+"China",2012,11100,75.4,"Asia",1380000000
+"China",2013,12000,75.7,"Asia",1380000000
+"China",2014,12800,75.9,"Asia",1390000000
+"China",2015,13600,76.3,"Asia",1400000000
+"China",2016,14400,76.6,"Asia",1400000000
+"China",2017,15200,76.8,"Asia",1410000000
+"China",2018,16000,76.9,"Asia",1420000000
+"Colombia",2000,8310,73.3,"Americas",40400000
+"Colombia",2001,8330,73.4,"Americas",41000000
+"Colombia",2002,8420,73.6,"Americas",41600000
+"Colombia",2003,8630,74.3,"Americas",42200000
+"Colombia",2004,8960,74.6,"Americas",42700000
+"Colombia",2005,9260,75,"Americas",43300000
+"Colombia",2006,9760,75.2,"Americas",43800000
+"Colombia",2007,10300,75.8,"Americas",44400000
+"Colombia",2008,10500,76,"Americas",44900000
+"Colombia",2009,10600,76.2,"Americas",45400000
+"Colombia",2010,10900,76.4,"Americas",45900000
+"Colombia",2011,11500,77,"Americas",46400000
+"Colombia",2012,11800,77.3,"Americas",46900000
+"Colombia",2013,12300,77.7,"Americas",47300000
+"Colombia",2014,12700,77.9,"Americas",47800000
+"Colombia",2015,13000,78,"Americas",48200000
+"Colombia",2016,13100,78.2,"Americas",48700000
+"Colombia",2017,13400,78.4,"Americas",49100000
+"Colombia",2018,13700,78.6,"Americas",49500000
+"Comoros",2000,1480,61.5,"Africa",542000
+"Comoros",2001,1480,62.4,"Africa",556000
+"Comoros",2002,1480,62.7,"Africa",569000
+"Comoros",2003,1470,63.5,"Africa",583000
+"Comoros",2004,1470,64,"Africa",597000
+"Comoros",2005,1470,64.3,"Africa",612000
+"Comoros",2006,1480,64.5,"Africa",626000
+"Comoros",2007,1450,64.7,"Africa",642000
+"Comoros",2008,1420,65.3,"Africa",657000
+"Comoros",2009,1420,64.9,"Africa",673000
+"Comoros",2010,1410,65.9,"Africa",690000
+"Comoros",2011,1420,65.6,"Africa",707000
+"Comoros",2012,1420,66.2,"Africa",724000
+"Comoros",2013,1440,66.5,"Africa",742000
+"Comoros",2014,1430,67,"Africa",759000
+"Comoros",2015,1410,67.3,"Africa",777000
+"Comoros",2016,1410,67.6,"Africa",796000
+"Comoros",2017,1430,67.8,"Africa",814000
+"Comoros",2018,1440,68,"Africa",832000
+"Congo, Dem. Rep.",2000,529,53.4,"Africa",47100000
+"Congo, Dem. Rep.",2001,504,53.6,"Africa",48400000
+"Congo, Dem. Rep.",2002,504,53.8,"Africa",49800000
+"Congo, Dem. Rep.",2003,516,54,"Africa",51400000
+"Congo, Dem. Rep.",2004,534,54.9,"Africa",53000000
+"Congo, Dem. Rep.",2005,549,55.4,"Africa",54800000
+"Congo, Dem. Rep.",2006,559,55.9,"Africa",56500000
+"Congo, Dem. Rep.",2007,575,56.1,"Africa",58400000
+"Congo, Dem. Rep.",2008,591,56.5,"Africa",60400000
+"Congo, Dem. Rep.",2009,588,56.9,"Africa",62400000
+"Congo, Dem. Rep.",2010,609,57.5,"Africa",64500000
+"Congo, Dem. Rep.",2011,630,58,"Africa",66700000
+"Congo, Dem. Rep.",2012,653,58.5,"Africa",69000000
+"Congo, Dem. Rep.",2013,685,59.3,"Africa",71300000
+"Congo, Dem. Rep.",2014,726,60.1,"Africa",73700000
+"Congo, Dem. Rep.",2015,750,60.9,"Africa",76200000
+"Congo, Dem. Rep.",2016,742,61.6,"Africa",78700000
+"Congo, Dem. Rep.",2017,745,62,"Africa",81300000
+"Congo, Dem. Rep.",2018,751,62.4,"Africa",84000000
+"Congo, Rep.",2000,4480,52.8,NA,3230000
+"Congo, Rep.",2001,4520,53.7,NA,3320000
+"Congo, Rep.",2002,4610,54.4,NA,3410000
+"Congo, Rep.",2003,4520,55,NA,3500000
+"Congo, Rep.",2004,4540,55.8,NA,3610000
+"Congo, Rep.",2005,4740,56.6,NA,3720000
+"Congo, Rep.",2006,4880,57.5,NA,3840000
+"Congo, Rep.",2007,4640,58,NA,3980000
+"Congo, Rep.",2008,4730,58.7,NA,4120000
+"Congo, Rep.",2009,4920,59.6,NA,4250000
+"Congo, Rep.",2010,5190,60.4,NA,4390000
+"Congo, Rep.",2011,5210,61.1,NA,4510000
+"Congo, Rep.",2012,5270,61.5,NA,4630000
+"Congo, Rep.",2013,5320,62,NA,4750000
+"Congo, Rep.",2014,5540,62.4,NA,4870000
+"Congo, Rep.",2015,5540,62.6,NA,5000000
+"Congo, Rep.",2016,5300,63,NA,5130000
+"Congo, Rep.",2017,5650,63.4,NA,5260000
+"Congo, Rep.",2018,5620,63.9,NA,5400000
+"Costa Rica",2000,9880,78,"Americas",3930000
+"Costa Rica",2001,10000,78.3,"Americas",4000000
+"Costa Rica",2002,10200,78.5,"Americas",4060000
+"Costa Rica",2003,10500,78.8,"Americas",4130000
+"Costa Rica",2004,10800,79.1,"Americas",4190000
+"Costa Rica",2005,11000,79.3,"Americas",4250000
+"Costa Rica",2006,11700,79.6,"Americas",4310000
+"Costa Rica",2007,12400,80,"Americas",4370000
+"Costa Rica",2008,12800,80.2,"Americas",4430000
+"Costa Rica",2009,12500,80.3,"Americas",4490000
+"Costa Rica",2010,13000,80.4,"Americas",4550000
+"Costa Rica",2011,13400,80.5,"Americas",4600000
+"Costa Rica",2012,13900,80.6,"Americas",4650000
+"Costa Rica",2013,14000,80.7,"Americas",4710000
+"Costa Rica",2014,14400,80.8,"Americas",4760000
+"Costa Rica",2015,14900,80.9,"Americas",4810000
+"Costa Rica",2016,15400,81,"Americas",4860000
+"Costa Rica",2017,15800,81.2,"Americas",4910000
+"Costa Rica",2018,16200,81.4,"Americas",4950000
+"Cote d'Ivoire",2000,2950,52.6,"Africa",16700000
+"Cote d'Ivoire",2001,2890,52.7,"Africa",17000000
+"Cote d'Ivoire",2002,2790,52.9,"Africa",17400000
+"Cote d'Ivoire",2003,2700,53.1,"Africa",17700000
+"Cote d'Ivoire",2004,2690,53.3,"Africa",18000000
+"Cote d'Ivoire",2005,2680,53.7,"Africa",18300000
+"Cote d'Ivoire",2006,2670,54.1,"Africa",18700000
+"Cote d'Ivoire",2007,2660,54.6,"Africa",19100000
+"Cote d'Ivoire",2008,2670,55.2,"Africa",19500000
+"Cote d'Ivoire",2009,2700,55.8,"Africa",19900000
+"Cote d'Ivoire",2010,2690,56.3,"Africa",20400000
+"Cote d'Ivoire",2011,2510,56.9,"Africa",20900000
+"Cote d'Ivoire",2012,2710,57.4,"Africa",21400000
+"Cote d'Ivoire",2013,2880,58.1,"Africa",22000000
+"Cote d'Ivoire",2014,3060,58.6,"Africa",22500000
+"Cote d'Ivoire",2015,3250,59.2,"Africa",23100000
+"Cote d'Ivoire",2016,3450,60,"Africa",23700000
+"Cote d'Ivoire",2017,3600,60.6,"Africa",24300000
+"Cote d'Ivoire",2018,3760,61.2,"Africa",24900000
+"Croatia",2000,15700,73.9,"Europe",4430000
+"Croatia",2001,16200,74.2,"Europe",4410000
+"Croatia",2002,17100,74.4,"Europe",4400000
+"Croatia",2003,18000,74.7,"Europe",4390000
+"Croatia",2004,18800,74.9,"Europe",4380000
+"Croatia",2005,19500,75.1,"Europe",4380000
+"Croatia",2006,20500,75.3,"Europe",4370000
+"Croatia",2007,21600,75.6,"Europe",4360000
+"Croatia",2008,22000,75.8,"Europe",4350000
+"Croatia",2009,20400,76.1,"Europe",4340000
+"Croatia",2010,20100,76.3,"Europe",4330000
+"Croatia",2011,20700,76.6,"Europe",4310000
+"Croatia",2012,20300,76.8,"Europe",4300000
+"Croatia",2013,20200,77.1,"Europe",4280000
+"Croatia",2014,20100,77.3,"Europe",4260000
+"Croatia",2015,20600,77.3,"Europe",4240000
+"Croatia",2016,21400,77.3,"Europe",4210000
+"Croatia",2017,22000,77.5,"Europe",4190000
+"Croatia",2018,22600,77.7,"Europe",4160000
+"Cuba",2000,11600,76.6,"Americas",11200000
+"Cuba",2001,11900,76.9,"Americas",11200000
+"Cuba",2002,12100,77.1,"Americas",11200000
+"Cuba",2003,12400,77.3,"Americas",11200000
+"Cuba",2004,13100,77.5,"Americas",11300000
+"Cuba",2005,14100,77.6,"Americas",11300000
+"Cuba",2006,15800,77.8,"Americas",11300000
+"Cuba",2007,16900,78,"Americas",11300000
+"Cuba",2008,17600,78.1,"Americas",11300000
+"Cuba",2009,17900,78.3,"Americas",11300000
+"Cuba",2010,18300,78.4,"Americas",11300000
+"Cuba",2011,18800,78.5,"Americas",11400000
+"Cuba",2012,19400,78.6,"Americas",11400000
+"Cuba",2013,20000,78.7,"Americas",11400000
+"Cuba",2014,20000,78.8,"Americas",11400000
+"Cuba",2015,20000,78.9,"Americas",11500000
+"Cuba",2016,20000,79,"Americas",11500000
+"Cuba",2017,20000,79.2,"Americas",11500000
+"Cuba",2018,20000,79.3,"Americas",11500000
+"Cyprus",2000,30100,76.8,"Asia",943000
+"Cyprus",2001,30800,77.3,"Asia",960000
+"Cyprus",2002,31500,77.5,"Asia",977000
+"Cyprus",2003,31900,77.7,"Asia",994000
+"Cyprus",2004,32900,77.9,"Asia",1010000
+"Cyprus",2005,33700,78,"Asia",1030000
+"Cyprus",2006,34600,78.7,"Asia",1050000
+"Cyprus",2007,35500,79,"Asia",1060000
+"Cyprus",2008,36000,79.3,"Asia",1080000
+"Cyprus",2009,34400,79.6,"Asia",1100000
+"Cyprus",2010,33900,79.9,"Asia",1110000
+"Cyprus",2011,33200,80.2,"Asia",1120000
+"Cyprus",2012,31700,80.6,"Asia",1140000
+"Cyprus",2013,29800,80.6,"Asia",1140000
+"Cyprus",2014,29700,80.5,"Asia",1150000
+"Cyprus",2015,30400,80.5,"Asia",1160000
+"Cyprus",2016,31200,80.5,"Asia",1170000
+"Cyprus",2017,31700,80.6,"Asia",1180000
+"Cyprus",2018,32200,80.8,"Asia",1190000
+"Czech Republic",2000,21100,75,"Europe",10300000
+"Czech Republic",2001,21900,75.2,"Europe",10300000
+"Czech Republic",2002,22300,75.4,"Europe",10300000
+"Czech Republic",2003,23100,75.6,"Europe",10200000
+"Czech Republic",2004,24200,75.9,"Europe",10200000
+"Czech Republic",2005,25700,76.2,"Europe",10300000
+"Czech Republic",2006,27400,76.5,"Europe",10300000
+"Czech Republic",2007,28800,76.8,"Europe",10400000
+"Czech Republic",2008,29300,77.1,"Europe",10400000
+"Czech Republic",2009,27700,77.2,"Europe",10500000
+"Czech Republic",2010,28300,77.5,"Europe",10500000
+"Czech Republic",2011,28800,77.8,"Europe",10600000
+"Czech Republic",2012,28500,78,"Europe",10600000
+"Czech Republic",2013,28400,78.3,"Europe",10600000
+"Czech Republic",2014,29100,78.6,"Europe",10600000
+"Czech Republic",2015,30400,78.9,"Europe",10600000
+"Czech Republic",2016,31100,79.1,"Europe",10600000
+"Czech Republic",2017,31700,79.2,"Europe",10600000
+"Czech Republic",2018,32300,79.4,"Europe",10600000
+"Denmark",2000,42300,76.9,"Europe",5340000
+"Denmark",2001,42500,77.1,"Europe",5360000
+"Denmark",2002,42600,77.3,"Europe",5370000
+"Denmark",2003,42600,77.5,"Europe",5390000
+"Denmark",2004,43700,77.8,"Europe",5400000
+"Denmark",2005,44600,78.1,"Europe",5420000
+"Denmark",2006,46200,78.3,"Europe",5440000
+"Denmark",2007,46400,78.6,"Europe",5470000
+"Denmark",2008,45900,78.9,"Europe",5500000
+"Denmark",2009,43400,79.2,"Europe",5530000
+"Denmark",2010,44000,79.5,"Europe",5550000
+"Denmark",2011,44400,79.8,"Europe",5580000
+"Denmark",2012,44300,80.1,"Europe",5610000
+"Denmark",2013,44600,80.4,"Europe",5640000
+"Denmark",2014,45100,80.7,"Europe",5660000
+"Denmark",2015,45500,80.7,"Europe",5690000
+"Denmark",2016,45700,80.8,"Europe",5710000
+"Denmark",2017,46100,81,"Europe",5730000
+"Denmark",2018,46600,81.1,"Europe",5750000
+"Djibouti",2000,2130,61.4,"Africa",718000
+"Djibouti",2001,2130,61.5,"Africa",733000
+"Djibouti",2002,2150,61.6,"Africa",746000
+"Djibouti",2003,2180,61.7,"Africa",759000
+"Djibouti",2004,2230,61.7,"Africa",771000
+"Djibouti",2005,2260,62,"Africa",783000
+"Djibouti",2006,2330,61.9,"Africa",796000
+"Djibouti",2007,2410,62.5,"Africa",809000
+"Djibouti",2008,2510,62.9,"Africa",823000
+"Djibouti",2009,2590,63.3,"Africa",837000
+"Djibouti",2010,2640,63.7,"Africa",851000
+"Djibouti",2011,2710,64.2,"Africa",866000
+"Djibouti",2012,2790,64.6,"Africa",881000
+"Djibouti",2013,2880,65.1,"Africa",897000
+"Djibouti",2014,3000,65.6,"Africa",912000
+"Djibouti",2015,3140,66.1,"Africa",927000
+"Djibouti",2016,3270,66.7,"Africa",942000
+"Djibouti",2017,3400,66.9,"Africa",957000
+"Djibouti",2018,3540,67.1,"Africa",971000
+"Dominica",2000,8180,72.9,"Americas",69700
+"Dominica",2001,8210,73.1,"Americas",69700
+"Dominica",2002,8050,73.1,"Americas",69800
+"Dominica",2003,8640,73.1,"Americas",70100
+"Dominica",2004,8880,73.3,"Americas",70400
+"Dominica",2005,8840,73.4,"Americas",70600
+"Dominica",2006,9080,73.4,"Americas",70800
+"Dominica",2007,9630,73.4,"Americas",71000
+"Dominica",2008,10300,73.5,"Americas",71100
+"Dominica",2009,10200,73.4,"Americas",71200
+"Dominica",2010,10200,73,"Americas",71400
+"Dominica",2011,10100,73,"Americas",71700
+"Dominica",2012,9980,72.9,"Americas",72000
+"Dominica",2013,10000,72.7,"Americas",72400
+"Dominica",2014,10400,72.7,"Americas",72800
+"Dominica",2015,10100,71.7,"Americas",73200
+"Dominica",2016,10200,73,"Americas",73500
+"Dominica",2017,10400,NA,"Americas",73900
+"Dominica",2018,10600,NA,"Americas",74300
+"Dominican Republic",2000,7960,73.2,"Americas",8560000
+"Dominican Republic",2001,7980,73.4,"Americas",8700000
+"Dominican Republic",2002,8320,73.5,"Americas",8830000
+"Dominican Republic",2003,8170,73.5,"Americas",8970000
+"Dominican Republic",2004,8150,73.3,"Americas",9100000
+"Dominican Republic",2005,8780,73.5,"Americas",9240000
+"Dominican Republic",2006,9580,73.6,"Americas",9370000
+"Dominican Republic",2007,10300,73.9,"Americas",9500000
+"Dominican Republic",2008,10400,74.2,"Americas",9640000
+"Dominican Republic",2009,10400,74.4,"Americas",9770000
+"Dominican Republic",2010,11100,74.6,"Americas",9900000
+"Dominican Republic",2011,11300,74.7,"Americas",10000000
+"Dominican Republic",2012,11500,74.9,"Americas",10200000
+"Dominican Republic",2013,11900,75.1,"Americas",10300000
+"Dominican Republic",2014,12600,75.3,"Americas",10400000
+"Dominican Republic",2015,13400,75.5,"Americas",10500000
+"Dominican Republic",2016,14100,75.7,"Americas",10600000
+"Dominican Republic",2017,14700,75.9,"Americas",10800000
+"Dominican Republic",2018,15200,76.1,"Americas",10900000
+"Ecuador",2000,7390,74.3,"Americas",12600000
+"Ecuador",2001,7550,74.6,"Americas",12900000
+"Ecuador",2002,7730,74.8,"Americas",13100000
+"Ecuador",2003,7810,75.1,"Americas",13300000
+"Ecuador",2004,8310,75.3,"Americas",13500000
+"Ecuador",2005,8610,75.6,"Americas",13700000
+"Ecuador",2006,8840,75.8,"Americas",14000000
+"Ecuador",2007,8880,76,"Americas",14200000
+"Ecuador",2008,9290,76.3,"Americas",14400000
+"Ecuador",2009,9180,76.5,"Americas",14700000
+"Ecuador",2010,9350,76.7,"Americas",14900000
+"Ecuador",2011,9930,77,"Americas",15200000
+"Ecuador",2012,10300,77.2,"Americas",15400000
+"Ecuador",2013,10700,77.5,"Americas",15700000
+"Ecuador",2014,10900,77.8,"Americas",15900000
+"Ecuador",2015,10800,77.9,"Americas",16100000
+"Ecuador",2016,10500,77.9,"Americas",16400000
+"Ecuador",2017,10300,78.1,"Americas",16600000
+"Ecuador",2018,10200,78.3,"Americas",16900000
+"Egypt",2000,7390,69.9,"Africa",69900000
+"Egypt",2001,7510,69.7,"Africa",71200000
+"Egypt",2002,7540,69.8,"Africa",72600000
+"Egypt",2003,7640,69.9,"Africa",74000000
+"Egypt",2004,7800,70.1,"Africa",75400000
+"Egypt",2005,8000,70.3,"Africa",76800000
+"Egypt",2006,8400,70.3,"Africa",78200000
+"Egypt",2007,8840,70.5,"Africa",79500000
+"Egypt",2008,9310,70.5,"Africa",81000000
+"Egypt",2009,9560,70.4,"Africa",82500000
+"Egypt",2010,9860,70.5,"Africa",84100000
+"Egypt",2011,9820,70.9,"Africa",85900000
+"Egypt",2012,9820,71,"Africa",87800000
+"Egypt",2013,9810,71.5,"Africa",89800000
+"Egypt",2014,9880,71.8,"Africa",91800000
+"Egypt",2015,10100,71.9,"Africa",93800000
+"Egypt",2016,10300,72.2,"Africa",95700000
+"Egypt",2017,10500,72.4,"Africa",97600000
+"Egypt",2018,10800,72.6,"Africa",99400000
+"El Salvador",2000,6360,72.2,"Americas",5870000
+"El Salvador",2001,6430,71.9,"Americas",5910000
+"El Salvador",2002,6540,72.7,"Americas",5940000
+"El Salvador",2003,6660,72.8,"Americas",5970000
+"El Salvador",2004,6750,72.9,"Americas",6000000
+"El Salvador",2005,6960,73.1,"Americas",6030000
+"El Salvador",2006,7200,73.3,"Americas",6060000
+"El Salvador",2007,7440,73.5,"Americas",6080000
+"El Salvador",2008,7500,73.8,"Americas",6110000
+"El Salvador",2009,7230,73.8,"Americas",6140000
+"El Salvador",2010,7300,74.1,"Americas",6160000
+"El Salvador",2011,7430,74.3,"Americas",6190000
+"El Salvador",2012,7530,74.5,"Americas",6220000
+"El Salvador",2013,7640,74.6,"Americas",6250000
+"El Salvador",2014,7710,74.8,"Americas",6280000
+"El Salvador",2015,7850,75,"Americas",6310000
+"El Salvador",2016,7990,75.3,"Americas",6340000
+"El Salvador",2017,8150,75.5,"Americas",6380000
+"El Salvador",2018,8290,75.8,"Americas",6410000
+"Equatorial Guinea",2000,10800,54.4,"Africa",614000
+"Equatorial Guinea",2001,16900,55.8,"Africa",640000
+"Equatorial Guinea",2002,19400,57,"Africa",666000
+"Equatorial Guinea",2003,21200,57.5,"Africa",695000
+"Equatorial Guinea",2004,28100,58,"Africa",725000
+"Equatorial Guinea",2005,31400,58.1,"Africa",757000
+"Equatorial Guinea",2006,32300,59,"Africa",792000
+"Equatorial Guinea",2007,35600,59.4,"Africa",829000
+"Equatorial Guinea",2008,40000,59.8,"Africa",868000
+"Equatorial Guinea",2009,38700,60.3,"Africa",909000
+"Equatorial Guinea",2010,33700,60.9,"Africa",951000
+"Equatorial Guinea",2011,34400,61.4,"Africa",994000
+"Equatorial Guinea",2012,35600,62.3,"Africa",1040000
+"Equatorial Guinea",2013,32700,63.7,"Africa",1080000
+"Equatorial Guinea",2014,31200,64.7,"Africa",1130000
+"Equatorial Guinea",2015,27200,65.2,"Africa",1180000
+"Equatorial Guinea",2016,23700,65.5,"Africa",1220000
+"Equatorial Guinea",2017,21900,65.8,"Africa",1270000
+"Equatorial Guinea",2018,20500,66.1,"Africa",1310000
+"Eritrea",2000,1680,58.1,"Africa",3390000
+"Eritrea",2001,1770,59.5,"Africa",3500000
+"Eritrea",2002,1770,59.8,"Africa",3610000
+"Eritrea",2003,1660,60,"Africa",3740000
+"Eritrea",2004,1630,60.3,"Africa",3860000
+"Eritrea",2005,1630,60.5,"Africa",3970000
+"Eritrea",2006,1570,60.8,"Africa",4070000
+"Eritrea",2007,1560,61,"Africa",4150000
+"Eritrea",2008,1380,61.2,"Africa",4230000
+"Eritrea",2009,1410,61.5,"Africa",4310000
+"Eritrea",2010,1420,61.7,"Africa",4390000
+"Eritrea",2011,1510,62,"Africa",4470000
+"Eritrea",2012,1180,62.3,"Africa",4560000
+"Eritrea",2013,1160,62.6,"Africa",4650000
+"Eritrea",2014,1200,63,"Africa",4750000
+"Eritrea",2015,1240,63.4,"Africa",4850000
+"Eritrea",2016,1240,63.7,"Africa",4950000
+"Eritrea",2017,1250,64.1,"Africa",5070000
+"Eritrea",2018,1250,64.6,"Africa",5190000
+"Estonia",2000,15700,70.8,"Europe",1400000
+"Estonia",2001,16800,70.6,"Europe",1390000
+"Estonia",2002,17900,71.4,"Europe",1380000
+"Estonia",2003,19400,71.9,"Europe",1370000
+"Estonia",2004,20700,72.4,"Europe",1360000
+"Estonia",2005,22800,72.8,"Europe",1360000
+"Estonia",2006,25300,73.1,"Europe",1350000
+"Estonia",2007,27400,73.2,"Europe",1340000
+"Estonia",2008,26000,74.2,"Europe",1340000
+"Estonia",2009,22200,75,"Europe",1340000
+"Estonia",2010,22700,76,"Europe",1330000
+"Estonia",2011,24500,76.3,"Europe",1330000
+"Estonia",2012,25700,76.3,"Europe",1320000
+"Estonia",2013,26100,77.1,"Europe",1320000
+"Estonia",2014,27000,77.1,"Europe",1320000
+"Estonia",2015,27300,77.2,"Europe",1320000
+"Estonia",2016,27700,77.4,"Europe",1310000
+"Estonia",2017,28600,77.5,"Europe",1310000
+"Estonia",2018,29500,77.7,"Europe",1310000
+"Ethiopia",2000,618,51.1,"Africa",66500000
+"Ethiopia",2001,650,53.1,"Africa",68500000
+"Ethiopia",2002,642,53.9,"Africa",70500000
+"Ethiopia",2003,610,54.5,"Africa",72500000
+"Ethiopia",2004,673,55.3,"Africa",74600000
+"Ethiopia",2005,732,56.1,"Africa",76700000
+"Ethiopia",2006,790,57.1,"Africa",78900000
+"Ethiopia",2007,857,58.2,"Africa",81000000
+"Ethiopia",2008,925,59.4,"Africa",83200000
+"Ethiopia",2009,980,60.4,"Africa",85400000
+"Ethiopia",2010,1070,61.3,"Africa",87700000
+"Ethiopia",2011,1160,62.2,"Africa",90000000
+"Ethiopia",2012,1230,63.1,"Africa",92400000
+"Ethiopia",2013,1330,63.9,"Africa",94900000
+"Ethiopia",2014,1430,64.6,"Africa",97400000
+"Ethiopia",2015,1530,65.2,"Africa",99900000
+"Ethiopia",2016,1610,65.6,"Africa",102000000
+"Ethiopia",2017,1700,66,"Africa",105000000
+"Ethiopia",2018,1800,66.4,"Africa",108000000
+"Fiji",2000,6670,64.3,"Oceania",811000
+"Fiji",2001,6780,64.5,"Oceania",814000
+"Fiji",2002,6990,64.7,"Oceania",816000
+"Fiji",2003,7050,64.7,"Oceania",817000
+"Fiji",2004,7410,64.8,"Oceania",818000
+"Fiji",2005,7430,64.9,"Oceania",822000
+"Fiji",2006,7510,64.9,"Oceania",827000
+"Fiji",2007,7380,64.9,"Oceania",835000
+"Fiji",2008,7380,64.9,"Oceania",843000
+"Fiji",2009,7210,65,"Oceania",852000
+"Fiji",2010,7350,65.3,"Oceania",860000
+"Fiji",2011,7490,65.5,"Oceania",867000
+"Fiji",2012,7570,65.4,"Oceania",874000
+"Fiji",2013,7980,65.5,"Oceania",880000
+"Fiji",2014,8350,65.5,"Oceania",886000
+"Fiji",2015,8760,65.5,"Oceania",892000
+"Fiji",2016,8860,65.5,"Oceania",899000
+"Fiji",2017,9150,65.6,"Oceania",906000
+"Fiji",2018,9420,65.8,"Oceania",912000
+"Finland",2000,34900,77.7,"Europe",5190000
+"Finland",2001,35700,78.1,"Europe",5200000
+"Finland",2002,36200,78.3,"Europe",5210000
+"Finland",2003,36900,78.5,"Europe",5230000
+"Finland",2004,38200,78.7,"Europe",5240000
+"Finland",2005,39100,78.9,"Europe",5260000
+"Finland",2006,40500,79.1,"Europe",5280000
+"Finland",2007,42500,79.3,"Europe",5300000
+"Finland",2008,42600,79.6,"Europe",5320000
+"Finland",2009,38900,79.8,"Europe",5340000
+"Finland",2010,39800,80,"Europe",5370000
+"Finland",2011,40700,80.3,"Europe",5390000
+"Finland",2012,39900,80.5,"Europe",5410000
+"Finland",2013,39400,80.9,"Europe",5440000
+"Finland",2014,39000,81.2,"Europe",5460000
+"Finland",2015,39000,81.5,"Europe",5480000
+"Finland",2016,39400,81.7,"Europe",5500000
+"Finland",2017,39800,81.9,"Europe",5520000
+"Finland",2018,40300,82.1,"Europe",5540000
+"France",2000,34900,79.1,"Europe",59600000
+"France",2001,35300,79.3,"Europe",59900000
+"France",2002,35500,79.5,"Europe",60200000
+"France",2003,35500,79.7,"Europe",60600000
+"France",2004,36200,80.1,"Europe",60900000
+"France",2005,36500,80.3,"Europe",61200000
+"France",2006,37100,80.6,"Europe",61600000
+"France",2007,37800,80.8,"Europe",62000000
+"France",2008,37600,81,"Europe",62300000
+"France",2009,36300,81.2,"Europe",62700000
+"France",2010,36900,81.4,"Europe",63000000
+"France",2011,37500,81.7,"Europe",63300000
+"France",2012,37300,81.8,"Europe",63600000
+"France",2013,37400,82,"Europe",63900000
+"France",2014,37500,82.2,"Europe",64200000
+"France",2015,37800,82.2,"Europe",64500000
+"France",2016,38100,82.3,"Europe",64700000
+"France",2017,38500,82.5,"Europe",65000000
+"France",2018,39000,82.6,"Europe",65200000
+"Gabon",2000,17800,59.1,"Africa",1230000
+"Gabon",2001,17700,58.9,"Africa",1260000
+"Gabon",2002,17200,59.2,"Africa",1290000
+"Gabon",2003,17200,59.3,"Africa",1330000
+"Gabon",2004,16800,59.3,"Africa",1360000
+"Gabon",2005,17000,60,"Africa",1400000
+"Gabon",2006,15900,60.5,"Africa",1440000
+"Gabon",2007,16300,61.2,"Africa",1490000
+"Gabon",2008,15300,61.5,"Africa",1540000
+"Gabon",2009,14800,62,"Africa",1590000
+"Gabon",2010,15400,62.9,"Africa",1640000
+"Gabon",2011,15900,63.3,"Africa",1700000
+"Gabon",2012,16200,63.9,"Africa",1760000
+"Gabon",2013,16500,64.6,"Africa",1820000
+"Gabon",2014,16700,65.3,"Africa",1880000
+"Gabon",2015,16800,66,"Africa",1930000
+"Gabon",2016,16800,66.6,"Africa",1980000
+"Gabon",2017,17000,67,"Africa",2030000
+"Gabon",2018,17500,67.3,"Africa",2070000
+"Gambia",2000,1560,63.3,"Africa",1230000
+"Gambia",2001,1600,63.6,"Africa",1270000
+"Gambia",2002,1500,63.5,"Africa",1310000
+"Gambia",2003,1550,64,"Africa",1350000
+"Gambia",2004,1610,64.3,"Africa",1400000
+"Gambia",2005,1540,64.3,"Africa",1440000
+"Gambia",2006,1510,64.5,"Africa",1490000
+"Gambia",2007,1520,64.5,"Africa",1540000
+"Gambia",2008,1560,64.9,"Africa",1590000
+"Gambia",2009,1600,65.1,"Africa",1640000
+"Gambia",2010,1660,65.5,"Africa",1690000
+"Gambia",2011,1540,66,"Africa",1750000
+"Gambia",2012,1580,66.3,"Africa",1800000
+"Gambia",2013,1600,66.5,"Africa",1860000
+"Gambia",2014,1560,66.7,"Africa",1920000
+"Gambia",2015,1590,67,"Africa",1980000
+"Gambia",2016,1570,67.3,"Africa",2040000
+"Gambia",2017,1570,67.6,"Africa",2100000
+"Gambia",2018,1570,67.8,"Africa",2160000
+"Georgia",2000,3260,71.7,"Asia",4720000
+"Georgia",2001,3450,72,"Asia",4670000
+"Georgia",2002,3660,71.8,"Asia",4620000
+"Georgia",2003,4120,71.7,"Asia",4580000
+"Georgia",2004,4420,71.6,"Asia",4530000
+"Georgia",2005,4900,72,"Asia",4490000
+"Georgia",2006,5430,72.5,"Asia",4440000
+"Georgia",2007,6180,72.7,"Asia",4390000
+"Georgia",2008,6410,72.3,"Asia",4340000
+"Georgia",2009,6260,72.7,"Asia",4290000
+"Georgia",2010,6730,72.8,"Asia",4230000
+"Georgia",2011,7320,73,"Asia",4170000
+"Georgia",2012,7880,73.1,"Asia",4110000
+"Georgia",2013,8250,73.3,"Asia",4050000
+"Georgia",2014,8750,73.5,"Asia",3990000
+"Georgia",2015,9030,73.7,"Asia",3950000
+"Georgia",2016,9270,74,"Asia",3930000
+"Georgia",2017,9640,74.1,"Asia",3910000
+"Georgia",2018,10100,74.3,"Asia",3910000
+"Germany",2000,36800,77.9,"Europe",81500000
+"Germany",2001,37300,78.2,"Europe",81500000
+"Germany",2002,37300,78.4,"Europe",81600000
+"Germany",2003,37000,78.6,"Europe",81700000
+"Germany",2004,37400,78.9,"Europe",81700000
+"Germany",2005,37700,79.2,"Europe",81700000
+"Germany",2006,39100,79.4,"Europe",81500000
+"Germany",2007,40500,79.6,"Europe",81300000
+"Germany",2008,41000,79.8,"Europe",81100000
+"Germany",2009,38800,79.9,"Europe",81000000
+"Germany",2010,40400,80.1,"Europe",80900000
+"Germany",2011,42700,80.3,"Europe",80900000
+"Germany",2012,42800,80.4,"Europe",81100000
+"Germany",2013,42900,80.5,"Europe",81300000
+"Germany",2014,43400,80.8,"Europe",81500000
+"Germany",2015,43800,80.8,"Europe",81700000
+"Germany",2016,44100,80.9,"Europe",81900000
+"Germany",2017,44600,81.1,"Europe",82100000
+"Germany",2018,45200,81.3,"Europe",82300000
+"Ghana",2000,2260,59.3,"Africa",18900000
+"Ghana",2001,2290,59.2,"Africa",19400000
+"Ghana",2002,2330,59.3,"Africa",19900000
+"Ghana",2003,2390,59.5,"Africa",20400000
+"Ghana",2004,2460,59.9,"Africa",21000000
+"Ghana",2005,2540,60.1,"Africa",21500000
+"Ghana",2006,2630,60.5,"Africa",22100000
+"Ghana",2007,2680,60.8,"Africa",22700000
+"Ghana",2008,2850,61.3,"Africa",23300000
+"Ghana",2009,2910,61.7,"Africa",23900000
+"Ghana",2010,3060,62.2,"Africa",24500000
+"Ghana",2011,3400,62.9,"Africa",25100000
+"Ghana",2012,3630,63.7,"Africa",25700000
+"Ghana",2013,3810,64.3,"Africa",26300000
+"Ghana",2014,3870,64.9,"Africa",27000000
+"Ghana",2015,3930,65.4,"Africa",27600000
+"Ghana",2016,3980,66,"Africa",28200000
+"Ghana",2017,4240,66.3,"Africa",28800000
+"Ghana",2018,4380,66.6,"Africa",29500000
+"Greece",2000,24800,78.6,"Europe",11100000
+"Greece",2001,25700,78.9,"Europe",11200000
+"Greece",2002,26600,79.1,"Europe",11200000
+"Greece",2003,28100,79.3,"Europe",11200000
+"Greece",2004,29500,79.5,"Europe",11300000
+"Greece",2005,29600,79.6,"Europe",11300000
+"Greece",2006,31100,79.9,"Europe",11300000
+"Greece",2007,32100,80,"Europe",11400000
+"Greece",2008,31900,80.2,"Europe",11400000
+"Greece",2009,30400,80.3,"Europe",11400000
+"Greece",2010,28700,80.4,"Europe",11400000
+"Greece",2011,26100,80.5,"Europe",11400000
+"Greece",2012,24400,80.6,"Europe",11400000
+"Greece",2013,23700,80.8,"Europe",11300000
+"Greece",2014,24000,80.9,"Europe",11300000
+"Greece",2015,24100,81,"Europe",11200000
+"Greece",2016,24300,81,"Europe",11200000
+"Greece",2017,24900,81.2,"Europe",11200000
+"Greece",2018,25500,81.3,"Europe",11100000
+"Grenada",2000,9650,71.2,"Americas",102000
+"Grenada",2001,9440,71.1,"Americas",102000
+"Grenada",2002,9740,71,"Americas",102000
+"Grenada",2003,10600,71,"Americas",102000
+"Grenada",2004,10500,70.6,"Americas",103000
+"Grenada",2005,11900,71.1,"Americas",103000
+"Grenada",2006,11400,71.2,"Americas",103000
+"Grenada",2007,12000,71.3,"Americas",104000
+"Grenada",2008,12100,71.4,"Americas",104000
+"Grenada",2009,11300,71.4,"Americas",104000
+"Grenada",2010,11200,71.3,"Americas",105000
+"Grenada",2011,11200,71.3,"Americas",105000
+"Grenada",2012,11000,71.3,"Americas",105000
+"Grenada",2013,11300,71.3,"Americas",106000
+"Grenada",2014,12000,71.3,"Americas",106000
+"Grenada",2015,12700,71.4,"Americas",107000
+"Grenada",2016,12900,71.6,"Americas",107000
+"Grenada",2017,13200,71.7,"Americas",108000
+"Grenada",2018,13500,71.9,"Americas",108000
+"Guatemala",2000,6070,68.6,"Americas",11700000
+"Guatemala",2001,6070,68.9,"Americas",11900000
+"Guatemala",2002,6160,69.3,"Americas",12200000
+"Guatemala",2003,6170,69.5,"Americas",12500000
+"Guatemala",2004,6210,69.7,"Americas",12800000
+"Guatemala",2005,6270,69.8,"Americas",13100000
+"Guatemala",2006,6460,70.2,"Americas",13400000
+"Guatemala",2007,6710,70.5,"Americas",13700000
+"Guatemala",2008,6780,70.8,"Americas",14000000
+"Guatemala",2009,6670,71,"Americas",14300000
+"Guatemala",2010,6710,71.3,"Americas",14600000
+"Guatemala",2011,6840,71.5,"Americas",14900000
+"Guatemala",2012,6900,71.8,"Americas",15300000
+"Guatemala",2013,7010,72.1,"Americas",15600000
+"Guatemala",2014,7150,72.3,"Americas",15900000
+"Guatemala",2015,7290,72.5,"Americas",16300000
+"Guatemala",2016,7370,72.7,"Americas",16600000
+"Guatemala",2017,7440,73,"Americas",16900000
+"Guatemala",2018,7530,73.2,"Americas",17200000
+"Guinea",2000,1130,54.7,"Africa",8810000
+"Guinea",2001,1150,54.8,"Africa",8970000
+"Guinea",2002,1190,55.1,"Africa",9140000
+"Guinea",2003,1180,55.5,"Africa",9310000
+"Guinea",2004,1190,55.8,"Africa",9490000
+"Guinea",2005,1200,56.2,"Africa",9680000
+"Guinea",2006,1200,56.4,"Africa",9880000
+"Guinea",2007,1200,56.7,"Africa",10100000
+"Guinea",2008,1230,57.2,"Africa",10300000
+"Guinea",2009,1200,57.5,"Africa",10600000
+"Guinea",2010,1190,58,"Africa",10800000
+"Guinea",2011,1210,58.5,"Africa",11000000
+"Guinea",2012,1230,58.9,"Africa",11300000
+"Guinea",2013,1240,59.4,"Africa",11500000
+"Guinea",2014,1210,59.2,"Africa",11800000
+"Guinea",2015,1180,60,"Africa",12100000
+"Guinea",2016,1220,60.7,"Africa",12400000
+"Guinea",2017,1240,61.3,"Africa",12700000
+"Guinea",2018,1280,61.9,"Africa",13100000
+"Guinea-Bissau",2000,1360,52.3,"Africa",1240000
+"Guinea-Bissau",2001,1360,52.6,"Africa",1270000
+"Guinea-Bissau",2002,1320,52.9,"Africa",1290000
+"Guinea-Bissau",2003,1300,53.1,"Africa",1320000
+"Guinea-Bissau",2004,1310,53.2,"Africa",1350000
+"Guinea-Bissau",2005,1340,53.2,"Africa",1380000
+"Guinea-Bissau",2006,1340,53.8,"Africa",1410000
+"Guinea-Bissau",2007,1350,54.3,"Africa",1450000
+"Guinea-Bissau",2008,1360,54.5,"Africa",1480000
+"Guinea-Bissau",2009,1370,55,"Africa",1520000
+"Guinea-Bissau",2010,1390,55.6,"Africa",1560000
+"Guinea-Bissau",2011,1490,56.2,"Africa",1600000
+"Guinea-Bissau",2012,1420,56.7,"Africa",1640000
+"Guinea-Bissau",2013,1400,57.2,"Africa",1680000
+"Guinea-Bissau",2014,1390,57.6,"Africa",1730000
+"Guinea-Bissau",2015,1420,58.2,"Africa",1770000
+"Guinea-Bissau",2016,1470,58.8,"Africa",1820000
+"Guinea-Bissau",2017,1510,59.3,"Africa",1860000
+"Guinea-Bissau",2018,1550,59.7,"Africa",1910000
+"Guyana",2000,4510,65.6,"Americas",753000
+"Guyana",2001,4620,65.5,"Americas",752000
+"Guyana",2002,4670,65.3,"Americas",752000
+"Guyana",2003,4630,65,"Americas",752000
+"Guyana",2004,4780,64.8,"Americas",752000
+"Guyana",2005,4690,64.8,"Americas",751000
+"Guyana",2006,4940,65,"Americas",750000
+"Guyana",2007,5300,65.1,"Americas",748000
+"Guyana",2008,5410,65.2,"Americas",746000
+"Guyana",2009,5600,65.4,"Americas",746000
+"Guyana",2010,5840,65.5,"Americas",747000
+"Guyana",2011,6130,65.7,"Americas",749000
+"Guyana",2012,6390,66,"Americas",753000
+"Guyana",2013,6680,66.3,"Americas",758000
+"Guyana",2014,6890,66.7,"Americas",763000
+"Guyana",2015,7060,67,"Americas",769000
+"Guyana",2016,7250,67.9,"Americas",773000
+"Guyana",2017,7490,68,"Americas",778000
+"Guyana",2018,7740,68.2,"Americas",782000
+"Haiti",2000,1740,56.8,"Americas",8550000
+"Haiti",2001,1690,57.1,"Americas",8690000
+"Haiti",2002,1660,57.5,"Americas",8830000
+"Haiti",2003,1640,57.6,"Americas",8980000
+"Haiti",2004,1560,56.6,"Americas",9120000
+"Haiti",2005,1560,58,"Americas",9260000
+"Haiti",2006,1570,58.4,"Americas",9410000
+"Haiti",2007,1600,58.9,"Americas",9560000
+"Haiti",2008,1590,59.3,"Americas",9710000
+"Haiti",2009,1610,60,"Americas",9850000
+"Haiti",2010,1500,32.1,"Americas",10000000
+"Haiti",2011,1560,60.5,"Americas",10100000
+"Haiti",2012,1590,61.6,"Americas",10300000
+"Haiti",2013,1630,62.5,"Americas",10400000
+"Haiti",2014,1650,63.3,"Americas",10600000
+"Haiti",2015,1650,63.9,"Americas",10700000
+"Haiti",2016,1650,64,"Americas",10800000
+"Haiti",2017,1680,64.3,"Americas",11000000
+"Haiti",2018,1710,64.5,"Americas",11100000
+"Holy See",2000,NA,NA,NA,785
+"Holy See",2001,NA,NA,NA,788
+"Holy See",2002,NA,NA,NA,792
+"Holy See",2003,NA,NA,NA,798
+"Holy See",2004,NA,NA,NA,797
+"Holy See",2005,NA,NA,NA,798
+"Holy See",2006,NA,NA,NA,800
+"Holy See",2007,NA,NA,NA,796
+"Holy See",2008,NA,NA,NA,794
+"Holy See",2009,NA,NA,NA,795
+"Holy See",2010,NA,NA,NA,794
+"Holy See",2011,NA,NA,NA,796
+"Holy See",2012,NA,NA,NA,804
+"Holy See",2013,NA,NA,NA,801
+"Holy See",2014,NA,NA,NA,800
+"Holy See",2015,NA,NA,NA,803
+"Holy See",2016,NA,NA,NA,801
+"Holy See",2017,NA,NA,NA,792
+"Holy See",2018,NA,NA,NA,801
+"Honduras",2000,3330,69.6,"Americas",6520000
+"Honduras",2001,3330,69.7,"Americas",6690000
+"Honduras",2002,3370,69.9,"Americas",6860000
+"Honduras",2003,3440,70,"Americas",7030000
+"Honduras",2004,3570,70.3,"Americas",7200000
+"Honduras",2005,3700,70.6,"Americas",7370000
+"Honduras",2006,3850,70.8,"Americas",7540000
+"Honduras",2007,4000,71.1,"Americas",7710000
+"Honduras",2008,4080,71.3,"Americas",7870000
+"Honduras",2009,3900,71.5,"Americas",8040000
+"Honduras",2010,3970,71.6,"Americas",8190000
+"Honduras",2011,4050,71.8,"Americas",8350000
+"Honduras",2012,4140,71.8,"Americas",8510000
+"Honduras",2013,4180,72.2,"Americas",8660000
+"Honduras",2014,4230,72.3,"Americas",8810000
+"Honduras",2015,4310,72.5,"Americas",8960000
+"Honduras",2016,4390,72.7,"Americas",9110000
+"Honduras",2017,4490,72.9,"Americas",9270000
+"Honduras",2018,4590,73.1,"Americas",9420000
+"Hungary",2000,17900,71.8,"Europe",10200000
+"Hungary",2001,18600,72.2,"Europe",10200000
+"Hungary",2002,19500,72.5,"Europe",10200000
+"Hungary",2003,20300,72.7,"Europe",10100000
+"Hungary",2004,21300,72.9,"Europe",10100000
+"Hungary",2005,22300,73.1,"Europe",10100000
+"Hungary",2006,23200,73.3,"Europe",10100000
+"Hungary",2007,23300,73.6,"Europe",10000000
+"Hungary",2008,23600,73.9,"Europe",9990000
+"Hungary",2009,22100,74.2,"Europe",9960000
+"Hungary",2010,22300,74.5,"Europe",9930000
+"Hungary",2011,22700,74.9,"Europe",9900000
+"Hungary",2012,22500,75.2,"Europe",9870000
+"Hungary",2013,23000,75.5,"Europe",9840000
+"Hungary",2014,24000,75.6,"Europe",9810000
+"Hungary",2015,24800,75.7,"Europe",9780000
+"Hungary",2016,25400,75.7,"Europe",9750000
+"Hungary",2017,26200,75.8,"Europe",9720000
+"Hungary",2018,26900,75.9,"Europe",9690000
+"Iceland",2000,34100,79.9,"Europe",280000
+"Iceland",2001,34900,80.2,"Europe",283000
+"Iceland",2002,34700,80.5,"Europe",285000
+"Iceland",2003,35300,80.7,"Europe",288000
+"Iceland",2004,37900,81,"Europe",291000
+"Iceland",2005,39800,81.2,"Europe",295000
+"Iceland",2006,40800,81.3,"Europe",300000
+"Iceland",2007,43500,81.6,"Europe",305000
+"Iceland",2008,43300,81.8,"Europe",311000
+"Iceland",2009,40200,81.9,"Europe",316000
+"Iceland",2010,38800,82,"Europe",320000
+"Iceland",2011,39500,82.1,"Europe",323000
+"Iceland",2012,39700,82.2,"Europe",326000
+"Iceland",2013,41100,82.3,"Europe",327000
+"Iceland",2014,41400,82.2,"Europe",328000
+"Iceland",2015,42700,82.2,"Europe",330000
+"Iceland",2016,45300,82.3,"Europe",332000
+"Iceland",2017,46400,82.4,"Europe",335000
+"Iceland",2018,47400,82.6,"Europe",338000
+"India",2000,2500,62.3,"Asia",1050000000
+"India",2001,2570,62.7,"Asia",1070000000
+"India",2002,2620,63.1,"Asia",1090000000
+"India",2003,2780,63.5,"Asia",1110000000
+"India",2004,2960,63.8,"Asia",1130000000
+"India",2005,3180,64.2,"Asia",1140000000
+"India",2006,3420,64.6,"Asia",1160000000
+"India",2007,3700,65,"Asia",1180000000
+"India",2008,3790,65.4,"Asia",1200000000
+"India",2009,4050,65.8,"Asia",1210000000
+"India",2010,4410,66.2,"Asia",1230000000
+"India",2011,4640,66.6,"Asia",1250000000
+"India",2012,4830,67,"Asia",1260000000
+"India",2013,5070,67.4,"Asia",1280000000
+"India",2014,5390,67.8,"Asia",1290000000
+"India",2015,5750,68.2,"Asia",1310000000
+"India",2016,6090,68.6,"Asia",1320000000
+"India",2017,6480,68.9,"Asia",1340000000
+"India",2018,6890,69.1,"Asia",1350000000
+"Indonesia",2000,5810,67.3,"Asia",212000000
+"Indonesia",2001,5930,67.6,"Asia",215000000
+"Indonesia",2002,6120,67.8,"Asia",218000000
+"Indonesia",2003,6320,68.1,"Asia",221000000
+"Indonesia",2004,6550,66.5,"Asia",224000000
+"Indonesia",2005,6830,68.6,"Asia",227000000
+"Indonesia",2006,7100,68.8,"Asia",230000000
+"Indonesia",2007,7450,69.1,"Asia",233000000
+"Indonesia",2008,7790,69.3,"Asia",236000000
+"Indonesia",2009,8050,69.6,"Asia",239000000
+"Indonesia",2010,8430,69.9,"Asia",243000000
+"Indonesia",2011,8840,70.2,"Asia",246000000
+"Indonesia",2012,9250,70.5,"Asia",249000000
+"Indonesia",2013,9640,70.8,"Asia",252000000
+"Indonesia",2014,10000,71.1,"Asia",255000000
+"Indonesia",2015,10400,71.4,"Asia",258000000
+"Indonesia",2016,10800,71.7,"Asia",261000000
+"Indonesia",2017,11200,71.9,"Asia",264000000
+"Indonesia",2018,11700,72,"Asia",267000000
+"Iran",2000,11900,71.6,"Asia",66100000
+"Iran",2001,12000,71.6,"Asia",67100000
+"Iran",2002,12800,71.7,"Asia",68000000
+"Iran",2003,13700,70.3,"Asia",68800000
+"Iran",2004,14100,72.1,"Asia",69600000
+"Iran",2005,14600,72.5,"Asia",70400000
+"Iran",2006,15200,73,"Asia",71200000
+"Iran",2007,16400,73.4,"Asia",72000000
+"Iran",2008,16400,73.8,"Asia",72800000
+"Iran",2009,16600,74.1,"Asia",73700000
+"Iran",2010,17400,74.5,"Asia",74600000
+"Iran",2011,17900,74.8,"Asia",75500000
+"Iran",2012,16500,74.9,"Asia",76500000
+"Iran",2013,16000,75,"Asia",77400000
+"Iran",2014,16500,75.3,"Asia",78400000
+"Iran",2015,16000,75.8,"Asia",79400000
+"Iran",2016,16300,76.1,"Asia",80300000
+"Iran",2017,16800,76.3,"Asia",81200000
+"Iran",2018,17400,76.5,"Asia",82000000
+"Iraq",2000,12200,66,"Asia",23600000
+"Iraq",2001,12100,66.6,"Asia",24300000
+"Iraq",2002,11000,66.4,"Asia",24900000
+"Iraq",2003,7140,65,"Asia",25600000
+"Iraq",2004,10700,65.3,"Asia",26300000
+"Iraq",2005,10900,64.8,"Asia",27000000
+"Iraq",2006,11700,63.9,"Asia",27700000
+"Iraq",2007,11600,64.3,"Asia",28400000
+"Iraq",2008,12200,66.2,"Asia",29100000
+"Iraq",2009,12300,66.9,"Asia",29900000
+"Iraq",2010,12700,67.2,"Asia",30800000
+"Iraq",2011,13300,67.6,"Asia",31700000
+"Iraq",2012,14600,67.9,"Asia",32800000
+"Iraq",2013,15100,67.7,"Asia",33900000
+"Iraq",2014,14700,67.1,"Asia",35000000
+"Iraq",2015,14900,67.6,"Asia",36100000
+"Iraq",2016,16100,67.7,"Asia",37200000
+"Iraq",2017,16100,67.8,"Asia",38300000
+"Iraq",2018,15900,68,"Asia",39300000
+"Ireland",2000,40800,76.7,"Europe",3850000
+"Ireland",2001,42600,77.1,"Europe",3910000
+"Ireland",2002,44200,77.7,"Europe",3980000
+"Ireland",2003,45100,78.1,"Europe",4050000
+"Ireland",2004,47300,78.5,"Europe",4130000
+"Ireland",2005,48900,78.9,"Europe",4210000
+"Ireland",2006,50400,79.3,"Europe",4300000
+"Ireland",2007,50800,79.6,"Europe",4400000
+"Ireland",2008,47600,79.8,"Europe",4490000
+"Ireland",2009,45000,79.9,"Europe",4570000
+"Ireland",2010,45700,80.4,"Europe",4630000
+"Ireland",2011,45500,80.5,"Europe",4660000
+"Ireland",2012,44900,80.8,"Europe",4680000
+"Ireland",2013,45300,81,"Europe",4680000
+"Ireland",2014,48900,81.1,"Europe",4690000
+"Ireland",2015,60900,81.1,"Europe",4700000
+"Ireland",2016,62800,81.2,"Europe",4730000
+"Ireland",2017,64300,81.3,"Europe",4760000
+"Ireland",2018,65600,81.5,"Europe",4800000
+"Israel",2000,26100,78.5,"Asia",6010000
+"Israel",2001,25500,78.6,"Asia",6130000
+"Israel",2002,25000,78.5,"Asia",6240000
+"Israel",2003,24900,79,"Asia",6350000
+"Israel",2004,25700,79.3,"Asia",6470000
+"Israel",2005,26300,79.7,"Asia",6600000
+"Israel",2006,27400,79.8,"Asia",6760000
+"Israel",2007,28500,80.2,"Asia",6920000
+"Israel",2008,28900,80.5,"Asia",7100000
+"Israel",2009,28600,80.9,"Asia",7270000
+"Israel",2010,29600,81.4,"Asia",7430000
+"Israel",2011,30500,81.6,"Asia",7570000
+"Israel",2012,30700,81.9,"Asia",7700000
+"Israel",2013,31400,82,"Asia",7820000
+"Israel",2014,31800,81.4,"Asia",7940000
+"Israel",2015,32000,82,"Asia",8060000
+"Israel",2016,32600,82.1,"Asia",8190000
+"Israel",2017,33000,82.3,"Asia",8320000
+"Israel",2018,33400,82.4,"Asia",8450000
+"Italy",2000,36500,79.5,"Europe",57300000
+"Italy",2001,37200,79.8,"Europe",57500000
+"Italy",2002,37200,80.1,"Europe",57800000
+"Italy",2003,37100,80.2,"Europe",58100000
+"Italy",2004,37400,80.6,"Europe",58500000
+"Italy",2005,37600,80.8,"Europe",58800000
+"Italy",2006,38200,81,"Europe",59100000
+"Italy",2007,38600,81.2,"Europe",59300000
+"Italy",2008,38000,81.4,"Europe",59500000
+"Italy",2009,35700,81.5,"Europe",59600000
+"Italy",2010,36200,81.7,"Europe",59700000
+"Italy",2011,36300,81.8,"Europe",59800000
+"Italy",2012,35200,81.9,"Europe",59700000
+"Italy",2013,34200,82.2,"Europe",59700000
+"Italy",2014,33900,82.2,"Europe",59600000
+"Italy",2015,34200,82.3,"Europe",59500000
+"Italy",2016,34600,82.3,"Europe",59400000
+"Italy",2017,34900,82.5,"Europe",59400000
+"Italy",2018,35200,82.6,"Europe",59300000
+"Jamaica",2000,7930,73.8,"Americas",2660000
+"Jamaica",2001,7980,73.6,"Americas",2680000
+"Jamaica",2002,8080,73.9,"Americas",2700000
+"Jamaica",2003,8330,74.1,"Americas",2710000
+"Jamaica",2004,8390,74.3,"Americas",2730000
+"Jamaica",2005,8410,74.7,"Americas",2740000
+"Jamaica",2006,8610,74.8,"Americas",2760000
+"Jamaica",2007,8680,74.7,"Americas",2780000
+"Jamaica",2008,8570,74.7,"Americas",2790000
+"Jamaica",2009,8150,74.6,"Americas",2800000
+"Jamaica",2010,8000,74.7,"Americas",2820000
+"Jamaica",2011,8100,74.8,"Americas",2830000
+"Jamaica",2012,8020,74.8,"Americas",2840000
+"Jamaica",2013,8030,74.9,"Americas",2850000
+"Jamaica",2014,8050,74.9,"Americas",2860000
+"Jamaica",2015,8110,74.9,"Americas",2870000
+"Jamaica",2016,8190,74.9,"Americas",2880000
+"Jamaica",2017,8340,75,"Americas",2890000
+"Jamaica",2018,8520,75.2,"Americas",2900000
+"Japan",2000,33900,81,"Asia",128000000
+"Japan",2001,33900,81.2,"Asia",128000000
+"Japan",2002,33900,81.5,"Asia",128000000
+"Japan",2003,34300,81.7,"Asia",128000000
+"Japan",2004,35100,81.8,"Asia",128000000
+"Japan",2005,35700,82,"Asia",128000000
+"Japan",2006,36100,82.2,"Asia",128000000
+"Japan",2007,36700,82.3,"Asia",129000000
+"Japan",2008,36300,82.5,"Asia",129000000
+"Japan",2009,34300,82.7,"Asia",129000000
+"Japan",2010,35800,82.8,"Asia",129000000
+"Japan",2011,35800,82.6,"Asia",129000000
+"Japan",2012,36400,83.2,"Asia",128000000
+"Japan",2013,37100,83.4,"Asia",128000000
+"Japan",2014,37300,83.6,"Asia",128000000
+"Japan",2015,37800,83.8,"Asia",128000000
+"Japan",2016,38200,83.9,"Asia",128000000
+"Japan",2017,38600,84,"Asia",127000000
+"Japan",2018,39100,84.2,"Asia",127000000
+"Jordan",2000,7240,73.1,"Asia",5100000
+"Jordan",2001,7480,73.2,"Asia",5190000
+"Jordan",2002,7780,73.2,"Asia",5290000
+"Jordan",2003,7940,73.1,"Asia",5400000
+"Jordan",2004,8400,73,"Asia",5540000
+"Jordan",2005,8800,73.1,"Asia",5710000
+"Jordan",2006,9160,73.8,"Asia",5930000
+"Jordan",2007,9490,74.4,"Asia",6190000
+"Jordan",2008,9720,74.8,"Asia",6490000
+"Jordan",2009,9750,75.3,"Asia",6820000
+"Jordan",2010,9470,75.8,"Asia",7180000
+"Jordan",2011,9210,76.1,"Asia",7570000
+"Jordan",2012,8960,76.3,"Asia",7990000
+"Jordan",2013,8760,76.5,"Asia",8410000
+"Jordan",2014,8620,76.6,"Asia",8810000
+"Jordan",2015,8490,76.8,"Asia",9160000
+"Jordan",2016,8390,76.3,"Asia",9460000
+"Jordan",2017,8410,76.5,"Asia",9700000
+"Jordan",2018,8450,76.7,"Asia",9900000
+"Kazakhstan",2000,9950,64.6,NA,15100000
+"Kazakhstan",2001,11300,64.7,NA,15000000
+"Kazakhstan",2002,12400,64.9,NA,15100000
+"Kazakhstan",2003,13500,64.9,NA,15200000
+"Kazakhstan",2004,14700,64.9,NA,15400000
+"Kazakhstan",2005,16000,65,NA,15500000
+"Kazakhstan",2006,17500,65.2,NA,15700000
+"Kazakhstan",2007,18900,65.9,NA,15800000
+"Kazakhstan",2008,19300,66.8,NA,16000000
+"Kazakhstan",2009,19000,67.7,NA,16200000
+"Kazakhstan",2010,20100,68.4,NA,16400000
+"Kazakhstan",2011,21300,69,NA,16600000
+"Kazakhstan",2012,22000,69.7,NA,16900000
+"Kazakhstan",2013,23000,70.5,NA,17200000
+"Kazakhstan",2014,23600,71.2,NA,17500000
+"Kazakhstan",2015,23500,71.6,NA,17700000
+"Kazakhstan",2016,23400,71.7,NA,18000000
+"Kazakhstan",2017,23900,71.8,NA,18200000
+"Kazakhstan",2018,24200,72,NA,18400000
+"Kenya",2000,2130,55.2,"Africa",31500000
+"Kenya",2001,2150,55.5,"Africa",32300000
+"Kenya",2002,2110,55.7,"Africa",33200000
+"Kenya",2003,2110,56,"Africa",34100000
+"Kenya",2004,2160,56.6,"Africa",35100000
+"Kenya",2005,2220,57.4,"Africa",36000000
+"Kenya",2006,2300,58.5,"Africa",37100000
+"Kenya",2007,2400,59.6,"Africa",38100000
+"Kenya",2008,2340,60.6,"Africa",39100000
+"Kenya",2009,2350,61.7,"Africa",40200000
+"Kenya",2010,2480,62.8,"Africa",41400000
+"Kenya",2011,2560,63.8,"Africa",42500000
+"Kenya",2012,2600,64.6,"Africa",43600000
+"Kenya",2013,2680,65.2,"Africa",44800000
+"Kenya",2014,2750,65.8,"Africa",46000000
+"Kenya",2015,2840,66.3,"Africa",47200000
+"Kenya",2016,2930,66.9,"Africa",48500000
+"Kenya",2017,3010,67.1,"Africa",49700000
+"Kenya",2018,3110,67.3,"Africa",51000000
+"Kiribati",2000,2010,59.5,"Oceania",84400
+"Kiribati",2001,1940,59.7,"Oceania",85900
+"Kiribati",2002,1980,59.8,"Oceania",87300
+"Kiribati",2003,1990,59.9,"Oceania",88900
+"Kiribati",2004,1920,60,"Oceania",90500
+"Kiribati",2005,1980,60.2,"Oceania",92300
+"Kiribati",2006,1910,60.3,"Oceania",94300
+"Kiribati",2007,1910,60.4,"Oceania",96300
+"Kiribati",2008,1830,60.5,"Oceania",98400
+"Kiribati",2009,1800,60.6,"Oceania",101000
+"Kiribati",2010,1730,60.7,"Oceania",103000
+"Kiribati",2011,1710,60.8,"Oceania",105000
+"Kiribati",2012,1760,61,"Oceania",107000
+"Kiribati",2013,1830,61.2,"Oceania",109000
+"Kiribati",2014,1840,61.4,"Oceania",110000
+"Kiribati",2015,1870,61.6,"Oceania",112000
+"Kiribati",2016,1900,61.9,"Oceania",114000
+"Kiribati",2017,1900,62.1,"Oceania",116000
+"Kiribati",2018,1890,62.2,"Oceania",118000
+"Kuwait",2000,69900,76.5,"Asia",2050000
+"Kuwait",2001,68500,76.5,"Asia",2110000
+"Kuwait",2002,69400,76.9,"Asia",2140000
+"Kuwait",2003,80500,77.2,"Asia",2170000
+"Kuwait",2004,87600,77.1,"Asia",2210000
+"Kuwait",2005,93500,77,"Asia",2280000
+"Kuwait",2006,96200,77,"Asia",2380000
+"Kuwait",2007,96900,77.1,"Asia",2500000
+"Kuwait",2008,93700,77.2,"Asia",2650000
+"Kuwait",2009,81900,77.5,"Asia",2820000
+"Kuwait",2010,75200,78.2,"Asia",3000000
+"Kuwait",2011,77500,78.9,"Asia",3190000
+"Kuwait",2012,77600,79.3,"Asia",3400000
+"Kuwait",2013,74100,79.7,"Asia",3600000
+"Kuwait",2014,70800,79.9,"Asia",3780000
+"Kuwait",2015,69300,79.8,"Asia",3940000
+"Kuwait",2016,67300,79.7,"Asia",4050000
+"Kuwait",2017,67700,79.8,"Asia",4140000
+"Kuwait",2018,68400,80,"Asia",4200000
+"Kyrgyz Republic",2000,2080,66.4,"Asia",4920000
+"Kyrgyz Republic",2001,2160,66.7,"Asia",4960000
+"Kyrgyz Republic",2002,2140,66.6,"Asia",4990000
+"Kyrgyz Republic",2003,2270,66.6,"Asia",5010000
+"Kyrgyz Republic",2004,2400,66.7,"Asia",5040000
+"Kyrgyz Republic",2005,2370,66.6,"Asia",5080000
+"Kyrgyz Republic",2006,2420,66.6,"Asia",5130000
+"Kyrgyz Republic",2007,2600,66.9,"Asia",5190000
+"Kyrgyz Republic",2008,2790,67.4,"Asia",5260000
+"Kyrgyz Republic",2009,2840,68,"Asia",5340000
+"Kyrgyz Republic",2010,2790,68.5,"Asia",5420000
+"Kyrgyz Republic",2011,2920,69.1,"Asia",5510000
+"Kyrgyz Republic",2012,2870,69.6,"Asia",5590000
+"Kyrgyz Republic",2013,3120,70.1,"Asia",5680000
+"Kyrgyz Republic",2014,3180,70.7,"Asia",5770000
+"Kyrgyz Republic",2015,3240,71.1,"Asia",5870000
+"Kyrgyz Republic",2016,3290,71.2,"Asia",5960000
+"Kyrgyz Republic",2017,3370,71.3,"Asia",6050000
+"Kyrgyz Republic",2018,3490,71.5,"Asia",6130000
+"Lao",2000,2350,57.1,"Asia",5330000
+"Lao",2001,2440,57.5,"Asia",5410000
+"Lao",2002,2550,58.4,"Asia",5500000
+"Lao",2003,2660,59,"Asia",5580000
+"Lao",2004,2790,59.7,"Asia",5660000
+"Lao",2005,2940,60.3,"Asia",5750000
+"Lao",2006,3140,60.9,"Asia",5850000
+"Lao",2007,3320,61.7,"Asia",5950000
+"Lao",2008,3520,62.3,"Asia",6050000
+"Lao",2009,3730,63.1,"Asia",6150000
+"Lao",2010,3980,63.8,"Asia",6250000
+"Lao",2011,4240,64.6,"Asia",6330000
+"Lao",2012,4530,65.2,"Asia",6420000
+"Lao",2013,4830,65.7,"Asia",6490000
+"Lao",2014,5130,66.3,"Asia",6580000
+"Lao",2015,5430,66.8,"Asia",6660000
+"Lao",2016,5740,67.3,"Asia",6760000
+"Lao",2017,6010,67.6,"Asia",6860000
+"Lao",2018,6310,67.9,"Asia",6960000
+"Latvia",2000,11200,70.4,"Europe",2380000
+"Latvia",2001,12000,69.9,"Europe",2360000
+"Latvia",2002,13000,70.2,"Europe",2330000
+"Latvia",2003,14300,70.6,"Europe",2310000
+"Latvia",2004,15600,70.9,"Europe",2280000
+"Latvia",2005,17500,70.8,"Europe",2250000
+"Latvia",2006,19800,70.5,"Europe",2230000
+"Latvia",2007,21900,70.9,"Europe",2200000
+"Latvia",2008,21300,71.9,"Europe",2170000
+"Latvia",2009,18600,72.6,"Europe",2150000
+"Latvia",2010,18300,73.1,"Europe",2120000
+"Latvia",2011,19800,73.6,"Europe",2090000
+"Latvia",2012,20800,74,"Europe",2070000
+"Latvia",2013,21600,74.1,"Europe",2040000
+"Latvia",2014,22300,74.6,"Europe",2020000
+"Latvia",2015,23100,74.8,"Europe",1990000
+"Latvia",2016,23700,74.9,"Europe",1970000
+"Latvia",2017,24600,75,"Europe",1950000
+"Latvia",2018,25500,75.1,"Europe",1930000
+"Lebanon",2000,12500,76.5,"Asia",3240000
+"Lebanon",2001,12500,77,"Asia",3360000
+"Lebanon",2002,12400,77.4,"Asia",3520000
+"Lebanon",2003,12100,77.7,"Asia",3700000
+"Lebanon",2004,12300,78,"Asia",3860000
+"Lebanon",2005,12300,78.3,"Asia",3990000
+"Lebanon",2006,12200,78,"Asia",4060000
+"Lebanon",2007,13300,78.7,"Asia",4090000
+"Lebanon",2008,14400,79.1,"Asia",4110000
+"Lebanon",2009,15600,79.5,"Asia",4180000
+"Lebanon",2010,16300,79.8,"Asia",4340000
+"Lebanon",2011,15700,79,"Asia",4590000
+"Lebanon",2012,15000,80.2,"Asia",4920000
+"Lebanon",2013,14100,80,"Asia",5280000
+"Lebanon",2014,13500,80,"Asia",5600000
+"Lebanon",2015,13100,80.1,"Asia",5850000
+"Lebanon",2016,13000,80.1,"Asia",6010000
+"Lebanon",2017,13200,80.3,"Asia",6080000
+"Lebanon",2018,13400,80.5,"Asia",6090000
+"Lesotho",2000,1780,48.8,"Africa",1870000
+"Lesotho",2001,1830,47.5,"Africa",1890000
+"Lesotho",2002,1830,46,"Africa",1900000
+"Lesotho",2003,1890,44.7,"Africa",1920000
+"Lesotho",2004,1910,43.8,"Africa",1930000
+"Lesotho",2005,1960,43.3,"Africa",1950000
+"Lesotho",2006,2030,43.2,"Africa",1970000
+"Lesotho",2007,2110,43.6,"Africa",1980000
+"Lesotho",2008,2230,44.3,"Africa",2000000
+"Lesotho",2009,2250,45.4,"Africa",2020000
+"Lesotho",2010,2380,46.5,"Africa",2040000
+"Lesotho",2011,2500,47.5,"Africa",2060000
+"Lesotho",2012,2620,47.9,"Africa",2090000
+"Lesotho",2013,2640,48.1,"Africa",2120000
+"Lesotho",2014,2660,48.6,"Africa",2150000
+"Lesotho",2015,2780,49.6,"Africa",2170000
+"Lesotho",2016,2810,50.4,"Africa",2200000
+"Lesotho",2017,2870,50.8,"Africa",2230000
+"Lesotho",2018,2960,51.1,"Africa",2260000
+"Liberia",2000,839,54.5,"Africa",2880000
+"Liberia",2001,832,55.3,"Africa",2990000
+"Liberia",2002,844,54.9,"Africa",3060000
+"Liberia",2003,579,54.9,"Africa",3120000
+"Liberia",2004,583,57.6,"Africa",3180000
+"Liberia",2005,598,58.2,"Africa",3260000
+"Liberia",2006,624,58.7,"Africa",3380000
+"Liberia",2007,657,59.2,"Africa",3510000
+"Liberia",2008,675,59.8,"Africa",3660000
+"Liberia",2009,683,60.3,"Africa",3810000
+"Liberia",2010,700,60.8,"Africa",3950000
+"Liberia",2011,734,61.4,"Africa",4070000
+"Liberia",2012,772,62.1,"Africa",4180000
+"Liberia",2013,819,62.7,"Africa",4290000
+"Liberia",2014,805,59.4,"Africa",4390000
+"Liberia",2015,785,63.8,"Africa",4500000
+"Liberia",2016,754,64.4,"Africa",4610000
+"Liberia",2017,776,64.9,"Africa",4730000
+"Liberia",2018,801,65.4,"Africa",4850000
+"Libya",2000,21900,74.4,"Africa",5360000
+"Libya",2001,21200,74.6,"Africa",5440000
+"Libya",2002,20700,74.7,"Africa",5530000
+"Libya",2003,23000,74.8,"Africa",5620000
+"Libya",2004,23600,75,"Africa",5700000
+"Libya",2005,26000,75.2,"Africa",5790000
+"Libya",2006,27300,75.4,"Africa",5880000
+"Libya",2007,28600,75.6,"Africa",5970000
+"Libya",2008,29000,75.7,"Africa",6050000
+"Libya",2009,28400,75.9,"Africa",6120000
+"Libya",2010,29600,76.1,"Africa",6170000
+"Libya",2011,11200,61,"Africa",6190000
+"Libya",2012,22900,75.5,"Africa",6200000
+"Libya",2013,19900,76,"Africa",6200000
+"Libya",2014,15100,74.4,"Africa",6200000
+"Libya",2015,13500,74.2,"Africa",6230000
+"Libya",2016,17600,75.1,"Africa",6290000
+"Libya",2017,17900,75.3,"Africa",6370000
+"Libya",2018,18300,75.5,"Africa",6470000
+"Liechtenstein",2000,NA,NA,NA,33300
+"Liechtenstein",2001,NA,NA,NA,33700
+"Liechtenstein",2002,NA,NA,NA,34000
+"Liechtenstein",2003,NA,NA,NA,34300
+"Liechtenstein",2004,NA,NA,NA,34600
+"Liechtenstein",2005,NA,NA,NA,34900
+"Liechtenstein",2006,NA,NA,NA,35100
+"Liechtenstein",2007,NA,NA,NA,35300
+"Liechtenstein",2008,NA,NA,NA,35500
+"Liechtenstein",2009,NA,NA,NA,35800
+"Liechtenstein",2010,NA,NA,NA,36000
+"Liechtenstein",2011,NA,NA,NA,36300
+"Liechtenstein",2012,NA,NA,NA,36500
+"Liechtenstein",2013,NA,NA,NA,36800
+"Liechtenstein",2014,NA,NA,NA,37100
+"Liechtenstein",2015,NA,NA,NA,37400
+"Liechtenstein",2016,NA,NA,NA,37700
+"Liechtenstein",2017,NA,NA,NA,37900
+"Liechtenstein",2018,NA,NA,NA,38200
+"Lithuania",2000,12200,72,"Europe",3500000
+"Lithuania",2001,13100,71.6,"Europe",3470000
+"Lithuania",2002,14100,72,"Europe",3440000
+"Lithuania",2003,15700,72,"Europe",3410000
+"Lithuania",2004,16900,72,"Europe",3380000
+"Lithuania",2005,18500,71.4,"Europe",3340000
+"Lithuania",2006,20200,71.2,"Europe",3300000
+"Lithuania",2007,22700,70.9,"Europe",3260000
+"Lithuania",2008,23600,71.6,"Europe",3210000
+"Lithuania",2009,20300,73,"Europe",3170000
+"Lithuania",2010,21100,73.2,"Europe",3120000
+"Lithuania",2011,22900,73.5,"Europe",3080000
+"Lithuania",2012,24100,73.9,"Europe",3040000
+"Lithuania",2013,25100,74,"Europe",3000000
+"Lithuania",2014,26300,74.7,"Europe",2960000
+"Lithuania",2015,27000,74.9,"Europe",2930000
+"Lithuania",2016,27900,75,"Europe",2910000
+"Lithuania",2017,29100,75.2,"Europe",2890000
+"Lithuania",2018,30400,75.3,"Europe",2880000
+"Luxembourg",2000,81700,78.4,"Europe",436000
+"Luxembourg",2001,82800,78.7,"Europe",440000
+"Luxembourg",2002,85000,78.9,"Europe",444000
+"Luxembourg",2003,85400,79,"Europe",447000
+"Luxembourg",2004,87200,79.5,"Europe",452000
+"Luxembourg",2005,88600,80,"Europe",458000
+"Luxembourg",2006,91700,80.3,"Europe",466000
+"Luxembourg",2007,97900,80.7,"Europe",475000
+"Luxembourg",2008,94900,81,"Europe",485000
+"Luxembourg",2009,89100,81.2,"Europe",496000
+"Luxembourg",2010,91700,81.3,"Europe",508000
+"Luxembourg",2011,92000,81.5,"Europe",520000
+"Luxembourg",2012,89500,81.7,"Europe",532000
+"Luxembourg",2013,91000,81.9,"Europe",545000
+"Luxembourg",2014,93800,81.9,"Europe",556000
+"Luxembourg",2015,95300,82,"Europe",567000
+"Luxembourg",2016,97000,82.1,"Europe",576000
+"Luxembourg",2017,98100,82.2,"Europe",583000
+"Luxembourg",2018,99000,82.4,"Europe",590000
+"Macedonia, FYR",2000,8620,72.2,NA,2030000
+"Macedonia, FYR",2001,8320,72.3,NA,2040000
+"Macedonia, FYR",2002,8420,72.5,NA,2050000
+"Macedonia, FYR",2003,8590,72.6,NA,2050000
+"Macedonia, FYR",2004,8980,72.7,NA,2060000
+"Macedonia, FYR",2005,9390,72.9,NA,2060000
+"Macedonia, FYR",2006,9850,73.1,NA,2060000
+"Macedonia, FYR",2007,10500,73.3,NA,2070000
+"Macedonia, FYR",2008,11000,73.5,NA,2070000
+"Macedonia, FYR",2009,11000,73.7,NA,2070000
+"Macedonia, FYR",2010,11400,74,NA,2070000
+"Macedonia, FYR",2011,11600,74.2,NA,2070000
+"Macedonia, FYR",2012,11600,74.2,NA,2070000
+"Macedonia, FYR",2013,11900,74.3,NA,2080000
+"Macedonia, FYR",2014,12300,74.4,NA,2080000
+"Macedonia, FYR",2015,12800,74.6,NA,2080000
+"Macedonia, FYR",2016,13100,74.9,NA,2080000
+"Macedonia, FYR",2017,13500,75,NA,2080000
+"Macedonia, FYR",2018,14000,75.2,NA,2090000
+"Madagascar",2000,1440,58.5,"Africa",15800000
+"Madagascar",2001,1480,59,"Africa",16300000
+"Madagascar",2002,1260,59.1,"Africa",16800000
+"Madagascar",2003,1340,59.3,"Africa",17300000
+"Madagascar",2004,1370,59.6,"Africa",17800000
+"Madagascar",2005,1390,60.1,"Africa",18300000
+"Madagascar",2006,1420,60.4,"Africa",18900000
+"Madagascar",2007,1460,60.6,"Africa",19400000
+"Madagascar",2008,1520,60.8,"Africa",20000000
+"Madagascar",2009,1420,60.8,"Africa",20600000
+"Madagascar",2010,1390,60.8,"Africa",21200000
+"Madagascar",2011,1370,61.1,"Africa",21700000
+"Madagascar",2012,1370,61.4,"Africa",22300000
+"Madagascar",2013,1360,61.7,"Africa",23000000
+"Madagascar",2014,1370,62,"Africa",23600000
+"Madagascar",2015,1380,62.3,"Africa",24200000
+"Madagascar",2016,1400,62.7,"Africa",24900000
+"Madagascar",2017,1420,63,"Africa",25600000
+"Madagascar",2018,1460,63.4,"Africa",26300000
+"Malawi",2000,866,44.7,"Africa",11400000
+"Malawi",2001,800,45.1,"Africa",11700000
+"Malawi",2002,792,45.5,"Africa",12000000
+"Malawi",2003,816,46.2,"Africa",12300000
+"Malawi",2004,837,46.8,"Africa",12700000
+"Malawi",2005,840,47.6,"Africa",13000000
+"Malawi",2006,854,48.5,"Africa",13400000
+"Malawi",2007,908,49.5,"Africa",13800000
+"Malawi",2008,948,50.6,"Africa",14300000
+"Malawi",2009,996,51.8,"Africa",14700000
+"Malawi",2010,1030,53.1,"Africa",15200000
+"Malawi",2011,1050,54.5,"Africa",15600000
+"Malawi",2012,1040,56.1,"Africa",16100000
+"Malawi",2013,1060,57.5,"Africa",16600000
+"Malawi",2014,1090,58.5,"Africa",17100000
+"Malawi",2015,1090,59.4,"Africa",17600000
+"Malawi",2016,1080,60.3,"Africa",18100000
+"Malawi",2017,1110,60.7,"Africa",18600000
+"Malawi",2018,1130,61,"Africa",19200000
+"Malaysia",2000,16300,73.1,"Asia",23200000
+"Malaysia",2001,16000,73.3,"Asia",23700000
+"Malaysia",2002,16600,73.4,"Asia",24200000
+"Malaysia",2003,17200,73.5,"Asia",24700000
+"Malaysia",2004,18000,73.7,"Asia",25200000
+"Malaysia",2005,18600,73.9,"Asia",25700000
+"Malaysia",2006,19300,74.1,"Asia",26100000
+"Malaysia",2007,20700,74.2,"Asia",26600000
+"Malaysia",2008,21000,74.3,"Asia",27100000
+"Malaysia",2009,20100,74.3,"Asia",27600000
+"Malaysia",2010,21100,74.5,"Asia",28100000
+"Malaysia",2011,21800,74.6,"Asia",28600000
+"Malaysia",2012,22600,74.7,"Asia",29200000
+"Malaysia",2013,23200,74.9,"Asia",29700000
+"Malaysia",2014,24200,75.1,"Asia",30200000
+"Malaysia",2015,25000,75.4,"Asia",30700000
+"Malaysia",2016,25700,75.6,"Asia",31200000
+"Malaysia",2017,26400,75.8,"Asia",31600000
+"Malaysia",2018,27200,75.9,"Asia",32000000
+"Maldives",2000,6860,72.1,"Asia",280000
+"Maldives",2001,6970,72.8,"Asia",287000
+"Maldives",2002,7230,73.5,"Asia",294000
+"Maldives",2003,8090,74.3,"Asia",302000
+"Maldives",2004,8920,73.8,"Asia",310000
+"Maldives",2005,7960,75.7,"Asia",319000
+"Maldives",2006,9200,76.3,"Asia",327000
+"Maldives",2007,9670,77.1,"Asia",336000
+"Maldives",2008,10500,77.6,"Asia",345000
+"Maldives",2009,10000,77.8,"Asia",355000
+"Maldives",2010,10500,77.9,"Asia",365000
+"Maldives",2011,11100,78.3,"Asia",375000
+"Maldives",2012,11200,78.6,"Asia",386000
+"Maldives",2013,11500,78.8,"Asia",397000
+"Maldives",2014,11900,79,"Asia",408000
+"Maldives",2015,12000,79.3,"Asia",418000
+"Maldives",2016,12200,79.5,"Asia",428000
+"Maldives",2017,12600,79.8,"Asia",436000
+"Maldives",2018,13000,80.1,"Asia",444000
+"Mali",2000,1460,53.4,"Africa",11000000
+"Mali",2001,1640,53.9,"Africa",11300000
+"Mali",2002,1640,54.4,"Africa",11600000
+"Mali",2003,1740,55.2,"Africa",12000000
+"Mali",2004,1710,55.8,"Africa",12400000
+"Mali",2005,1760,56.5,"Africa",12800000
+"Mali",2006,1780,57.1,"Africa",13200000
+"Mali",2007,1790,57.7,"Africa",13700000
+"Mali",2008,1810,58.4,"Africa",14100000
+"Mali",2009,1830,59,"Africa",14600000
+"Mali",2010,1870,59.5,"Africa",15100000
+"Mali",2011,1880,60,"Africa",15500000
+"Mali",2012,1810,60.3,"Africa",16000000
+"Mali",2013,1790,60.5,"Africa",16500000
+"Mali",2014,1870,60.9,"Africa",17000000
+"Mali",2015,1920,61.4,"Africa",17500000
+"Mali",2016,1960,61.9,"Africa",18000000
+"Mali",2017,1990,62.4,"Africa",18500000
+"Mali",2018,2020,62.9,"Africa",19100000
+"Malta",2000,24600,77.5,"Europe",397000
+"Malta",2001,24600,77.8,"Europe",399000
+"Malta",2002,25100,78.1,"Europe",401000
+"Malta",2003,25600,78.5,"Europe",403000
+"Malta",2004,25500,78.8,"Europe",405000
+"Malta",2005,26300,79.1,"Europe",407000
+"Malta",2006,26700,79.4,"Europe",409000
+"Malta",2007,27700,79.6,"Europe",410000
+"Malta",2008,28400,79.7,"Europe",412000
+"Malta",2009,27500,80,"Europe",414000
+"Malta",2010,28300,80.3,"Europe",416000
+"Malta",2011,28600,80.4,"Europe",418000
+"Malta",2012,29100,80.7,"Europe",421000
+"Malta",2013,30100,81,"Europe",423000
+"Malta",2014,32300,81.2,"Europe",426000
+"Malta",2015,34400,81.3,"Europe",428000
+"Malta",2016,35700,81.4,"Europe",429000
+"Malta",2017,36800,81.6,"Europe",431000
+"Malta",2018,37900,81.8,"Europe",432000
+"Marshall Islands",2000,2870,63.3,"Oceania",52200
+"Marshall Islands",2001,3020,63.4,"Oceania",52200
+"Marshall Islands",2002,3110,63.3,"Oceania",52200
+"Marshall Islands",2003,3110,63.3,"Oceania",52100
+"Marshall Islands",2004,3110,63.2,"Oceania",52100
+"Marshall Islands",2005,3200,63.1,"Oceania",52100
+"Marshall Islands",2006,3260,63,"Oceania",52100
+"Marshall Islands",2007,3370,63.2,"Oceania",52100
+"Marshall Islands",2008,3310,63.4,"Oceania",52200
+"Marshall Islands",2009,3250,63.5,"Oceania",52300
+"Marshall Islands",2010,3450,63.7,"Oceania",52400
+"Marshall Islands",2011,3500,63.9,"Oceania",52500
+"Marshall Islands",2012,3620,64.1,"Oceania",52700
+"Marshall Islands",2013,3700,64.3,"Oceania",52800
+"Marshall Islands",2014,3660,64.5,"Oceania",52900
+"Marshall Islands",2015,3670,64.7,"Oceania",53000
+"Marshall Islands",2016,3780,65,"Oceania",53100
+"Marshall Islands",2017,3780,NA,"Oceania",53100
+"Marshall Islands",2018,3780,NA,"Oceania",53200
+"Mauritania",2000,2750,63.7,"Africa",2710000
+"Mauritania",2001,2730,64,"Africa",2790000
+"Mauritania",2002,2660,64.5,"Africa",2870000
+"Mauritania",2003,2740,65,"Africa",2960000
+"Mauritania",2004,2820,65.3,"Africa",3040000
+"Mauritania",2005,2990,65.7,"Africa",3130000
+"Mauritania",2006,3450,66.4,"Africa",3220000
+"Mauritania",2007,3450,66.9,"Africa",3310000
+"Mauritania",2008,3390,67.4,"Africa",3410000
+"Mauritania",2009,3260,67.8,"Africa",3510000
+"Mauritania",2010,3320,68.2,"Africa",3610000
+"Mauritania",2011,3370,68.6,"Africa",3720000
+"Mauritania",2012,3460,69,"Africa",3830000
+"Mauritania",2013,3570,69.3,"Africa",3950000
+"Mauritania",2014,3660,69.6,"Africa",4060000
+"Mauritania",2015,3600,70,"Africa",4180000
+"Mauritania",2016,3570,70.3,"Africa",4300000
+"Mauritania",2017,3590,70.4,"Africa",4420000
+"Mauritania",2018,3670,70.6,"Africa",4540000
+"Mauritius",2000,11100,71.5,"Africa",1190000
+"Mauritius",2001,11300,71.7,"Africa",1190000
+"Mauritius",2002,11400,71.8,"Africa",1200000
+"Mauritius",2003,11800,72,"Africa",1210000
+"Mauritius",2004,12400,72.2,"Africa",1220000
+"Mauritius",2005,12400,72.4,"Africa",1220000
+"Mauritius",2006,13400,72.5,"Africa",1230000
+"Mauritius",2007,14100,72.8,"Africa",1230000
+"Mauritius",2008,14900,73,"Africa",1240000
+"Mauritius",2009,15300,73.2,"Africa",1240000
+"Mauritius",2010,15900,73.4,"Africa",1250000
+"Mauritius",2011,16600,73.8,"Africa",1250000
+"Mauritius",2012,17100,74,"Africa",1250000
+"Mauritius",2013,17600,74.2,"Africa",1260000
+"Mauritius",2014,18300,74.3,"Africa",1260000
+"Mauritius",2015,18900,74.5,"Africa",1260000
+"Mauritius",2016,19500,74.6,"Africa",1260000
+"Mauritius",2017,20300,74.8,"Africa",1270000
+"Mauritius",2018,21000,74.9,"Africa",1270000
+"Mexico",2000,15000,74.6,"Americas",102000000
+"Mexico",2001,14700,74.9,"Americas",103000000
+"Mexico",2002,14600,74.9,"Americas",104000000
+"Mexico",2003,14600,74.9,"Americas",106000000
+"Mexico",2004,15000,75.2,"Americas",107000000
+"Mexico",2005,15300,75.2,"Americas",108000000
+"Mexico",2006,15800,75.5,"Americas",110000000
+"Mexico",2007,16000,75.7,"Americas",112000000
+"Mexico",2008,16000,75.5,"Americas",114000000
+"Mexico",2009,15000,75.4,"Americas",116000000
+"Mexico",2010,15500,75.5,"Americas",117000000
+"Mexico",2011,15900,75.8,"Americas",119000000
+"Mexico",2012,16300,75.9,"Americas",121000000
+"Mexico",2013,16300,75.8,"Americas",123000000
+"Mexico",2014,16500,75.9,"Americas",124000000
+"Mexico",2015,16700,76.2,"Americas",126000000
+"Mexico",2016,16800,76.4,"Americas",128000000
+"Mexico",2017,17000,76.6,"Americas",129000000
+"Mexico",2018,17300,76.8,"Americas",131000000
+"Micronesia, Fed. Sts.",2000,3170,64.8,NA,107000
+"Micronesia, Fed. Sts.",2001,3230,65.4,NA,107000
+"Micronesia, Fed. Sts.",2002,3260,64.5,NA,107000
+"Micronesia, Fed. Sts.",2003,3320,65.7,NA,107000
+"Micronesia, Fed. Sts.",2004,3220,65.7,NA,107000
+"Micronesia, Fed. Sts.",2005,3300,65.6,NA,106000
+"Micronesia, Fed. Sts.",2006,3310,65.6,NA,106000
+"Micronesia, Fed. Sts.",2007,3260,65.6,NA,105000
+"Micronesia, Fed. Sts.",2008,3200,65.6,NA,104000
+"Micronesia, Fed. Sts.",2009,3240,65.5,NA,104000
+"Micronesia, Fed. Sts.",2010,3340,65.4,NA,104000
+"Micronesia, Fed. Sts.",2011,3410,65.4,NA,103000
+"Micronesia, Fed. Sts.",2012,3430,65.6,NA,104000
+"Micronesia, Fed. Sts.",2013,3300,65.6,NA,104000
+"Micronesia, Fed. Sts.",2014,3180,65.5,NA,104000
+"Micronesia, Fed. Sts.",2015,3290,65.3,NA,104000
+"Micronesia, Fed. Sts.",2016,3330,65.6,NA,105000
+"Micronesia, Fed. Sts.",2017,3380,65.7,NA,106000
+"Micronesia, Fed. Sts.",2018,3410,65.8,NA,106000
+"Moldova",2000,2320,67.6,"Europe",4200000
+"Moldova",2001,2470,68.1,"Europe",4190000
+"Moldova",2002,2670,68.5,"Europe",4180000
+"Moldova",2003,2850,68.8,"Europe",4170000
+"Moldova",2004,3070,69.1,"Europe",4170000
+"Moldova",2005,3310,68.5,"Europe",4160000
+"Moldova",2006,3480,68.9,"Europe",4140000
+"Moldova",2007,3590,69.2,"Europe",4130000
+"Moldova",2008,3880,69.6,"Europe",4110000
+"Moldova",2009,3650,69.9,"Europe",4100000
+"Moldova",2010,3910,69.7,"Europe",4080000
+"Moldova",2011,4180,71.5,"Europe",4080000
+"Moldova",2012,4150,71.6,"Europe",4070000
+"Moldova",2013,4540,72.5,"Europe",4070000
+"Moldova",2014,4760,72.2,"Europe",4070000
+"Moldova",2015,4750,72.1,"Europe",4070000
+"Moldova",2016,4940,72.2,"Europe",4060000
+"Moldova",2017,5130,72.3,"Europe",4050000
+"Moldova",2018,5330,72.4,"Europe",4040000
+"Monaco",2000,50200,NA,"Europe",32100
+"Monaco",2001,50900,NA,"Europe",32400
+"Monaco",2002,51100,NA,"Europe",32600
+"Monaco",2003,51300,NA,"Europe",32900
+"Monaco",2004,52200,NA,"Europe",33300
+"Monaco",2005,52800,NA,"Europe",33800
+"Monaco",2006,54600,NA,"Europe",34400
+"Monaco",2007,60900,NA,"Europe",35100
+"Monaco",2008,59900,NA,"Europe",35900
+"Monaco",2009,53700,NA,"Europe",36500
+"Monaco",2010,54100,NA,"Europe",37100
+"Monaco",2011,58100,NA,"Europe",37500
+"Monaco",2012,58100,NA,"Europe",37800
+"Monaco",2013,57900,NA,"Europe",38000
+"Monaco",2014,58300,NA,"Europe",38100
+"Monaco",2015,58800,NA,"Europe",38300
+"Monaco",2016,59500,NA,"Europe",38500
+"Monaco",2017,60100,NA,"Europe",38700
+"Monaco",2018,60700,NA,"Europe",38900
+"Mongolia",2000,4660,62.8,"Asia",2400000
+"Mongolia",2001,4750,63.1,"Asia",2420000
+"Mongolia",2002,4920,63.4,"Asia",2440000
+"Mongolia",2003,5220,63.5,"Asia",2470000
+"Mongolia",2004,5710,63.7,"Asia",2500000
+"Mongolia",2005,6050,64,"Asia",2530000
+"Mongolia",2006,6480,64.5,"Asia",2560000
+"Mongolia",2007,7060,65.1,"Asia",2590000
+"Mongolia",2008,7580,65.6,"Asia",2630000
+"Mongolia",2009,7370,65.9,"Asia",2670000
+"Mongolia",2010,7710,66.2,"Asia",2710000
+"Mongolia",2011,8880,66.6,"Asia",2760000
+"Mongolia",2012,9790,67,"Asia",2810000
+"Mongolia",2013,10700,67.6,"Asia",2870000
+"Mongolia",2014,11300,68,"Asia",2920000
+"Mongolia",2015,11400,68.2,"Asia",2980000
+"Mongolia",2016,11300,68.3,"Asia",3030000
+"Mongolia",2017,11400,68.5,"Asia",3080000
+"Mongolia",2018,12100,68.7,"Asia",3120000
+"Montenegro",2000,10100,73.8,"Europe",614000
+"Montenegro",2001,10100,74,"Europe",613000
+"Montenegro",2002,10300,74.3,"Europe",613000
+"Montenegro",2003,10500,74.5,"Europe",614000
+"Montenegro",2004,11000,74.7,"Europe",615000
+"Montenegro",2005,11400,75,"Europe",616000
+"Montenegro",2006,12400,75.3,"Europe",618000
+"Montenegro",2007,13700,75.6,"Europe",619000
+"Montenegro",2008,14600,76,"Europe",621000
+"Montenegro",2009,13700,76.2,"Europe",623000
+"Montenegro",2010,14000,76.4,"Europe",624000
+"Montenegro",2011,14500,76.4,"Europe",625000
+"Montenegro",2012,14100,76.5,"Europe",626000
+"Montenegro",2013,14600,76.7,"Europe",627000
+"Montenegro",2014,14800,76.8,"Europe",628000
+"Montenegro",2015,15300,76.9,"Europe",628000
+"Montenegro",2016,15700,77,"Europe",629000
+"Montenegro",2017,16200,77.2,"Europe",629000
+"Montenegro",2018,16600,77.3,"Europe",629000
+"Morocco",2000,4480,70.9,"Africa",28800000
+"Morocco",2001,4750,71.2,"Africa",29200000
+"Morocco",2002,4840,71.5,"Africa",29500000
+"Morocco",2003,5070,71.7,"Africa",29800000
+"Morocco",2004,5250,71.9,"Africa",30200000
+"Morocco",2005,5360,72.2,"Africa",30500000
+"Morocco",2006,5700,72.5,"Africa",30900000
+"Morocco",2007,5830,72.7,"Africa",31200000
+"Morocco",2008,6110,73,"Africa",31600000
+"Morocco",2009,6290,73.3,"Africa",32000000
+"Morocco",2010,6440,73.5,"Africa",32400000
+"Morocco",2011,6690,73.8,"Africa",32900000
+"Morocco",2012,6790,74.1,"Africa",33300000
+"Morocco",2013,7000,74.3,"Africa",33800000
+"Morocco",2014,7070,74.6,"Africa",34300000
+"Morocco",2015,7290,74.8,"Africa",34800000
+"Morocco",2016,7270,75,"Africa",35300000
+"Morocco",2017,7480,75.2,"Africa",35700000
+"Morocco",2018,7720,75.5,"Africa",36200000
+"Mozambique",2000,562,51.3,"Africa",18100000
+"Mozambique",2001,615,51.8,"Africa",18600000
+"Mozambique",2002,650,51.8,"Africa",19100000
+"Mozambique",2003,672,52.1,"Africa",19700000
+"Mozambique",2004,703,52.3,"Africa",20300000
+"Mozambique",2005,742,52.4,"Africa",20900000
+"Mozambique",2006,792,52.6,"Africa",21500000
+"Mozambique",2007,826,52.9,"Africa",22200000
+"Mozambique",2008,858,53.6,"Africa",22800000
+"Mozambique",2009,886,54.1,"Africa",23500000
+"Mozambique",2010,918,54.5,"Africa",24200000
+"Mozambique",2011,955,55,"Africa",24900000
+"Mozambique",2012,994,55.6,"Africa",25700000
+"Mozambique",2013,1040,56.5,"Africa",26400000
+"Mozambique",2014,1080,57.9,"Africa",27200000
+"Mozambique",2015,1120,59,"Africa",28000000
+"Mozambique",2016,1130,60,"Africa",28800000
+"Mozambique",2017,1160,60.5,"Africa",29700000
+"Mozambique",2018,1200,61.1,"Africa",30500000
+"Myanmar",2000,1310,61.1,"Asia",46100000
+"Myanmar",2001,1440,61.5,"Asia",46600000
+"Myanmar",2002,1590,62,"Asia",47100000
+"Myanmar",2003,1800,62.5,"Asia",47600000
+"Myanmar",2004,2020,63,"Asia",48100000
+"Myanmar",2005,2280,63.6,"Asia",48500000
+"Myanmar",2006,2550,64.3,"Asia",48800000
+"Myanmar",2007,2840,65,"Asia",49200000
+"Myanmar",2008,3110,59.8,"Asia",49500000
+"Myanmar",2009,3420,66.2,"Asia",49800000
+"Myanmar",2010,3720,66.8,"Asia",50200000
+"Myanmar",2011,3900,67.4,"Asia",50600000
+"Myanmar",2012,4150,68,"Asia",51000000
+"Myanmar",2013,4460,68.5,"Asia",51400000
+"Myanmar",2014,4770,69.1,"Asia",51900000
+"Myanmar",2015,5070,69.5,"Asia",52400000
+"Myanmar",2016,5350,70,"Asia",52900000
+"Myanmar",2017,5720,70.2,"Asia",53400000
+"Myanmar",2018,6100,70.3,"Asia",53900000
+"Namibia",2000,6110,53.6,"Africa",1900000
+"Namibia",2001,6070,52.9,"Africa",1930000
+"Namibia",2002,6270,52,"Africa",1960000
+"Namibia",2003,6450,51.5,"Africa",1990000
+"Namibia",2004,7160,51.3,"Africa",2010000
+"Namibia",2005,7260,51.6,"Africa",2030000
+"Namibia",2006,7680,52.5,"Africa",2060000
+"Namibia",2007,8100,54.1,"Africa",2080000
+"Namibia",2008,8210,55.6,"Africa",2110000
+"Namibia",2009,8110,57.2,"Africa",2140000
+"Namibia",2010,8460,58.6,"Africa",2170000
+"Namibia",2011,8720,60.1,"Africa",2220000
+"Namibia",2012,8970,61.7,"Africa",2260000
+"Namibia",2013,9260,62.7,"Africa",2320000
+"Namibia",2014,9630,63.7,"Africa",2370000
+"Namibia",2015,9910,64.3,"Africa",2430000
+"Namibia",2016,9810,64.8,"Africa",2480000
+"Namibia",2017,10200,65.3,"Africa",2530000
+"Namibia",2018,10500,65.7,"Africa",2590000
+"Nauru",2000,6960,NA,"Oceania",10000
+"Nauru",2001,6490,NA,"Oceania",10100
+"Nauru",2002,5830,NA,"Oceania",10100
+"Nauru",2003,5830,NA,"Oceania",10100
+"Nauru",2004,5570,NA,"Oceania",10100
+"Nauru",2005,4900,NA,"Oceania",10100
+"Nauru",2006,3930,NA,"Oceania",10100
+"Nauru",2007,3960,NA,"Oceania",10000
+"Nauru",2008,5330,NA,"Oceania",9950
+"Nauru",2009,5800,NA,"Oceania",9950
+"Nauru",2010,6590,NA,"Oceania",10000
+"Nauru",2011,7340,NA,"Oceania",10200
+"Nauru",2012,7910,NA,"Oceania",10500
+"Nauru",2013,10100,NA,"Oceania",10800
+"Nauru",2014,12600,NA,"Oceania",11100
+"Nauru",2015,12300,NA,"Oceania",11300
+"Nauru",2016,13000,NA,"Oceania",11300
+"Nauru",2017,12800,NA,"Oceania",11400
+"Nauru",2018,12600,NA,"Oceania",11300
+"Nepal",2000,1540,63.7,"Asia",23700000
+"Nepal",2001,1590,64.3,"Asia",24200000
+"Nepal",2002,1560,64.4,"Asia",24600000
+"Nepal",2003,1600,65.2,"Asia",25000000
+"Nepal",2004,1650,65.6,"Asia",25300000
+"Nepal",2005,1680,66,"Asia",25600000
+"Nepal",2006,1720,66.5,"Asia",25900000
+"Nepal",2007,1760,66.9,"Asia",26200000
+"Nepal",2008,1850,67.3,"Asia",26500000
+"Nepal",2009,1920,67.8,"Asia",26700000
+"Nepal",2010,1990,68.3,"Asia",27000000
+"Nepal",2011,2030,68.7,"Asia",27300000
+"Nepal",2012,2100,69.2,"Asia",27600000
+"Nepal",2013,2160,69.6,"Asia",28000000
+"Nepal",2014,2270,70,"Asia",28300000
+"Nepal",2015,2300,69.7,"Asia",28700000
+"Nepal",2016,2290,70.8,"Asia",29000000
+"Nepal",2017,2360,71.2,"Asia",29300000
+"Nepal",2018,2420,71.5,"Asia",29600000
+"Netherlands",2000,41700,78.1,"Europe",15900000
+"Netherlands",2001,42300,78.2,"Europe",16000000
+"Netherlands",2002,42100,78.4,"Europe",16100000
+"Netherlands",2003,42000,78.7,"Europe",16200000
+"Netherlands",2004,42700,79.1,"Europe",16300000
+"Netherlands",2005,43500,79.4,"Europe",16400000
+"Netherlands",2006,45000,79.8,"Europe",16400000
+"Netherlands",2007,46500,80.1,"Europe",16500000
+"Netherlands",2008,47100,80.3,"Europe",16600000
+"Netherlands",2009,45100,80.5,"Europe",16600000
+"Netherlands",2010,45500,80.7,"Europe",16700000
+"Netherlands",2011,46100,80.9,"Europe",16700000
+"Netherlands",2012,45400,81.1,"Europe",16800000
+"Netherlands",2013,45200,81.3,"Europe",16800000
+"Netherlands",2014,45700,81.5,"Europe",16900000
+"Netherlands",2015,46400,81.6,"Europe",16900000
+"Netherlands",2016,47100,81.6,"Europe",17000000
+"Netherlands",2017,47900,81.8,"Europe",17000000
+"Netherlands",2018,48500,81.9,"Europe",17100000
+"New Zealand",2000,28300,78.5,"Oceania",3860000
+"New Zealand",2001,29100,78.7,"Oceania",3910000
+"New Zealand",2002,29900,79,"Oceania",3960000
+"New Zealand",2003,30700,79.2,"Oceania",4020000
+"New Zealand",2004,31400,79.5,"Oceania",4080000
+"New Zealand",2005,32100,79.8,"Oceania",4140000
+"New Zealand",2006,32600,80,"Oceania",4190000
+"New Zealand",2007,33200,80.2,"Oceania",4230000
+"New Zealand",2008,32500,80.3,"Oceania",4280000
+"New Zealand",2009,32100,80.6,"Oceania",4320000
+"New Zealand",2010,32300,80.9,"Oceania",4370000
+"New Zealand",2011,32700,81,"Oceania",4420000
+"New Zealand",2012,33300,81.2,"Oceania",4470000
+"New Zealand",2013,33800,81.5,"Oceania",4520000
+"New Zealand",2014,34500,81.5,"Oceania",4570000
+"New Zealand",2015,34600,81.5,"Oceania",4610000
+"New Zealand",2016,35300,81.5,"Oceania",4660000
+"New Zealand",2017,35900,81.6,"Oceania",4710000
+"New Zealand",2018,36400,81.8,"Oceania",4750000
+"Nicaragua",2000,3460,75.6,"Americas",5030000
+"Nicaragua",2001,3510,75.9,"Americas",5100000
+"Nicaragua",2002,3490,76,"Americas",5170000
+"Nicaragua",2003,3530,76.1,"Americas",5240000
+"Nicaragua",2004,3670,76.3,"Americas",5310000
+"Nicaragua",2005,3770,76.6,"Americas",5380000
+"Nicaragua",2006,3870,76.9,"Americas",5450000
+"Nicaragua",2007,4010,77,"Americas",5520000
+"Nicaragua",2008,4090,77.3,"Americas",5590000
+"Nicaragua",2009,3910,77.3,"Americas",5670000
+"Nicaragua",2010,4030,77.4,"Americas",5740000
+"Nicaragua",2011,4230,77.5,"Americas",5810000
+"Nicaragua",2012,4450,77.5,"Americas",5880000
+"Nicaragua",2013,4620,77.6,"Americas",5950000
+"Nicaragua",2014,4790,77.8,"Americas",6010000
+"Nicaragua",2015,4960,78,"Americas",6080000
+"Nicaragua",2016,5140,78.2,"Americas",6150000
+"Nicaragua",2017,5300,78.5,"Americas",6220000
+"Nicaragua",2018,5470,78.7,"Americas",6280000
+"Niger",2000,753,52.2,"Africa",11400000
+"Niger",2001,778,52.7,"Africa",11800000
+"Niger",2002,773,53.5,"Africa",12200000
+"Niger",2003,785,54.1,"Africa",12700000
+"Niger",2004,757,54.9,"Africa",13100000
+"Niger",2005,763,55.6,"Africa",13600000
+"Niger",2006,778,56.2,"Africa",14100000
+"Niger",2007,773,56.9,"Africa",14700000
+"Niger",2008,816,57.6,"Africa",15200000
+"Niger",2009,780,58.1,"Africa",15800000
+"Niger",2010,814,58.8,"Africa",16400000
+"Niger",2011,802,59.3,"Africa",17100000
+"Niger",2012,863,59.8,"Africa",17700000
+"Niger",2013,874,60.3,"Africa",18400000
+"Niger",2014,900,60.8,"Africa",19100000
+"Niger",2015,897,61.2,"Africa",19900000
+"Niger",2016,907,61.7,"Africa",20700000
+"Niger",2017,928,62.1,"Africa",21500000
+"Niger",2018,949,62.5,"Africa",22300000
+"Nigeria",2000,2850,54.9,"Africa",122000000
+"Nigeria",2001,2900,55.1,"Africa",125000000
+"Nigeria",2002,2940,55.1,"Africa",129000000
+"Nigeria",2003,3160,55.6,"Africa",132000000
+"Nigeria",2004,4120,56.1,"Africa",135000000
+"Nigeria",2005,4150,56.9,"Africa",139000000
+"Nigeria",2006,4370,57.5,"Africa",143000000
+"Nigeria",2007,4550,58.2,"Africa",146000000
+"Nigeria",2008,4710,59,"Africa",150000000
+"Nigeria",2009,4910,59.8,"Africa",154000000
+"Nigeria",2010,5150,60.5,"Africa",159000000
+"Nigeria",2011,5260,61.3,"Africa",163000000
+"Nigeria",2012,5340,62,"Africa",167000000
+"Nigeria",2013,5480,62.5,"Africa",172000000
+"Nigeria",2014,5670,63,"Africa",176000000
+"Nigeria",2015,5670,64,"Africa",181000000
+"Nigeria",2016,5440,65,"Africa",186000000
+"Nigeria",2017,5480,65.6,"Africa",191000000
+"Nigeria",2018,5570,66.1,"Africa",196000000
+"North Korea",2000,1290,63.6,"Asia",22900000
+"North Korea",2001,1370,63.5,"Asia",23100000
+"North Korea",2002,1380,63.4,"Asia",23300000
+"North Korea",2003,1410,69.8,"Asia",23500000
+"North Korea",2004,1410,69.7,"Asia",23700000
+"North Korea",2005,1460,69.8,"Asia",23900000
+"North Korea",2006,1460,69.8,"Asia",24100000
+"North Korea",2007,1390,69.8,"Asia",24200000
+"North Korea",2008,1430,70,"Asia",24300000
+"North Korea",2009,1410,70,"Asia",24500000
+"North Korea",2010,1390,70.1,"Asia",24600000
+"North Korea",2011,1400,70.2,"Asia",24700000
+"North Korea",2012,1390,70.3,"Asia",24900000
+"North Korea",2013,1390,70.4,"Asia",25000000
+"North Korea",2014,1390,70.5,"Asia",25100000
+"North Korea",2015,1390,70.6,"Asia",25200000
+"North Korea",2016,1390,70.7,"Asia",25400000
+"North Korea",2017,1390,70.9,"Asia",25500000
+"North Korea",2018,1390,71.1,"Asia",25600000
+"Norway",2000,58100,78.7,"Europe",4500000
+"Norway",2001,59000,78.9,"Europe",4520000
+"Norway",2002,59500,79.1,"Europe",4550000
+"Norway",2003,59700,79.5,"Europe",4570000
+"Norway",2004,61700,79.8,"Europe",4600000
+"Norway",2005,62900,80.1,"Europe",4630000
+"Norway",2006,63900,80.3,"Europe",4670000
+"Norway",2007,65100,80.5,"Europe",4720000
+"Norway",2008,64500,80.7,"Europe",4770000
+"Norway",2009,62700,80.9,"Europe",4830000
+"Norway",2010,62300,81,"Europe",4890000
+"Norway",2011,62100,81.2,"Europe",4950000
+"Norway",2012,62900,81.5,"Europe",5010000
+"Norway",2013,62800,81.7,"Europe",5080000
+"Norway",2014,63300,82,"Europe",5140000
+"Norway",2015,63700,82.1,"Europe",5200000
+"Norway",2016,63800,82.1,"Europe",5250000
+"Norway",2017,64200,82.2,"Europe",5310000
+"Norway",2018,64800,82.4,"Europe",5350000
+"Oman",2000,44000,74.5,"Asia",2270000
+"Oman",2001,45400,74.8,"Asia",2290000
+"Oman",2002,44100,75,"Asia",2330000
+"Oman",2003,42000,75.2,"Asia",2390000
+"Oman",2004,41600,75.7,"Asia",2440000
+"Oman",2005,41500,76,"Asia",2510000
+"Oman",2006,42500,76.1,"Asia",2580000
+"Oman",2007,43000,76.1,"Asia",2660000
+"Oman",2008,44900,76.4,"Asia",2760000
+"Oman",2009,45600,76.3,"Asia",2880000
+"Oman",2010,45300,76.1,"Asia",3040000
+"Oman",2011,42100,76.4,"Asia",3240000
+"Oman",2012,43000,76.7,"Asia",3460000
+"Oman",2013,41900,76.9,"Asia",3710000
+"Oman",2014,40300,77.2,"Asia",3960000
+"Oman",2015,40100,77.4,"Asia",4200000
+"Oman",2016,39100,77.6,"Asia",4420000
+"Oman",2017,39400,77.8,"Asia",4640000
+"Oman",2018,38900,78.1,"Asia",4830000
+"Pakistan",2000,3500,62.6,"Asia",139000000
+"Pakistan",2001,3490,62.8,"Asia",142000000
+"Pakistan",2002,3520,62.9,"Asia",145000000
+"Pakistan",2003,3620,63.1,"Asia",148000000
+"Pakistan",2004,3810,63.4,"Asia",151000000
+"Pakistan",2005,4010,62.6,"Asia",154000000
+"Pakistan",2006,4180,64,"Asia",157000000
+"Pakistan",2007,4290,64.4,"Asia",160000000
+"Pakistan",2008,4270,64.7,"Asia",164000000
+"Pakistan",2009,4300,65,"Asia",167000000
+"Pakistan",2010,4280,65.3,"Asia",171000000
+"Pakistan",2011,4310,65.8,"Asia",174000000
+"Pakistan",2012,4370,66.1,"Asia",178000000
+"Pakistan",2013,4460,66.5,"Asia",182000000
+"Pakistan",2014,4580,66.9,"Asia",186000000
+"Pakistan",2015,4700,67.3,"Asia",189000000
+"Pakistan",2016,4870,67.7,"Asia",193000000
+"Pakistan",2017,5020,67.8,"Asia",197000000
+"Pakistan",2018,5220,68,"Asia",201000000
+"Palau",2000,13600,NA,"Oceania",19200
+"Palau",2001,14000,NA,"Oceania",19400
+"Palau",2002,14800,NA,"Oceania",19600
+"Palau",2003,13800,NA,"Oceania",19700
+"Palau",2004,14700,NA,"Oceania",19800
+"Palau",2005,14800,NA,"Oceania",19900
+"Palau",2006,14300,NA,"Oceania",20000
+"Palau",2007,14200,NA,"Oceania",20100
+"Palau",2008,13400,NA,"Oceania",20200
+"Palau",2009,12100,NA,"Oceania",20300
+"Palau",2010,12400,NA,"Oceania",20500
+"Palau",2011,13000,NA,"Oceania",20600
+"Palau",2012,13300,NA,"Oceania",20800
+"Palau",2013,12800,NA,"Oceania",20900
+"Palau",2014,13300,NA,"Oceania",21100
+"Palau",2015,14400,NA,"Oceania",21300
+"Palau",2016,14300,NA,"Oceania",21500
+"Palau",2017,14800,NA,"Oceania",21700
+"Palau",2018,15300,NA,"Oceania",22000
+"Palestine",2000,2260,71.4,"Asia",3220000
+"Palestine",2001,2000,71.7,"Asia",3310000
+"Palestine",2002,1700,71.4,"Asia",3380000
+"Palestine",2003,1890,71.3,"Asia",3440000
+"Palestine",2004,2030,71.5,"Asia",3500000
+"Palestine",2005,2200,71.9,"Asia",3580000
+"Palestine",2006,2060,71.9,"Asia",3660000
+"Palestine",2007,2140,72,"Asia",3750000
+"Palestine",2008,2200,72.1,"Asia",3850000
+"Palestine",2009,2330,71.9,"Asia",3960000
+"Palestine",2010,2440,72.3,"Asia",4070000
+"Palestine",2011,2670,72.1,"Asia",4180000
+"Palestine",2012,2750,72.1,"Asia",4290000
+"Palestine",2013,2730,72.1,"Asia",4410000
+"Palestine",2014,2640,70.7,"Asia",4540000
+"Palestine",2015,2650,71.8,"Asia",4660000
+"Palestine",2016,2690,71.8,"Asia",4790000
+"Palestine",2017,2700,72,"Asia",4920000
+"Palestine",2018,2700,72.2,"Asia",5050000
+"Panama",2000,10600,76.9,"Americas",3030000
+"Panama",2001,10400,77.1,"Americas",3090000
+"Panama",2002,10500,77.2,"Americas",3150000
+"Panama",2003,10700,77.3,"Americas",3210000
+"Panama",2004,11300,77.4,"Americas",3270000
+"Panama",2005,11900,77.5,"Americas",3330000
+"Panama",2006,12700,77.5,"Americas",3390000
+"Panama",2007,13900,77.6,"Americas",3450000
+"Panama",2008,14900,77.6,"Americas",3520000
+"Panama",2009,14800,77.7,"Americas",3580000
+"Panama",2010,15400,77.8,"Americas",3640000
+"Panama",2011,16900,77.9,"Americas",3710000
+"Panama",2012,18200,78,"Americas",3770000
+"Panama",2013,19100,78.2,"Americas",3840000
+"Panama",2014,19900,78.4,"Americas",3900000
+"Panama",2015,20700,78.7,"Americas",3970000
+"Panama",2016,21300,79,"Americas",4030000
+"Panama",2017,22300,79.2,"Americas",4100000
+"Panama",2018,23400,79.4,"Americas",4160000
+"Papua New Guinea",2000,1790,57.6,"Oceania",5570000
+"Papua New Guinea",2001,1740,57.6,"Oceania",5720000
+"Papua New Guinea",2002,1700,57.6,"Oceania",5860000
+"Papua New Guinea",2003,1690,57.6,"Oceania",6010000
+"Papua New Guinea",2004,1700,57.6,"Oceania",6160000
+"Papua New Guinea",2005,1760,57.6,"Oceania",6310000
+"Papua New Guinea",2006,1760,57.8,"Oceania",6470000
+"Papua New Guinea",2007,1840,57.9,"Oceania",6630000
+"Papua New Guinea",2008,1910,58.2,"Oceania",6790000
+"Papua New Guinea",2009,1980,58.4,"Oceania",6950000
+"Papua New Guinea",2010,2090,58.7,"Oceania",7110000
+"Papua New Guinea",2011,2260,59,"Oceania",7270000
+"Papua New Guinea",2012,2390,59.3,"Oceania",7430000
+"Papua New Guinea",2013,2470,59.8,"Oceania",7590000
+"Papua New Guinea",2014,2620,60.1,"Oceania",7760000
+"Papua New Guinea",2015,2750,60.5,"Oceania",7920000
+"Papua New Guinea",2016,2760,60.8,"Oceania",8080000
+"Papua New Guinea",2017,2780,61,"Oceania",8250000
+"Papua New Guinea",2018,2800,61.1,"Oceania",8420000
+"Paraguay",2000,6090,74.4,"Americas",5300000
+"Paraguay",2001,5920,74.3,"Americas",5410000
+"Paraguay",2002,5810,74.3,"Americas",5510000
+"Paraguay",2003,5950,74.2,"Americas",5610000
+"Paraguay",2004,6090,74,"Americas",5700000
+"Paraguay",2005,6120,74.1,"Americas",5800000
+"Paraguay",2006,6320,74.1,"Americas",5880000
+"Paraguay",2007,6570,74.1,"Americas",5970000
+"Paraguay",2008,6890,74.1,"Americas",6050000
+"Paraguay",2009,6530,74,"Americas",6130000
+"Paraguay",2010,7290,74.1,"Americas",6210000
+"Paraguay",2011,7510,74.1,"Americas",6290000
+"Paraguay",2012,7310,74.1,"Americas",6380000
+"Paraguay",2013,8230,74.2,"Americas",6470000
+"Paraguay",2014,8500,74.2,"Americas",6550000
+"Paraguay",2015,8640,74.4,"Americas",6640000
+"Paraguay",2016,8880,74.6,"Americas",6730000
+"Paraguay",2017,9080,74.7,"Americas",6810000
+"Paraguay",2018,9280,74.8,"Americas",6900000
+"Peru",2000,6560,74.8,"Americas",25900000
+"Peru",2001,6520,75.4,"Americas",26300000
+"Peru",2002,6780,75.9,"Americas",26600000
+"Peru",2003,6980,76.3,"Americas",26900000
+"Peru",2004,7230,76.7,"Americas",27300000
+"Peru",2005,7600,77.1,"Americas",27600000
+"Peru",2006,8070,77.5,"Americas",27900000
+"Peru",2007,8650,77.7,"Americas",28300000
+"Peru",2008,9320,77.9,"Americas",28600000
+"Peru",2009,9310,77.9,"Americas",29000000
+"Peru",2010,9960,77.9,"Americas",29400000
+"Peru",2011,10400,78.1,"Americas",29800000
+"Peru",2012,10900,78.5,"Americas",30200000
+"Peru",2013,11400,78.9,"Americas",30600000
+"Peru",2014,11500,79.3,"Americas",31000000
+"Peru",2015,11800,79.5,"Americas",31400000
+"Peru",2016,12100,79.7,"Americas",31800000
+"Peru",2017,12400,80,"Americas",32200000
+"Peru",2018,12700,80.2,"Americas",32600000
+"Philippines",2000,4220,68.2,"Asia",78000000
+"Philippines",2001,4260,68.3,"Asia",79700000
+"Philippines",2002,4320,68.2,"Asia",81400000
+"Philippines",2003,4440,68.2,"Asia",83000000
+"Philippines",2004,4650,68.2,"Asia",84700000
+"Philippines",2005,4780,68.3,"Asia",86300000
+"Philippines",2006,4940,68.3,"Asia",87800000
+"Philippines",2007,5180,68.5,"Asia",89300000
+"Philippines",2008,5310,68.7,"Asia",90800000
+"Philippines",2009,5290,68.8,"Asia",92200000
+"Philippines",2010,5600,69,"Asia",93700000
+"Philippines",2011,5710,69.2,"Asia",95300000
+"Philippines",2012,5990,69.3,"Asia",96900000
+"Philippines",2013,6310,69.4,"Asia",98500000
+"Philippines",2014,6590,69.8,"Asia",100000000
+"Philippines",2015,6880,70.1,"Asia",102000000
+"Philippines",2016,7240,70.3,"Asia",103000000
+"Philippines",2017,7580,70.4,"Asia",105000000
+"Philippines",2018,7960,70.5,"Asia",107000000
+"Poland",2000,14700,73.8,"Europe",38600000
+"Poland",2001,14900,74.2,"Europe",38500000
+"Poland",2002,15200,74.6,"Europe",38500000
+"Poland",2003,15800,74.9,"Europe",38400000
+"Poland",2004,16600,75,"Europe",38400000
+"Poland",2005,17200,75.2,"Europe",38400000
+"Poland",2006,18300,75.3,"Europe",38300000
+"Poland",2007,19600,75.4,"Europe",38300000
+"Poland",2008,20400,75.6,"Europe",38300000
+"Poland",2009,21000,75.8,"Europe",38300000
+"Poland",2010,21800,76.3,"Europe",38300000
+"Poland",2011,22900,76.5,"Europe",38300000
+"Poland",2012,23200,76.7,"Europe",38300000
+"Poland",2013,23600,77,"Europe",38300000
+"Poland",2014,24300,77.5,"Europe",38300000
+"Poland",2015,25300,77.7,"Europe",38300000
+"Poland",2016,26000,77.9,"Europe",38200000
+"Poland",2017,26900,78,"Europe",38200000
+"Poland",2018,27700,78.2,"Europe",38100000
+"Portugal",2000,26000,76.7,"Europe",10400000
+"Portugal",2001,26300,77,"Europe",10400000
+"Portugal",2002,26400,77.3,"Europe",10400000
+"Portugal",2003,26000,77.6,"Europe",10500000
+"Portugal",2004,26400,78,"Europe",10500000
+"Portugal",2005,26600,78.3,"Europe",10600000
+"Portugal",2006,27000,78.8,"Europe",10600000
+"Portugal",2007,27600,79,"Europe",10600000
+"Portugal",2008,27600,79.3,"Europe",10700000
+"Portugal",2009,26700,79.6,"Europe",10700000
+"Portugal",2010,27200,79.8,"Europe",10700000
+"Portugal",2011,26800,80.1,"Europe",10600000
+"Portugal",2012,25800,80.3,"Europe",10600000
+"Portugal",2013,25700,80.5,"Europe",10500000
+"Portugal",2014,26000,80.7,"Europe",10500000
+"Portugal",2015,26500,80.8,"Europe",10400000
+"Portugal",2016,27000,80.9,"Europe",10400000
+"Portugal",2017,27500,81.1,"Europe",10300000
+"Portugal",2018,27900,81.3,"Europe",10300000
+"Qatar",2000,108000,75.3,"Asia",592000
+"Qatar",2001,108000,75.6,"Asia",617000
+"Qatar",2002,111000,75.7,"Asia",646000
+"Qatar",2003,108000,76,"Asia",689000
+"Qatar",2004,116000,76.4,"Asia",759000
+"Qatar",2005,110000,76.9,"Asia",865000
+"Qatar",2006,119000,77.4,"Asia",1010000
+"Qatar",2007,119000,77.9,"Asia",1190000
+"Qatar",2008,120000,78.4,"Asia",1390000
+"Qatar",2009,117000,78.9,"Asia",1590000
+"Qatar",2010,125000,79.5,"Asia",1780000
+"Qatar",2011,129000,80,"Asia",1950000
+"Qatar",2012,125000,80.2,"Asia",2110000
+"Qatar",2013,123000,80.5,"Asia",2250000
+"Qatar",2014,121000,80.5,"Asia",2370000
+"Qatar",2015,120000,80.5,"Asia",2480000
+"Qatar",2016,118000,80.4,"Asia",2570000
+"Qatar",2017,120000,80.6,"Asia",2640000
+"Qatar",2018,121000,80.7,"Asia",2690000
+"Romania",2000,10500,71.2,"Europe",22100000
+"Romania",2001,11300,71.1,"Europe",22000000
+"Romania",2002,12100,71.3,"Europe",21900000
+"Romania",2003,12800,71.6,"Europe",21700000
+"Romania",2004,14000,72.1,"Europe",21600000
+"Romania",2005,14700,72.4,"Europe",21400000
+"Romania",2006,15900,72.8,"Europe",21200000
+"Romania",2007,17300,73.2,"Europe",21000000
+"Romania",2008,19100,73.2,"Europe",20800000
+"Romania",2009,17900,73.3,"Europe",20600000
+"Romania",2010,17800,73.7,"Europe",20400000
+"Romania",2011,18100,74.5,"Europe",20300000
+"Romania",2012,18300,74.6,"Europe",20200000
+"Romania",2013,19000,74.8,"Europe",20100000
+"Romania",2014,19700,74.8,"Europe",20000000
+"Romania",2015,20500,75.1,"Europe",19900000
+"Romania",2016,21600,75.3,"Europe",19800000
+"Romania",2017,22500,75.4,"Europe",19700000
+"Romania",2018,23400,75.5,"Europe",19600000
+"Russia",2000,14100,65.6,"Europe",146000000
+"Russia",2001,14800,65.6,"Europe",146000000
+"Russia",2002,15600,65.5,"Europe",145000000
+"Russia",2003,16800,65.5,"Europe",145000000
+"Russia",2004,18100,65.8,"Europe",144000000
+"Russia",2005,19300,65.9,"Europe",144000000
+"Russia",2006,21000,67,"Europe",143000000
+"Russia",2007,22800,67.7,"Europe",143000000
+"Russia",2008,24000,68,"Europe",143000000
+"Russia",2009,22100,68.9,"Europe",143000000
+"Russia",2010,23100,69.2,"Europe",143000000
+"Russia",2011,24100,69.8,"Europe",143000000
+"Russia",2012,24900,70.4,"Europe",143000000
+"Russia",2013,25100,70.7,"Europe",144000000
+"Russia",2014,24900,70.8,"Europe",144000000
+"Russia",2015,24100,70.8,"Europe",144000000
+"Russia",2016,24000,70.8,"Europe",144000000
+"Russia",2017,24400,71,"Europe",144000000
+"Russia",2018,24800,71.1,"Europe",144000000
+"Rwanda",2000,785,49.4,"Africa",8030000
+"Rwanda",2001,821,50.6,"Africa",8330000
+"Rwanda",2002,907,52.5,"Africa",8540000
+"Rwanda",2003,912,54.1,"Africa",8680000
+"Rwanda",2004,964,55.9,"Africa",8820000
+"Rwanda",2005,1030,57.7,"Africa",8990000
+"Rwanda",2006,1100,59.5,"Africa",9210000
+"Rwanda",2007,1160,61.1,"Africa",9450000
+"Rwanda",2008,1250,62.5,"Africa",9710000
+"Rwanda",2009,1300,63.3,"Africa",9980000
+"Rwanda",2010,1350,64.6,"Africa",10200000
+"Rwanda",2011,1420,65.3,"Africa",10500000
+"Rwanda",2012,1510,66,"Africa",10800000
+"Rwanda",2013,1540,66.5,"Africa",11100000
+"Rwanda",2014,1620,66.9,"Africa",11300000
+"Rwanda",2015,1720,67.3,"Africa",11600000
+"Rwanda",2016,1770,67.7,"Africa",11900000
+"Rwanda",2017,1850,68,"Africa",12200000
+"Rwanda",2018,1930,68.3,"Africa",12500000
+"Samoa",2000,4330,70.5,"Oceania",175000
+"Samoa",2001,4600,70.6,"Oceania",176000
+"Samoa",2002,4770,70.8,"Oceania",177000
+"Samoa",2003,4960,70.9,"Oceania",178000
+"Samoa",2004,5160,71,"Oceania",179000
+"Samoa",2005,5340,71.2,"Oceania",180000
+"Samoa",2006,5410,71.3,"Oceania",181000
+"Samoa",2007,5710,71.3,"Oceania",182000
+"Samoa",2008,5730,71.4,"Oceania",184000
+"Samoa",2009,5410,69.4,"Oceania",185000
+"Samoa",2010,5400,71.5,"Oceania",186000
+"Samoa",2011,5670,71.5,"Oceania",188000
+"Samoa",2012,5640,71.4,"Oceania",189000
+"Samoa",2013,5490,71.6,"Oceania",191000
+"Samoa",2014,5510,71.6,"Oceania",192000
+"Samoa",2015,5560,71.7,"Oceania",194000
+"Samoa",2016,5880,72,"Oceania",195000
+"Samoa",2017,5890,72.2,"Oceania",196000
+"Samoa",2018,5950,72.4,"Oceania",198000
+"San Marino",2000,51400,NA,"Europe",27400
+"San Marino",2001,53100,NA,"Europe",27800
+"San Marino",2002,52000,NA,"Europe",28100
+"San Marino",2003,52600,NA,"Europe",28500
+"San Marino",2004,53700,NA,"Europe",28900
+"San Marino",2005,53900,NA,"Europe",29200
+"San Marino",2006,55200,NA,"Europe",29600
+"San Marino",2007,56600,NA,"Europe",30000
+"San Marino",2008,54400,NA,"Europe",30400
+"San Marino",2009,47200,NA,"Europe",30700
+"San Marino",2010,44500,NA,"Europe",31100
+"San Marino",2011,43100,NA,"Europe",31500
+"San Marino",2012,41100,NA,"Europe",31900
+"San Marino",2013,39200,NA,"Europe",32300
+"San Marino",2014,39100,NA,"Europe",32700
+"San Marino",2015,39200,NA,"Europe",33000
+"San Marino",2016,39400,NA,"Europe",33200
+"San Marino",2017,39600,NA,"Europe",33400
+"San Marino",2018,39800,NA,"Europe",33600
+"Sao Tome and Principe",2000,2000,64.6,"Africa",139000
+"Sao Tome and Principe",2001,2020,65,"Africa",142000
+"Sao Tome and Principe",2002,2020,65.3,"Africa",145000
+"Sao Tome and Principe",2003,2100,65.8,"Africa",148000
+"Sao Tome and Principe",2004,2130,66,"Africa",152000
+"Sao Tome and Principe",2005,2230,66.1,"Africa",156000
+"Sao Tome and Principe",2006,2370,66.8,"Africa",159000
+"Sao Tome and Principe",2007,2400,67.3,"Africa",163000
+"Sao Tome and Principe",2008,2530,67.7,"Africa",167000
+"Sao Tome and Principe",2009,2530,68.4,"Africa",171000
+"Sao Tome and Principe",2010,2640,68.9,"Africa",175000
+"Sao Tome and Principe",2011,2700,69.3,"Africa",179000
+"Sao Tome and Principe",2012,2720,69.3,"Africa",183000
+"Sao Tome and Principe",2013,2790,69.7,"Africa",187000
+"Sao Tome and Principe",2014,2890,70,"Africa",191000
+"Sao Tome and Principe",2015,2940,70.3,"Africa",196000
+"Sao Tome and Principe",2016,2990,70.6,"Africa",200000
+"Sao Tome and Principe",2017,3090,70.7,"Africa",204000
+"Sao Tome and Principe",2018,3190,70.9,"Africa",209000
+"Saudi Arabia",2000,43100,73,"Asia",20800000
+"Saudi Arabia",2001,41500,73.1,"Asia",21300000
+"Saudi Arabia",2002,39200,73.3,"Asia",21900000
+"Saudi Arabia",2003,42300,73.5,"Asia",22600000
+"Saudi Arabia",2004,44400,73.6,"Asia",23200000
+"Saudi Arabia",2005,45500,73.9,"Asia",23900000
+"Saudi Arabia",2006,45500,74.1,"Asia",24600000
+"Saudi Arabia",2007,45100,74.4,"Asia",25300000
+"Saudi Arabia",2008,46700,74.7,"Asia",25900000
+"Saudi Arabia",2009,44500,74.9,"Asia",26700000
+"Saudi Arabia",2010,45400,75.1,"Asia",27400000
+"Saudi Arabia",2011,48500,75.3,"Asia",28200000
+"Saudi Arabia",2012,49700,75.6,"Asia",29100000
+"Saudi Arabia",2013,49500,76.1,"Asia",29900000
+"Saudi Arabia",2014,50000,76.6,"Asia",30800000
+"Saudi Arabia",2015,50700,76.8,"Asia",31600000
+"Saudi Arabia",2016,50500,77.3,"Asia",32300000
+"Saudi Arabia",2017,50100,77.5,"Asia",32900000
+"Saudi Arabia",2018,50100,77.6,"Asia",33600000
+"Senegal",2000,1910,59.6,"Africa",9880000
+"Senegal",2001,1950,60,"Africa",10100000
+"Senegal",2002,1910,60.2,"Africa",10400000
+"Senegal",2003,1980,61,"Africa",10700000
+"Senegal",2004,2050,61.4,"Africa",11000000
+"Senegal",2005,2100,61.7,"Africa",11300000
+"Senegal",2006,2100,62.1,"Africa",11600000
+"Senegal",2007,2140,62.7,"Africa",11900000
+"Senegal",2008,2160,63.2,"Africa",12200000
+"Senegal",2009,2150,63.6,"Africa",12600000
+"Senegal",2010,2180,64,"Africa",12900000
+"Senegal",2011,2160,64.4,"Africa",13300000
+"Senegal",2012,2180,64.8,"Africa",13700000
+"Senegal",2013,2190,65.1,"Africa",14100000
+"Senegal",2014,2220,65.5,"Africa",14500000
+"Senegal",2015,2300,65.9,"Africa",15000000
+"Senegal",2016,2380,66.2,"Africa",15400000
+"Senegal",2017,2470,66.5,"Africa",15900000
+"Senegal",2018,2570,66.8,"Africa",16300000
+"Serbia",2000,7990,72.2,"Europe",9490000
+"Serbia",2001,8400,72.4,"Europe",9410000
+"Serbia",2002,9000,72.5,"Europe",9350000
+"Serbia",2003,9420,72.7,"Europe",9300000
+"Serbia",2004,10300,72.9,"Europe",9260000
+"Serbia",2005,10900,73.2,"Europe",9210000
+"Serbia",2006,11500,73.5,"Europe",9170000
+"Serbia",2007,12200,73.9,"Europe",9140000
+"Serbia",2008,12900,74.2,"Europe",9100000
+"Serbia",2009,12600,74.5,"Europe",9060000
+"Serbia",2010,12700,74.7,"Europe",9030000
+"Serbia",2011,13000,74.8,"Europe",8990000
+"Serbia",2012,12900,75.1,"Europe",8960000
+"Serbia",2013,13300,75.3,"Europe",8920000
+"Serbia",2014,13100,75.5,"Europe",8880000
+"Serbia",2015,13300,75.7,"Europe",8850000
+"Serbia",2016,13700,75.9,"Europe",8820000
+"Serbia",2017,14300,76,"Europe",8790000
+"Serbia",2018,14800,76.2,"Europe",8760000
+"Seychelles",2000,18500,71.2,"Africa",81200
+"Seychelles",2001,18000,71.3,"Africa",82600
+"Seychelles",2002,17700,71.5,"Africa",84200
+"Seychelles",2003,16800,71.6,"Africa",85900
+"Seychelles",2004,16400,71.8,"Africa",87500
+"Seychelles",2005,17800,72.1,"Africa",88700
+"Seychelles",2006,19100,72.4,"Africa",89700
+"Seychelles",2007,21000,72.7,"Africa",90300
+"Seychelles",2008,20100,73.1,"Africa",90700
+"Seychelles",2009,19800,73.2,"Africa",91000
+"Seychelles",2010,20400,73.4,"Africa",91400
+"Seychelles",2011,22600,73.5,"Africa",91800
+"Seychelles",2012,23800,73.6,"Africa",92300
+"Seychelles",2013,24800,73.7,"Africa",92800
+"Seychelles",2014,25200,73.6,"Africa",93300
+"Seychelles",2015,25500,73.7,"Africa",93700
+"Seychelles",2016,26300,73.8,"Africa",94200
+"Seychelles",2017,26900,74,"Africa",94700
+"Seychelles",2018,27500,74.2,"Africa",95200
+"Sierra Leone",2000,913,50.9,"Africa",4560000
+"Sierra Leone",2001,816,51.3,"Africa",4740000
+"Sierra Leone",2002,985,51.4,"Africa",4960000
+"Sierra Leone",2003,1030,51.7,"Africa",5200000
+"Sierra Leone",2004,1050,52.1,"Africa",5440000
+"Sierra Leone",2005,1050,52.5,"Africa",5660000
+"Sierra Leone",2006,1070,52.9,"Africa",5850000
+"Sierra Leone",2007,1130,53.2,"Africa",6020000
+"Sierra Leone",2008,1160,53.8,"Africa",6170000
+"Sierra Leone",2009,1180,54.3,"Africa",6310000
+"Sierra Leone",2010,1220,55,"Africa",6460000
+"Sierra Leone",2011,1250,55.7,"Africa",6610000
+"Sierra Leone",2012,1400,56.4,"Africa",6770000
+"Sierra Leone",2013,1660,57.4,"Africa",6920000
+"Sierra Leone",2014,1690,53.9,"Africa",7080000
+"Sierra Leone",2015,1320,57.6,"Africa",7240000
+"Sierra Leone",2016,1370,59.1,"Africa",7400000
+"Sierra Leone",2017,1430,59.6,"Africa",7560000
+"Sierra Leone",2018,1490,60,"Africa",7720000
+"Singapore",2000,51700,79.4,"Asia",3910000
+"Singapore",2001,49800,79.8,"Asia",4020000
+"Singapore",2002,51500,80.1,"Asia",4130000
+"Singapore",2003,54600,80.4,"Asia",4250000
+"Singapore",2004,59000,80.7,"Asia",4370000
+"Singapore",2005,62000,80.9,"Asia",4490000
+"Singapore",2006,65400,81.1,"Asia",4610000
+"Singapore",2007,68400,81.6,"Asia",4730000
+"Singapore",2008,66000,82.1,"Asia",4850000
+"Singapore",2009,63700,82.4,"Asia",4970000
+"Singapore",2010,72100,82.7,"Asia",5070000
+"Singapore",2011,75000,82.9,"Asia",5180000
+"Singapore",2012,76000,83.2,"Asia",5270000
+"Singapore",2013,78500,83.2,"Asia",5360000
+"Singapore",2014,80300,83.4,"Asia",5450000
+"Singapore",2015,80900,83.6,"Asia",5540000
+"Singapore",2016,81400,83.7,"Asia",5620000
+"Singapore",2017,82600,83.8,"Asia",5710000
+"Singapore",2018,83900,84,"Asia",5790000
+"Slovak Republic",2000,15600,73.3,"Europe",5400000
+"Slovak Republic",2001,16200,73.5,"Europe",5400000
+"Slovak Republic",2002,16900,73.8,"Europe",5400000
+"Slovak Republic",2003,17800,73.9,"Europe",5400000
+"Slovak Republic",2004,18800,74.1,"Europe",5400000
+"Slovak Republic",2005,20000,74.2,"Europe",5400000
+"Slovak Republic",2006,21700,74.4,"Europe",5400000
+"Slovak Republic",2007,24100,74.5,"Europe",5400000
+"Slovak Republic",2008,25400,74.9,"Europe",5400000
+"Slovak Republic",2009,24000,75.1,"Europe",5400000
+"Slovak Republic",2010,25200,75.5,"Europe",5400000
+"Slovak Republic",2011,25800,75.9,"Europe",5410000
+"Slovak Republic",2012,26200,76.2,"Europe",5420000
+"Slovak Republic",2013,26600,76.5,"Europe",5430000
+"Slovak Republic",2014,27200,76.7,"Europe",5430000
+"Slovak Republic",2015,28300,76.8,"Europe",5440000
+"Slovak Republic",2016,29200,76.9,"Europe",5440000
+"Slovak Republic",2017,30200,77,"Europe",5450000
+"Slovak Republic",2018,31400,77.2,"Europe",5450000
+"Slovenia",2000,22700,75.9,"Europe",1990000
+"Slovenia",2001,23400,76.2,"Europe",1990000
+"Slovenia",2002,24200,76.5,"Europe",1990000
+"Slovenia",2003,24900,76.7,"Europe",1990000
+"Slovenia",2004,26000,77.1,"Europe",1990000
+"Slovenia",2005,27000,77.5,"Europe",2000000
+"Slovenia",2006,28400,77.9,"Europe",2000000
+"Slovenia",2007,30200,78.2,"Europe",2010000
+"Slovenia",2008,31100,78.7,"Europe",2020000
+"Slovenia",2009,28500,79.1,"Europe",2040000
+"Slovenia",2010,28700,79.5,"Europe",2050000
+"Slovenia",2011,28800,79.8,"Europe",2050000
+"Slovenia",2012,28000,80,"Europe",2060000
+"Slovenia",2013,27600,80.3,"Europe",2070000
+"Slovenia",2014,28500,80.7,"Europe",2070000
+"Slovenia",2015,29100,80.7,"Europe",2070000
+"Slovenia",2016,29800,80.8,"Europe",2080000
+"Slovenia",2017,30400,81,"Europe",2080000
+"Slovenia",2018,30900,81.1,"Europe",2080000
+"Solomon Islands",2000,1730,61.5,"Oceania",413000
+"Solomon Islands",2001,1550,61.3,"Oceania",424000
+"Solomon Islands",2002,1470,61.2,"Oceania",435000
+"Solomon Islands",2003,1520,61.1,"Oceania",447000
+"Solomon Islands",2004,1560,61,"Oceania",458000
+"Solomon Islands",2005,1600,61,"Oceania",470000
+"Solomon Islands",2006,1670,61.1,"Oceania",481000
+"Solomon Islands",2007,1750,61,"Oceania",493000
+"Solomon Islands",2008,1830,61.4,"Oceania",504000
+"Solomon Islands",2009,1710,61.4,"Oceania",516000
+"Solomon Islands",2010,1780,61.7,"Oceania",528000
+"Solomon Islands",2011,1970,62,"Oceania",540000
+"Solomon Islands",2012,2020,62.2,"Oceania",552000
+"Solomon Islands",2013,2030,62.4,"Oceania",564000
+"Solomon Islands",2014,2020,62.4,"Oceania",576000
+"Solomon Islands",2015,2050,62.8,"Oceania",587000
+"Solomon Islands",2016,2070,63.1,"Oceania",599000
+"Solomon Islands",2017,2090,63.3,"Oceania",611000
+"Solomon Islands",2018,2110,63.6,"Oceania",623000
+"Somalia",2000,603,52.1,"Africa",9010000
+"Somalia",2001,603,52.5,"Africa",9290000
+"Somalia",2002,607,52.7,"Africa",9560000
+"Somalia",2003,611,53.1,"Africa",9840000
+"Somalia",2004,614,53.4,"Africa",10100000
+"Somalia",2005,616,53.9,"Africa",10400000
+"Somalia",2006,615,54,"Africa",10700000
+"Somalia",2007,615,54.1,"Africa",11000000
+"Somalia",2008,615,54.8,"Africa",11400000
+"Somalia",2009,615,55,"Africa",11700000
+"Somalia",2010,614,53.1,"Africa",12100000
+"Somalia",2011,614,53.4,"Africa",12400000
+"Somalia",2012,616,55.9,"Africa",12800000
+"Somalia",2013,619,56.6,"Africa",13100000
+"Somalia",2014,621,56.9,"Africa",13500000
+"Somalia",2015,623,57.3,"Africa",13900000
+"Somalia",2016,625,57.2,"Africa",14300000
+"Somalia",2017,627,57.6,"Africa",14700000
+"Somalia",2018,629,58,"Africa",15200000
+"South Africa",2000,9720,55.4,"Africa",45700000
+"South Africa",2001,9890,54.3,"Africa",46400000
+"South Africa",2002,10100,53.1,"Africa",47000000
+"South Africa",2003,10300,52.1,"Africa",47600000
+"South Africa",2004,10600,51.4,"Africa",48200000
+"South Africa",2005,11100,51.1,"Africa",48800000
+"South Africa",2006,11500,51,"Africa",49400000
+"South Africa",2007,12000,51.4,"Africa",49900000
+"South Africa",2008,12200,52.1,"Africa",50400000
+"South Africa",2009,11800,53.1,"Africa",51000000
+"South Africa",2010,12000,54.3,"Africa",51600000
+"South Africa",2011,12200,55.8,"Africa",52300000
+"South Africa",2012,12300,57.5,"Africa",53000000
+"South Africa",2013,12400,59.2,"Africa",53800000
+"South Africa",2014,12500,60.6,"Africa",54500000
+"South Africa",2015,12400,61.8,"Africa",55300000
+"South Africa",2016,12300,62.4,"Africa",56000000
+"South Africa",2017,12300,63,"Africa",56700000
+"South Africa",2018,12300,63.5,"Africa",57400000
+"South Korea",2000,20800,76,"Asia",47400000
+"South Korea",2000,20800,76,"Asia",47400000
+"South Korea",2001,21500,76.3,"Asia",47700000
+"South Korea",2001,21500,76.3,"Asia",47700000
+"South Korea",2002,23000,76.7,"Asia",48000000
+"South Korea",2002,23000,76.7,"Asia",48000000
+"South Korea",2003,23500,77.3,"Asia",48300000
+"South Korea",2003,23500,77.3,"Asia",48300000
+"South Korea",2004,24600,77.8,"Asia",48500000
+"South Korea",2004,24600,77.8,"Asia",48500000
+"South Korea",2005,25500,78.3,"Asia",48700000
+"South Korea",2005,25500,78.3,"Asia",48700000
+"South Korea",2006,26700,78.8,"Asia",48900000
+"South Korea",2006,26700,78.8,"Asia",48900000
+"South Korea",2007,28000,79.2,"Asia",49100000
+"South Korea",2007,28000,79.2,"Asia",49100000
+"South Korea",2008,28600,79.5,"Asia",49200000
+"South Korea",2008,28600,79.5,"Asia",49200000
+"South Korea",2009,28600,79.9,"Asia",49400000
+"South Korea",2009,28600,79.9,"Asia",49400000
+"South Korea",2010,30400,80.1,"Asia",49600000
+"South Korea",2010,30400,80.1,"Asia",49600000
+"South Korea",2011,31200,80.4,"Asia",49700000
+"South Korea",2011,31200,80.4,"Asia",49700000
+"South Korea",2012,31800,80.6,"Asia",50000000
+"South Korea",2012,31800,80.6,"Asia",50000000
+"South Korea",2013,32500,80.9,"Asia",50200000
+"South Korea",2013,32500,80.9,"Asia",50200000
+"South Korea",2014,33400,80.9,"Asia",50400000
+"South Korea",2014,33400,80.9,"Asia",50400000
+"South Korea",2015,34200,80.9,"Asia",50600000
+"South Korea",2015,34200,80.9,"Asia",50600000
+"South Korea",2016,35000,80.9,"Asia",50800000
+"South Korea",2016,35000,80.9,"Asia",50800000
+"South Korea",2017,35800,81.2,"Asia",51000000
+"South Korea",2017,35800,81.2,"Asia",51000000
+"South Korea",2018,36800,81.3,"Asia",51200000
+"South Korea",2018,36800,81.3,"Asia",51200000
+"South Sudan",2000,2640,54.5,"Africa",6700000
+"South Sudan",2001,2730,54.6,"Africa",6970000
+"South Sudan",2002,2810,55,"Africa",7240000
+"South Sudan",2003,2930,56,"Africa",7500000
+"South Sudan",2004,3000,56,"Africa",7790000
+"South Sudan",2005,3170,56.6,"Africa",8110000
+"South Sudan",2006,3400,56.8,"Africa",8470000
+"South Sudan",2007,3700,57.1,"Africa",8860000
+"South Sudan",2008,3720,57.5,"Africa",9260000
+"South Sudan",2009,3740,57.5,"Africa",9670000
+"South Sudan",2010,3790,58.1,"Africa",10100000
+"South Sudan",2011,3480,58.1,"Africa",10400000
+"South Sudan",2012,1810,58.4,"Africa",10800000
+"South Sudan",2013,1990,58.6,"Africa",11200000
+"South Sudan",2014,1990,58.7,"Africa",11500000
+"South Sudan",2015,1810,58.9,"Africa",11900000
+"South Sudan",2016,1860,59.7,"Africa",12200000
+"South Sudan",2017,1850,60.2,"Africa",12600000
+"South Sudan",2018,1820,60.7,"Africa",12900000
+"Spain",2000,30000,79.4,"Europe",40900000
+"Spain",2001,31000,79.7,"Europe",41400000
+"Spain",2002,31400,79.8,"Europe",42000000
+"Spain",2003,31800,80,"Europe",42700000
+"Spain",2004,32300,80.2,"Europe",43400000
+"Spain",2005,32900,80.5,"Europe",44000000
+"Spain",2006,33700,80.8,"Europe",44700000
+"Spain",2007,34300,81,"Europe",45400000
+"Spain",2008,34200,81.3,"Europe",46000000
+"Spain",2009,32700,81.7,"Europe",46500000
+"Spain",2010,32500,81.9,"Europe",46800000
+"Spain",2011,32100,82.2,"Europe",46900000
+"Spain",2012,31100,82.3,"Europe",46900000
+"Spain",2013,30700,82.6,"Europe",46700000
+"Spain",2014,31200,82.8,"Europe",46500000
+"Spain",2015,32200,82.9,"Europe",46400000
+"Spain",2016,33300,82.9,"Europe",46300000
+"Spain",2017,34000,83.1,"Europe",46400000
+"Spain",2018,34700,83.2,"Europe",46400000
+"Sri Lanka",2000,5580,72.8,"Asia",18800000
+"Sri Lanka",2001,5450,73.3,"Asia",18900000
+"Sri Lanka",2002,5630,73.5,"Asia",19100000
+"Sri Lanka",2003,5920,74.1,"Asia",19200000
+"Sri Lanka",2004,6190,69.6,"Asia",19400000
+"Sri Lanka",2005,6530,74.1,"Asia",19500000
+"Sri Lanka",2006,6970,74.4,"Asia",19700000
+"Sri Lanka",2007,7390,74.7,"Asia",19800000
+"Sri Lanka",2008,7770,74,"Asia",19900000
+"Sri Lanka",2009,7990,73.9,"Asia",20100000
+"Sri Lanka",2010,8560,74.4,"Asia",20200000
+"Sri Lanka",2011,9210,76,"Asia",20300000
+"Sri Lanka",2012,9980,76.3,"Asia",20400000
+"Sri Lanka",2013,10200,76.6,"Asia",20500000
+"Sri Lanka",2014,10700,76.9,"Asia",20600000
+"Sri Lanka",2015,11100,77.2,"Asia",20700000
+"Sri Lanka",2016,11400,77.4,"Asia",20800000
+"Sri Lanka",2017,11900,77.6,"Asia",20900000
+"Sri Lanka",2018,12400,77.8,"Asia",21000000
+"St. Kitts and Nevis",2000,20200,NA,NA,45400
+"St. Kitts and Nevis",2001,21000,NA,NA,46000
+"St. Kitts and Nevis",2002,21200,NA,NA,46600
+"St. Kitts and Nevis",2003,20200,NA,NA,47300
+"St. Kitts and Nevis",2004,20600,NA,NA,48000
+"St. Kitts and Nevis",2005,22100,NA,NA,48600
+"St. Kitts and Nevis",2006,22300,NA,NA,49200
+"St. Kitts and Nevis",2007,22000,NA,NA,49800
+"St. Kitts and Nevis",2008,23100,NA,NA,50300
+"St. Kitts and Nevis",2009,22100,NA,NA,50900
+"St. Kitts and Nevis",2010,21400,NA,NA,51400
+"St. Kitts and Nevis",2011,21700,NA,NA,52000
+"St. Kitts and Nevis",2012,21300,NA,NA,52600
+"St. Kitts and Nevis",2013,22400,NA,NA,53200
+"St. Kitts and Nevis",2014,23500,NA,NA,53700
+"St. Kitts and Nevis",2015,24100,NA,NA,54300
+"St. Kitts and Nevis",2016,24700,NA,NA,54800
+"St. Kitts and Nevis",2017,25300,NA,NA,55300
+"St. Kitts and Nevis",2018,25700,NA,NA,55900
+"St. Lucia",2000,10000,74.2,"Americas",157000
+"St. Lucia",2001,9540,74.1,"Americas",158000
+"St. Lucia",2002,9490,74.1,"Americas",160000
+"St. Lucia",2003,9860,74,"Americas",161000
+"St. Lucia",2004,10500,73.9,"Americas",162000
+"St. Lucia",2005,10400,74.2,"Americas",164000
+"St. Lucia",2006,11000,74.5,"Americas",165000
+"St. Lucia",2007,11000,74.8,"Americas",167000
+"St. Lucia",2008,11300,75.2,"Americas",169000
+"St. Lucia",2009,11100,75.6,"Americas",171000
+"St. Lucia",2010,10800,75.5,"Americas",173000
+"St. Lucia",2011,10800,76,"Americas",174000
+"St. Lucia",2012,10600,76.1,"Americas",175000
+"St. Lucia",2013,10500,76.2,"Americas",176000
+"St. Lucia",2014,10500,76.1,"Americas",176000
+"St. Lucia",2015,10700,76.1,"Americas",177000
+"St. Lucia",2016,10700,76.2,"Americas",178000
+"St. Lucia",2017,10800,76.4,"Americas",179000
+"St. Lucia",2018,10900,76.6,"Americas",180000
+"St. Vincent and the Grenadines",2000,7560,70.2,"Americas",108000
+"St. Vincent and the Grenadines",2001,7680,70.5,"Americas",108000
+"St. Vincent and the Grenadines",2002,8150,70.5,"Americas",108000
+"St. Vincent and the Grenadines",2003,8760,70.9,"Americas",108000
+"St. Vincent and the Grenadines",2004,9110,71,"Americas",109000
+"St. Vincent and the Grenadines",2005,9320,71.2,"Americas",109000
+"St. Vincent and the Grenadines",2006,10000,71.3,"Americas",109000
+"St. Vincent and the Grenadines",2007,9850,71.4,"Americas",109000
+"St. Vincent and the Grenadines",2008,10500,71.6,"Americas",109000
+"St. Vincent and the Grenadines",2009,10300,71.7,"Americas",109000
+"St. Vincent and the Grenadines",2010,9920,71.6,"Americas",109000
+"St. Vincent and the Grenadines",2011,9870,71.7,"Americas",109000
+"St. Vincent and the Grenadines",2012,10000,71.6,"Americas",109000
+"St. Vincent and the Grenadines",2013,10200,71.3,"Americas",109000
+"St. Vincent and the Grenadines",2014,10300,71.5,"Americas",109000
+"St. Vincent and the Grenadines",2015,10500,71.6,"Americas",109000
+"St. Vincent and the Grenadines",2016,10800,71.8,"Americas",110000
+"St. Vincent and the Grenadines",2017,11100,71.9,"Americas",110000
+"St. Vincent and the Grenadines",2018,11400,72,"Americas",110000
+"Sudan",2000,2290,62.6,"Africa",27300000
+"Sudan",2001,2370,63.2,"Africa",27900000
+"Sudan",2002,2450,63.7,"Africa",28700000
+"Sudan",2003,2570,63.8,"Africa",29400000
+"Sudan",2004,2590,64.1,"Africa",30200000
+"Sudan",2005,2710,64.9,"Africa",30900000
+"Sudan",2006,2910,65.2,"Africa",31600000
+"Sudan",2007,3160,65.6,"Africa",32300000
+"Sudan",2008,3320,65.9,"Africa",33000000
+"Sudan",2009,3340,66.1,"Africa",33700000
+"Sudan",2010,3370,66.3,"Africa",34400000
+"Sudan",2011,3630,66.5,"Africa",35200000
+"Sudan",2012,4100,66.8,"Africa",36000000
+"Sudan",2013,4180,67,"Africa",36800000
+"Sudan",2014,4190,67.6,"Africa",37700000
+"Sudan",2015,4290,68,"Africa",38600000
+"Sudan",2016,4390,68.3,"Africa",39600000
+"Sudan",2017,4410,68.5,"Africa",40500000
+"Sudan",2018,4440,68.8,"Africa",41500000
+"Suriname",2000,9730,69.7,"Americas",472000
+"Suriname",2001,10100,69.4,"Americas",478000
+"Suriname",2002,10400,69.3,"Americas",483000
+"Suriname",2003,10900,69.3,"Americas",488000
+"Suriname",2004,11800,69.3,"Americas",494000
+"Suriname",2005,12200,69.5,"Americas",499000
+"Suriname",2006,12500,69.6,"Americas",504000
+"Suriname",2007,13000,69.7,"Americas",510000
+"Suriname",2008,13400,69.8,"Americas",515000
+"Suriname",2009,13700,70.2,"Americas",521000
+"Suriname",2010,14200,70.3,"Americas",526000
+"Suriname",2011,14900,70.5,"Americas",532000
+"Suriname",2012,15100,70.7,"Americas",537000
+"Suriname",2013,15400,70.8,"Americas",543000
+"Suriname",2014,15300,71,"Americas",548000
+"Suriname",2015,14800,71.2,"Americas",553000
+"Suriname",2016,13100,71.4,"Americas",558000
+"Suriname",2017,13000,71.5,"Americas",563000
+"Suriname",2018,13200,71.6,"Americas",568000
+"Swaziland",2000,5840,47.5,NA,1060000
+"Swaziland",2001,5840,45.5,NA,1070000
+"Swaziland",2002,6050,44.2,NA,1080000
+"Swaziland",2003,6250,43.3,NA,1090000
+"Swaziland",2004,6430,42.6,NA,1100000
+"Swaziland",2005,6750,42.3,NA,1110000
+"Swaziland",2006,7060,43,NA,1120000
+"Swaziland",2007,7250,43.8,NA,1140000
+"Swaziland",2008,7180,44.5,NA,1160000
+"Swaziland",2009,7160,45.6,NA,1180000
+"Swaziland",2010,7300,47,NA,1200000
+"Swaziland",2011,7320,48.9,NA,1230000
+"Swaziland",2012,7530,50.5,NA,1250000
+"Swaziland",2013,7900,52,NA,1270000
+"Swaziland",2014,8080,53.8,NA,1300000
+"Swaziland",2015,8050,56.4,NA,1320000
+"Swaziland",2016,7730,57.7,NA,1340000
+"Swaziland",2017,7660,58.2,NA,1370000
+"Swaziland",2018,7600,58.6,NA,1390000
+"Sweden",2000,36900,79.7,"Europe",8880000
+"Sweden",2001,37300,79.8,"Europe",8900000
+"Sweden",2002,38000,80,"Europe",8920000
+"Sweden",2003,38700,80.1,"Europe",8950000
+"Sweden",2004,40300,80.2,"Europe",8990000
+"Sweden",2005,41200,80.5,"Europe",9040000
+"Sweden",2006,42900,80.7,"Europe",9100000
+"Sweden",2007,44100,80.9,"Europe",9160000
+"Sweden",2008,43500,81.1,"Europe",9240000
+"Sweden",2009,40900,81.3,"Europe",9310000
+"Sweden",2010,42900,81.5,"Europe",9390000
+"Sweden",2011,43800,81.7,"Europe",9470000
+"Sweden",2012,43300,81.8,"Europe",9540000
+"Sweden",2013,43500,81.9,"Europe",9620000
+"Sweden",2014,44200,82.1,"Europe",9690000
+"Sweden",2015,45500,82.1,"Europe",9760000
+"Sweden",2016,46400,82,"Europe",9840000
+"Sweden",2017,47000,82.2,"Europe",9910000
+"Sweden",2018,47500,82.4,"Europe",9980000
+"Switzerland",2000,50300,79.9,"Europe",7170000
+"Switzerland",2001,50700,80.1,"Europe",7200000
+"Switzerland",2002,50400,80.3,"Europe",7240000
+"Switzerland",2003,50100,80.5,"Europe",7290000
+"Switzerland",2004,51100,80.9,"Europe",7350000
+"Switzerland",2005,52400,81.2,"Europe",7410000
+"Switzerland",2006,54100,81.4,"Europe",7480000
+"Switzerland",2007,55800,81.6,"Europe",7560000
+"Switzerland",2008,56400,81.8,"Europe",7650000
+"Switzerland",2009,54500,82,"Europe",7740000
+"Switzerland",2010,55500,82.2,"Europe",7830000
+"Switzerland",2011,55900,82.5,"Europe",7930000
+"Switzerland",2012,55900,82.6,"Europe",8030000
+"Switzerland",2013,56300,82.7,"Europe",8130000
+"Switzerland",2014,56700,83,"Europe",8230000
+"Switzerland",2015,56500,83.1,"Europe",8320000
+"Switzerland",2016,56600,83.1,"Europe",8400000
+"Switzerland",2017,56900,83.3,"Europe",8480000
+"Switzerland",2018,57100,83.5,"Europe",8540000
+"Syria",2000,5190,73.3,"Asia",16400000
+"Syria",2001,5230,73.7,"Asia",16800000
+"Syria",2002,5470,74,"Asia",17100000
+"Syria",2003,5340,74.3,"Asia",17400000
+"Syria",2004,5550,74.6,"Asia",17800000
+"Syria",2005,5740,74.9,"Asia",18300000
+"Syria",2006,5890,75.1,"Asia",18900000
+"Syria",2007,6090,75.3,"Asia",19600000
+"Syria",2008,6250,75.5,"Asia",20300000
+"Syria",2009,6500,75.8,"Asia",20800000
+"Syria",2010,6600,76.2,"Asia",21000000
+"Syria",2011,6360,75,"Asia",20900000
+"Syria",2012,6300,68.4,"Asia",20400000
+"Syria",2013,5000,69.1,"Asia",19800000
+"Syria",2014,4300,67.2,"Asia",19200000
+"Syria",2015,3500,68.4,"Asia",18700000
+"Syria",2016,3300,68.4,"Asia",18400000
+"Syria",2017,3100,69,"Asia",18300000
+"Syria",2018,2900,69.8,"Asia",18300000
+"Tajikistan",2000,1180,65.2,"Asia",6220000
+"Tajikistan",2001,1280,65.5,"Asia",6330000
+"Tajikistan",2002,1390,65.9,"Asia",6450000
+"Tajikistan",2003,1510,66.3,"Asia",6580000
+"Tajikistan",2004,1630,66.8,"Asia",6710000
+"Tajikistan",2005,1710,67.3,"Asia",6850000
+"Tajikistan",2006,1790,68,"Asia",7000000
+"Tajikistan",2007,1890,68.5,"Asia",7150000
+"Tajikistan",2008,1990,68.8,"Asia",7310000
+"Tajikistan",2009,2020,69.3,"Asia",7470000
+"Tajikistan",2010,2110,69.6,"Asia",7640000
+"Tajikistan",2011,2210,69.9,"Asia",7820000
+"Tajikistan",2012,2320,70.5,"Asia",8000000
+"Tajikistan",2013,2440,71.1,"Asia",8180000
+"Tajikistan",2014,2550,71.4,"Asia",8360000
+"Tajikistan",2015,2640,71.6,"Asia",8550000
+"Tajikistan",2016,2760,71.9,"Asia",8730000
+"Tajikistan",2017,2840,72,"Asia",8920000
+"Tajikistan",2018,2920,72.2,"Asia",9110000
+"Tanzania",2000,1480,52.9,"Africa",34200000
+"Tanzania",2001,1530,53.4,"Africa",35100000
+"Tanzania",2002,1590,53.8,"Africa",36100000
+"Tanzania",2003,1660,54.3,"Africa",37100000
+"Tanzania",2004,1730,54.8,"Africa",38200000
+"Tanzania",2005,1820,55.3,"Africa",39400000
+"Tanzania",2006,1850,56,"Africa",40600000
+"Tanzania",2007,1940,57,"Africa",41900000
+"Tanzania",2008,1990,58,"Africa",43300000
+"Tanzania",2009,2030,58.6,"Africa",44700000
+"Tanzania",2010,2090,59.3,"Africa",46100000
+"Tanzania",2011,2190,59.9,"Africa",47600000
+"Tanzania",2012,2230,60.7,"Africa",49100000
+"Tanzania",2013,2320,61.8,"Africa",50600000
+"Tanzania",2014,2400,62.6,"Africa",52200000
+"Tanzania",2015,2490,63.5,"Africa",53900000
+"Tanzania",2016,2580,64.3,"Africa",55600000
+"Tanzania",2017,2680,64.9,"Africa",57300000
+"Tanzania",2018,2780,65.5,"Africa",59100000
+"Thailand",2000,9190,72,"Asia",63000000
+"Thailand",2001,9420,72.4,"Asia",63500000
+"Thailand",2002,9910,72.8,"Asia",64100000
+"Thailand",2003,10500,73.3,"Asia",64600000
+"Thailand",2004,11100,73.4,"Asia",65000000
+"Thailand",2005,11500,74.2,"Asia",65400000
+"Thailand",2006,12000,74.6,"Asia",65800000
+"Thailand",2007,12600,75.1,"Asia",66200000
+"Thailand",2008,12800,75.6,"Asia",66500000
+"Thailand",2009,12600,76.1,"Asia",66900000
+"Thailand",2010,13500,76.6,"Asia",67200000
+"Thailand",2011,13500,76.9,"Asia",67500000
+"Thailand",2012,14400,77.2,"Asia",67800000
+"Thailand",2013,14800,77.3,"Asia",68100000
+"Thailand",2014,14900,77.5,"Asia",68400000
+"Thailand",2015,15200,77.6,"Asia",68700000
+"Thailand",2016,15700,77.8,"Asia",68900000
+"Thailand",2017,16300,78,"Asia",69000000
+"Thailand",2018,16900,78.2,"Asia",69200000
+"Timor-Leste",2000,1390,63.7,"Asia",872000
+"Timor-Leste",2001,1580,64.3,"Asia",893000
+"Timor-Leste",2002,1430,64.8,"Asia",924000
+"Timor-Leste",2003,1340,65.2,"Asia",961000
+"Timor-Leste",2004,1300,66.2,"Asia",997000
+"Timor-Leste",2005,1340,67.2,"Asia",1030000
+"Timor-Leste",2006,1240,68.3,"Asia",1050000
+"Timor-Leste",2007,1360,69.2,"Asia",1060000
+"Timor-Leste",2008,1530,70,"Asia",1080000
+"Timor-Leste",2009,1710,70.6,"Asia",1090000
+"Timor-Leste",2010,1850,71.1,"Asia",1110000
+"Timor-Leste",2011,1960,71.6,"Asia",1130000
+"Timor-Leste",2012,2030,72,"Asia",1160000
+"Timor-Leste",2013,2040,72.3,"Asia",1180000
+"Timor-Leste",2014,2110,72.5,"Asia",1210000
+"Timor-Leste",2015,2150,72.6,"Asia",1240000
+"Timor-Leste",2016,1930,72.7,"Asia",1270000
+"Timor-Leste",2017,1800,73,"Asia",1300000
+"Timor-Leste",2018,1490,73.3,"Asia",1320000
+"Togo",2000,1280,56.3,"Africa",4970000
+"Togo",2001,1220,56.2,"Africa",5110000
+"Togo",2002,1180,56.2,"Africa",5250000
+"Togo",2003,1200,56,"Africa",5390000
+"Togo",2004,1200,56.4,"Africa",5530000
+"Togo",2005,1180,56.4,"Africa",5680000
+"Togo",2006,1200,57,"Africa",5840000
+"Togo",2007,1190,57.1,"Africa",6000000
+"Togo",2008,1190,57.4,"Africa",6160000
+"Togo",2009,1190,58,"Africa",6330000
+"Togo",2010,1210,58.7,"Africa",6500000
+"Togo",2011,1230,59.6,"Africa",6680000
+"Togo",2012,1260,60.4,"Africa",6860000
+"Togo",2013,1280,60.9,"Africa",7040000
+"Togo",2014,1320,61.5,"Africa",7230000
+"Togo",2015,1350,62.1,"Africa",7420000
+"Togo",2016,1380,62.6,"Africa",7610000
+"Togo",2017,1430,62.9,"Africa",7800000
+"Togo",2018,1480,63.1,"Africa",7990000
+"Tonga",2000,4600,68.8,"Oceania",98100
+"Tonga",2001,4740,68.9,"Oceania",98600
+"Tonga",2002,4880,69,"Oceania",99200
+"Tonga",2003,4950,69.1,"Oceania",99800
+"Tonga",2004,4900,69.2,"Oceania",100000
+"Tonga",2005,4950,69.5,"Oceania",101000
+"Tonga",2006,4880,69.6,"Oceania",102000
+"Tonga",2007,4640,69.7,"Oceania",102000
+"Tonga",2008,4760,69.7,"Oceania",103000
+"Tonga",2009,4840,68,"Oceania",104000
+"Tonga",2010,4980,69.9,"Oceania",104000
+"Tonga",2011,5100,70,"Oceania",105000
+"Tonga",2012,5130,70,"Oceania",105000
+"Tonga",2013,4950,70.1,"Oceania",105000
+"Tonga",2014,5030,70.2,"Oceania",106000
+"Tonga",2015,5190,70.3,"Oceania",106000
+"Tonga",2016,5330,70.4,"Oceania",107000
+"Tonga",2017,5410,70.6,"Oceania",108000
+"Tonga",2018,5500,70.7,"Oceania",109000
+"Trinidad and Tobago",2000,18300,69.5,"Americas",1270000
+"Trinidad and Tobago",2001,19000,69.8,"Americas",1270000
+"Trinidad and Tobago",2002,20400,70,"Americas",1280000
+"Trinidad and Tobago",2003,23300,70.5,"Americas",1280000
+"Trinidad and Tobago",2004,25000,71.1,"Americas",1290000
+"Trinidad and Tobago",2005,26400,71.3,"Americas",1300000
+"Trinidad and Tobago",2006,29800,71.7,"Americas",1300000
+"Trinidad and Tobago",2007,31000,72.1,"Americas",1310000
+"Trinidad and Tobago",2008,32000,72.3,"Americas",1320000
+"Trinidad and Tobago",2009,30400,72.5,"Americas",1320000
+"Trinidad and Tobago",2010,31300,72.6,"Americas",1330000
+"Trinidad and Tobago",2011,31000,72.7,"Americas",1330000
+"Trinidad and Tobago",2012,31300,72.8,"Americas",1340000
+"Trinidad and Tobago",2013,31900,72.9,"Americas",1350000
+"Trinidad and Tobago",2014,31600,73,"Americas",1350000
+"Trinidad and Tobago",2015,31300,73.1,"Americas",1360000
+"Trinidad and Tobago",2016,29600,73.2,"Americas",1360000
+"Trinidad and Tobago",2017,29900,73.3,"Americas",1370000
+"Trinidad and Tobago",2018,30300,73.4,"Americas",1370000
+"Tunisia",2000,7570,75,"Africa",9700000
+"Tunisia",2001,7790,75.3,"Africa",9790000
+"Tunisia",2002,7830,75.4,"Africa",9860000
+"Tunisia",2003,8140,75.6,"Africa",9940000
+"Tunisia",2004,8580,75.8,"Africa",10000000
+"Tunisia",2005,8800,76.1,"Africa",10100000
+"Tunisia",2006,9180,76.2,"Africa",10200000
+"Tunisia",2007,9700,76.4,"Africa",10300000
+"Tunisia",2008,10000,76.6,"Africa",10400000
+"Tunisia",2009,10200,76.7,"Africa",10500000
+"Tunisia",2010,10400,76.9,"Africa",10600000
+"Tunisia",2011,10100,77,"Africa",10800000
+"Tunisia",2012,10400,77.1,"Africa",10900000
+"Tunisia",2013,10600,77.2,"Africa",11000000
+"Tunisia",2014,10800,77.3,"Africa",11100000
+"Tunisia",2015,10800,77.4,"Africa",11300000
+"Tunisia",2016,10800,77.5,"Africa",11400000
+"Tunisia",2017,11200,77.7,"Africa",11500000
+"Tunisia",2018,11600,78,"Africa",11700000
+"Turkey",2000,13900,74.1,"Asia",63200000
+"Turkey",2001,12800,74.8,"Asia",64200000
+"Turkey",2002,13500,75.4,"Asia",65100000
+"Turkey",2003,14000,75.5,"Asia",66100000
+"Turkey",2004,15200,76.3,"Asia",67000000
+"Turkey",2005,16300,76.7,"Asia",67900000
+"Turkey",2006,17300,77.2,"Asia",68800000
+"Turkey",2007,17900,78.1,"Asia",69600000
+"Turkey",2008,17800,78.8,"Asia",70400000
+"Turkey",2009,16800,78.2,"Asia",71300000
+"Turkey",2010,18000,78.2,"Asia",72300000
+"Turkey",2011,19700,78.2,"Asia",73400000
+"Turkey",2012,20300,78.6,"Asia",74600000
+"Turkey",2013,21700,78.4,"Asia",75800000
+"Turkey",2014,22400,78.8,"Asia",77000000
+"Turkey",2015,23400,79,"Asia",78300000
+"Turkey",2016,23700,79.1,"Asia",79500000
+"Turkey",2017,24300,79.3,"Asia",80700000
+"Turkey",2018,24900,79.6,"Asia",81900000
+"Turkmenistan",2000,5330,63.7,NA,4520000
+"Turkmenistan",2001,5510,64,NA,4560000
+"Turkmenistan",2002,5470,64.3,NA,4610000
+"Turkmenistan",2003,5590,64.6,NA,4660000
+"Turkmenistan",2004,5810,64.9,NA,4700000
+"Turkmenistan",2005,6500,65.3,NA,4750000
+"Turkmenistan",2006,7130,65.8,NA,4810000
+"Turkmenistan",2007,7820,66.3,NA,4870000
+"Turkmenistan",2008,8850,66.9,NA,4940000
+"Turkmenistan",2009,9250,67.4,NA,5010000
+"Turkmenistan",2010,9940,67.9,NA,5090000
+"Turkmenistan",2011,11200,68.4,NA,5170000
+"Turkmenistan",2012,12200,68.8,NA,5270000
+"Turkmenistan",2013,13200,69.2,NA,5370000
+"Turkmenistan",2014,14300,69.6,NA,5470000
+"Turkmenistan",2015,15000,69.9,NA,5570000
+"Turkmenistan",2016,15600,70.2,NA,5660000
+"Turkmenistan",2017,16700,70.4,NA,5760000
+"Turkmenistan",2018,17900,70.5,NA,5850000
+"Tuvalu",2000,3060,NA,"Oceania",9420
+"Tuvalu",2001,3080,NA,"Oceania",9510
+"Tuvalu",2002,3290,NA,"Oceania",9640
+"Tuvalu",2003,3130,NA,"Oceania",9770
+"Tuvalu",2004,3050,NA,"Oceania",9890
+"Tuvalu",2005,2900,NA,"Oceania",10000
+"Tuvalu",2006,2930,NA,"Oceania",10100
+"Tuvalu",2007,3080,NA,"Oceania",10200
+"Tuvalu",2008,3290,NA,"Oceania",10300
+"Tuvalu",2009,3120,NA,"Oceania",10400
+"Tuvalu",2010,3010,NA,"Oceania",10500
+"Tuvalu",2011,3230,NA,"Oceania",10600
+"Tuvalu",2012,3210,NA,"Oceania",10700
+"Tuvalu",2013,3220,NA,"Oceania",10800
+"Tuvalu",2014,3270,NA,"Oceania",10900
+"Tuvalu",2015,3320,NA,"Oceania",11000
+"Tuvalu",2016,3390,NA,"Oceania",11100
+"Tuvalu",2017,3440,NA,"Oceania",11200
+"Tuvalu",2018,3490,NA,"Oceania",11300
+"Uganda",2000,1070,48.7,"Africa",24000000
+"Uganda",2001,1090,49.4,"Africa",24900000
+"Uganda",2002,1140,50.2,"Africa",25700000
+"Uganda",2003,1170,50.9,"Africa",26600000
+"Uganda",2004,1210,51.8,"Africa",27600000
+"Uganda",2005,1240,52.8,"Africa",28500000
+"Uganda",2006,1330,53.7,"Africa",29600000
+"Uganda",2007,1390,54.3,"Africa",30600000
+"Uganda",2008,1460,55.1,"Africa",31700000
+"Uganda",2009,1510,56,"Africa",32800000
+"Uganda",2010,1540,56.8,"Africa",33900000
+"Uganda",2011,1630,57.7,"Africa",35100000
+"Uganda",2012,1640,58.6,"Africa",36300000
+"Uganda",2013,1640,59.8,"Africa",37600000
+"Uganda",2014,1670,60.8,"Africa",38800000
+"Uganda",2015,1690,61.6,"Africa",40100000
+"Uganda",2016,1710,62.3,"Africa",41500000
+"Uganda",2017,1760,62.6,"Africa",42900000
+"Uganda",2018,1820,62.9,"Africa",44300000
+"Ukraine",2000,4800,67.4,"Europe",48800000
+"Ukraine",2001,5290,67.7,"Europe",48400000
+"Ukraine",2002,5620,67.8,"Europe",48000000
+"Ukraine",2003,6200,67.8,"Europe",47600000
+"Ukraine",2004,7000,67.6,"Europe",47200000
+"Ukraine",2005,7250,67.3,"Europe",46900000
+"Ukraine",2006,7830,67.9,"Europe",46600000
+"Ukraine",2007,8500,67.7,"Europe",46400000
+"Ukraine",2008,8740,68,"Europe",46200000
+"Ukraine",2009,7480,69.6,"Europe",46000000
+"Ukraine",2010,7820,70.4,"Europe",45800000
+"Ukraine",2011,8280,71.1,"Europe",45600000
+"Ukraine",2012,8320,71.1,"Europe",45300000
+"Ukraine",2013,8340,71.3,"Europe",45100000
+"Ukraine",2014,8240,71.7,"Europe",44900000
+"Ukraine",2015,7470,71.9,"Europe",44700000
+"Ukraine",2016,7670,72,"Europe",44400000
+"Ukraine",2017,7990,72.2,"Europe",44200000
+"Ukraine",2018,8330,72.3,"Europe",44000000
+"United Arab Emirates",2000,103000,74.8,"Asia",3150000
+"United Arab Emirates",2001,99300,75.1,"Asia",3330000
+"United Arab Emirates",2002,96400,75.4,"Asia",3510000
+"United Arab Emirates",2003,98400,75.8,"Asia",3740000
+"United Arab Emirates",2004,98600,76.2,"Asia",4090000
+"United Arab Emirates",2005,92300,76.6,"Asia",4580000
+"United Arab Emirates",2006,88600,76.8,"Asia",5240000
+"United Arab Emirates",2007,79300,76.8,"Asia",6040000
+"United Arab Emirates",2008,71700,76.8,"Asia",6890000
+"United Arab Emirates",2009,61100,76.6,"Asia",7670000
+"United Arab Emirates",2010,57600,76.5,"Asia",8270000
+"United Arab Emirates",2011,58400,76.5,"Asia",8670000
+"United Arab Emirates",2012,59800,76.4,"Asia",8900000
+"United Arab Emirates",2013,62500,76.4,"Asia",9010000
+"United Arab Emirates",2014,64100,76.4,"Asia",9070000
+"United Arab Emirates",2015,66000,76.5,"Asia",9150000
+"United Arab Emirates",2016,67100,76.6,"Asia",9270000
+"United Arab Emirates",2017,67700,76.7,"Asia",9400000
+"United Arab Emirates",2018,68200,76.9,"Asia",9540000
+"United Kingdom",2000,33000,77.8,"Europe",59000000
+"United Kingdom",2001,33700,78,"Europe",59100000
+"United Kingdom",2002,34400,78.3,"Europe",59300000
+"United Kingdom",2003,35400,78.4,"Europe",59600000
+"United Kingdom",2004,36100,78.8,"Europe",59900000
+"United Kingdom",2005,36900,79,"Europe",60300000
+"United Kingdom",2006,37600,79.3,"Europe",60800000
+"United Kingdom",2007,38200,79.6,"Europe",61400000
+"United Kingdom",2008,37700,79.8,"Europe",62100000
+"United Kingdom",2009,35800,80.1,"Europe",62700000
+"United Kingdom",2010,36200,80.3,"Europe",63300000
+"United Kingdom",2011,36500,80.5,"Europe",63800000
+"United Kingdom",2012,36700,80.7,"Europe",64300000
+"United Kingdom",2013,37100,80.7,"Europe",64600000
+"United Kingdom",2014,38000,80.8,"Europe",65000000
+"United Kingdom",2015,38500,80.8,"Europe",65400000
+"United Kingdom",2016,38900,80.9,"Europe",65800000
+"United Kingdom",2017,39500,81,"Europe",66200000
+"United Kingdom",2018,40100,81.2,"Europe",66600000
+"United States",2000,46000,76.9,"Americas",282000000
+"United States",2001,46000,77,"Americas",285000000
+"United States",2002,46400,77.1,"Americas",288000000
+"United States",2003,47300,77.3,"Americas",290000000
+"United States",2004,48600,77.5,"Americas",293000000
+"United States",2005,49800,77.7,"Americas",295000000
+"United States",2006,50600,77.9,"Americas",298000000
+"United States",2007,51000,78.1,"Americas",301000000
+"United States",2008,50400,78.3,"Americas",303000000
+"United States",2009,48600,78.6,"Americas",306000000
+"United States",2010,49400,78.7,"Americas",309000000
+"United States",2011,49800,78.8,"Americas",311000000
+"United States",2012,50500,78.9,"Americas",313000000
+"United States",2013,51000,78.9,"Americas",316000000
+"United States",2014,51800,78.9,"Americas",318000000
+"United States",2015,52800,78.8,"Americas",320000000
+"United States",2016,53300,78.8,"Americas",322000000
+"United States",2017,54200,79,"Americas",324000000
+"United States",2018,54900,79.1,"Americas",327000000
+"Uruguay",2000,12900,74.8,"Americas",3320000
+"Uruguay",2001,12400,74.9,"Americas",3330000
+"Uruguay",2002,11400,75,"Americas",3330000
+"Uruguay",2003,11500,75,"Americas",3330000
+"Uruguay",2004,12100,75.3,"Americas",3320000
+"Uruguay",2005,13000,75.6,"Americas",3330000
+"Uruguay",2006,13500,75.8,"Americas",3330000
+"Uruguay",2007,14300,75.8,"Americas",3340000
+"Uruguay",2008,15300,76.1,"Americas",3350000
+"Uruguay",2009,15900,76.3,"Americas",3360000
+"Uruguay",2010,17100,76.4,"Americas",3370000
+"Uruguay",2011,17900,76.4,"Americas",3390000
+"Uruguay",2012,18500,76.5,"Americas",3400000
+"Uruguay",2013,19300,76.7,"Americas",3410000
+"Uruguay",2014,19800,77,"Americas",3420000
+"Uruguay",2015,19800,77.1,"Americas",3430000
+"Uruguay",2016,20000,77.3,"Americas",3440000
+"Uruguay",2017,20600,77.4,"Americas",3460000
+"Uruguay",2018,21300,77.6,"Americas",3470000
+"Uzbekistan",2000,2500,66.4,"Asia",24800000
+"Uzbekistan",2001,2580,66.4,"Asia",25200000
+"Uzbekistan",2002,2650,66.4,"Asia",25500000
+"Uzbekistan",2003,2730,66.5,"Asia",25800000
+"Uzbekistan",2004,2900,66.6,"Asia",26200000
+"Uzbekistan",2005,3070,66.7,"Asia",26500000
+"Uzbekistan",2006,3250,67.1,"Asia",26900000
+"Uzbekistan",2007,3530,67.6,"Asia",27300000
+"Uzbekistan",2008,3780,68,"Asia",27700000
+"Uzbekistan",2009,4020,68.4,"Asia",28200000
+"Uzbekistan",2010,4240,68.8,"Asia",28600000
+"Uzbekistan",2011,4470,69,"Asia",29100000
+"Uzbekistan",2012,4770,69.3,"Asia",29500000
+"Uzbekistan",2013,5070,69.6,"Asia",30000000
+"Uzbekistan",2014,5370,69.8,"Asia",30500000
+"Uzbekistan",2015,5700,70,"Asia",31000000
+"Uzbekistan",2016,6040,70.3,"Asia",31400000
+"Uzbekistan",2017,6360,70.4,"Asia",31900000
+"Uzbekistan",2018,6690,70.5,"Asia",32400000
+"Vanuatu",2000,2820,62.4,"Oceania",185000
+"Vanuatu",2001,2660,62.4,"Oceania",189000
+"Vanuatu",2002,2470,62.3,"Oceania",194000
+"Vanuatu",2003,2510,62.3,"Oceania",199000
+"Vanuatu",2004,2540,62.2,"Oceania",204000
+"Vanuatu",2005,2610,62.3,"Oceania",209000
+"Vanuatu",2006,2760,62.4,"Oceania",215000
+"Vanuatu",2007,2830,62.5,"Oceania",220000
+"Vanuatu",2008,2940,62.7,"Oceania",225000
+"Vanuatu",2009,2970,62.8,"Oceania",231000
+"Vanuatu",2010,2950,63,"Oceania",236000
+"Vanuatu",2011,2920,63.2,"Oceania",242000
+"Vanuatu",2012,2900,63.3,"Oceania",247000
+"Vanuatu",2013,2890,63.5,"Oceania",253000
+"Vanuatu",2014,2890,63.5,"Oceania",259000
+"Vanuatu",2015,2810,63.6,"Oceania",265000
+"Vanuatu",2016,2860,64,"Oceania",270000
+"Vanuatu",2017,2890,64.1,"Oceania",276000
+"Vanuatu",2018,2900,64.3,"Oceania",282000
+"Venezuela",2000,14400,74.3,"Americas",24500000
+"Venezuela",2001,14600,74.4,"Americas",24900000
+"Venezuela",2002,13100,74.3,"Americas",25400000
+"Venezuela",2003,11900,74.2,"Americas",25900000
+"Venezuela",2004,13800,74.9,"Americas",26300000
+"Venezuela",2005,14900,75.1,"Americas",26800000
+"Venezuela",2006,16100,75,"Americas",27200000
+"Venezuela",2007,17300,75,"Americas",27700000
+"Venezuela",2008,17900,74.9,"Americas",28100000
+"Venezuela",2009,17100,75,"Americas",28600000
+"Venezuela",2010,16500,75.4,"Americas",29000000
+"Venezuela",2011,17000,75.4,"Americas",29500000
+"Venezuela",2012,17700,75.3,"Americas",29900000
+"Venezuela",2013,17700,75.4,"Americas",30300000
+"Venezuela",2014,16700,75.5,"Americas",30700000
+"Venezuela",2015,15600,75.5,"Americas",31200000
+"Venezuela",2016,15000,75.5,"Americas",31600000
+"Venezuela",2017,14500,75.7,"Americas",32000000
+"Venezuela",2018,14200,75.9,"Americas",32400000
+"Vietnam",2000,2650,70.7,NA,80300000
+"Vietnam",2001,2780,70.9,NA,81100000
+"Vietnam",2002,2920,71.1,NA,82000000
+"Vietnam",2003,3090,71.3,NA,82700000
+"Vietnam",2004,3280,71.5,NA,83500000
+"Vietnam",2005,3490,71.8,NA,84300000
+"Vietnam",2006,3690,72,NA,85100000
+"Vietnam",2007,3910,72.3,NA,85900000
+"Vietnam",2008,4090,72.5,NA,86700000
+"Vietnam",2009,4260,72.8,NA,87600000
+"Vietnam",2010,4490,73.1,NA,88500000
+"Vietnam",2011,4720,73.3,NA,89400000
+"Vietnam",2012,4910,73.6,NA,90500000
+"Vietnam",2013,5120,73.8,NA,91500000
+"Vietnam",2014,5370,74.1,NA,92500000
+"Vietnam",2015,5670,74.3,NA,93600000
+"Vietnam",2016,5960,74.5,NA,94600000
+"Vietnam",2017,6250,74.7,NA,95500000
+"Vietnam",2018,6550,74.9,NA,96500000
+"Yemen",2000,3890,62.6,"Asia",17900000
+"Yemen",2001,3930,63.1,"Asia",18400000
+"Yemen",2002,3970,63.5,"Asia",18900000
+"Yemen",2003,4000,64,"Asia",19500000
+"Yemen",2004,4050,64.5,"Asia",20000000
+"Yemen",2005,4160,65,"Asia",20600000
+"Yemen",2006,4170,65.5,"Asia",21200000
+"Yemen",2007,4190,65.8,"Asia",21800000
+"Yemen",2008,4230,66.4,"Asia",22400000
+"Yemen",2009,4270,67,"Asia",23000000
+"Yemen",2010,4480,67.5,"Asia",23600000
+"Yemen",2011,3810,67.7,"Asia",24300000
+"Yemen",2012,3790,67.9,"Asia",24900000
+"Yemen",2013,3870,68.4,"Asia",25600000
+"Yemen",2014,3770,68.4,"Asia",26200000
+"Yemen",2015,2640,67.2,"Asia",26900000
+"Yemen",2016,2330,66.7,"Asia",27600000
+"Yemen",2017,2380,66.9,"Asia",28300000
+"Yemen",2018,2430,67.1,"Asia",28900000
+"Zambia",2000,2100,44.1,"Africa",10500000
+"Zambia",2001,2160,43.9,"Africa",10800000
+"Zambia",2002,2190,44.4,"Africa",11100000
+"Zambia",2003,2280,44.6,"Africa",11400000
+"Zambia",2004,2380,45.3,"Africa",11700000
+"Zambia",2005,2480,46,"Africa",12100000
+"Zambia",2006,2610,46.7,"Africa",12400000
+"Zambia",2007,2750,47.8,"Africa",12700000
+"Zambia",2008,2880,49.4,"Africa",13100000
+"Zambia",2009,3060,50.7,"Africa",13500000
+"Zambia",2010,3280,52,"Africa",13900000
+"Zambia",2011,3360,53.2,"Africa",14300000
+"Zambia",2012,3510,54.5,"Africa",14700000
+"Zambia",2013,3580,55.7,"Africa",15200000
+"Zambia",2014,3630,57,"Africa",15600000
+"Zambia",2015,3630,58.1,"Africa",16100000
+"Zambia",2016,3640,58.8,"Africa",16600000
+"Zambia",2017,3750,59.1,"Africa",17100000
+"Zambia",2018,3870,59.5,"Africa",17600000
+"Zimbabwe",2000,2570,46.7,"Africa",12200000
+"Zimbabwe",2001,2580,46.2,"Africa",12400000
+"Zimbabwe",2002,2320,45.6,"Africa",12500000
+"Zimbabwe",2003,1910,45.3,"Africa",12600000
+"Zimbabwe",2004,1780,45.1,"Africa",12800000
+"Zimbabwe",2005,1650,45.3,"Africa",12900000
+"Zimbabwe",2006,1580,45.7,"Africa",13100000
+"Zimbabwe",2007,1490,46.4,"Africa",13300000
+"Zimbabwe",2008,1210,46.7,"Africa",13600000
+"Zimbabwe",2009,1290,47.5,"Africa",13800000
+"Zimbabwe",2010,1460,49.6,"Africa",14100000
+"Zimbabwe",2011,1660,51.9,"Africa",14400000
+"Zimbabwe",2012,1850,54.1,"Africa",14700000
+"Zimbabwe",2013,1900,55.6,"Africa",15100000
+"Zimbabwe",2014,1910,57,"Africa",15400000
+"Zimbabwe",2015,1890,58.3,"Africa",15800000
+"Zimbabwe",2016,1860,59.3,"Africa",16200000
+"Zimbabwe",2017,1910,59.8,"Africa",16500000
+"Zimbabwe",2018,1950,60.2,"Africa",16900000
