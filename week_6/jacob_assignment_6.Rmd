@@ -1,0 +1,316 @@
+---
+title: "Week 6 - Interactivity with Plotly"
+author: "Jacob Martin"
+date: "West Chester University "
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    fig_width: 6
+    number_sections: yes
+    toc_collapsed: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: true
+    theme: readable
+    fig_height: 4
+---
+
+```{=html}
+<style type="text/css">
+
+div#TOC li {
+    list-style:none;
+    background-color:lightgray;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #780c0c;
+}
+
+/* mouse over link */
+div#TOC a:hover {
+  color: red;
+}
+
+/* unvisited link */
+div#TOC a:link {
+  color: blue;
+}
+
+
+
+h1.title {
+  font-size: 24px;
+  color: Darkblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant-caps: normal;
+}
+h4.author { 
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { 
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h3 { 
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+</style>
+```
+```{r setup, include=FALSE}
+# code chunk specifies whether the R code, warnings, and output 
+# will be included in the output files.
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("cowplot")) {
+   install.packages("cowplot")
+   library(cowplot)
+}
+if (!require("latex2exp")) {
+   install.packages("latex2exp")
+   library(latex2exp)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("gapminder")) {
+   install.packages("gapminder")
+   library(gapminder)
+}
+if (!require("png")) {
+    install.packages("png")             # Install png package
+    library("png")
+}
+if (!require("RCurl")) {
+    install.packages("RCurl")           # Install RCurl package
+    library("RCurl")
+}
+if (!require("colourpicker")) {
+    install.packages("colourpicker")              
+    library("colourpicker")
+}
+if (!require("gifski")) {
+    install.packages("gifski")              
+    library("gifski")
+}
+if (!require("magick")) {
+    install.packages("magick")              
+    library("magick")
+}
+if (!require("grDevices")) {
+    install.packages("grDevices")              
+    library("grDevices")
+}
+### ggplot and extensions
+if (!require("ggplot2")) {
+    install.packages("ggplot2")              
+    library("ggplot2")
+}
+if (!require("gganimate")) {
+    install.packages("gganimate")              
+    library("gganimate")
+}
+if (!require("ggridges")) {
+    install.packages("ggridges")              
+    library("ggridges")
+}
+if (!require("graphics")) {
+    install.packages("graphics")              
+    library("graphics")
+}
+if (!require("tidyr")) {
+   install.packages("tidyr", dependencies = TRUE)
+   library(tidyr)
+}
+if (!require("reshape2")) {
+   install.packages("reshape2", dependencies = TRUE)
+   library(reshape2)
+}
+
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+```
+
+## Overview
+In this weeks assignment we will show how to create interactive plots using the library called `Plotly`. \
+`Plotly` is a robust graphing library which will allow us to display interactive, dynamic charts. Unlike static charts, interactive graphs can allow us to convey much more information to a viewer in a more engaging matter. The goal is to display data in such a way that the user can easily interpret any patterns or correlations. 
+
+## Data Transformation Review
+In <a href="https://jmartin12.github.io/STAT553/week_5/jacob_assignment_5.html">last week's assignment</a>, it was shown how to do various data transformations using many data sets. For this weeks graphs, the data source will be re-using the final data set from week 5.
+\
+Recall the structure of the dataset, visualized below: 
+
+
+```{r echo=FALSE}
+initial_data <- read.csv("jm_final_data.csv", header = TRUE)
+head(initial_data, 6)
+```
+
+If you are unfamiliar with how we got this data set, it is encouraged to review the `data transformation` sections of <a href="https://jmartin12.github.io/STAT553/week_5/jacob_assignment_5.html">week 5</a>. 
+\
+Simply put, our dataset has information relating to a country for a given year. We will show how to interactively visualize this data set, as opposed to the static chart from last week.
+
+## Interactive Plot - 2015 Data
+Our first graph will convey the following information:
+
+1. A scatter plot showing the relation of `life expectancy` vs `income`.
+2. The size of a given dot is proportional to it's `population` size.
+3. Hover text will appear over a given point which will display the `country name` and `population` size. 
+4. Appropriate use of color and transparency for viewing ease.
+\
+\
+
+For this graph, we will analyze data only from the year `2015`. We can extract this information via the following code: 
+
+
+```{r}
+subset_2015 <- subset(initial_data, Year == 2015)
+```
+The resulting data frame only has 2015 data:
+```{r echo=FALSE}
+head(subset_2015, 5)
+```
+
+Now, let's view the interactive graph which meets the specifications listed above.
+
+```{r}
+# Create the scatter plot
+plot <- plot_ly(data = subset_2015,
+                x = ~Income,
+                y = ~life_expectancy,
+                text = ~paste("Country: ", Country, "<br>Population Size: ", population),
+                color = ~Country,
+                size = ~population, sizes = c(5, 150), 
+                marker = list(opacity = 0.6, line = list(color = 'black', width = 1))) %>%
+        layout(title = "Association between Life Expectancy and Income (2015)",
+               xaxis = list(title = "Income"),
+               yaxis = list(title = "Life Expectancy"),
+               hovermode = "closest")
+
+# Show the plot
+plot
+```
+<i><font size=2>NOTE: the proportional size of the point and transparency levels were chosen via trial and error. Also, `hovermode` being set to `closest` allows the user to easily view country metadata without the cursor being exactly on a given marker. This is helpful because some dots are quite small.</font></i>
+
+## Narrative - 2015 Data
+The interactive graph has all the features we discussed. This allows us to easily distinguish which countries have the highest population. We can clearly see India, China, and the USA having very large populations based on the size of their individual marker. It is also easy to see that Japan, Switzerland, and Singapore all have the highest life expectancy. Qatar has, by far, the most amount of avg income per person; it must be nice to live there. Interestingly enough, there does <i>not</i> seem to be a correlation between the amount of income an individual makes for a given country, and the life expectancy. However, it is interesting to note that, generally speaking, the African countries have the lowest life expectancy, while the Asian countries seem to have the highest.
+
+## Animated Graph
+In this next section we will demonstrate how to show an animation for scatter plots. We will use our original data set with all years up to 1950*, and cycle through each year to see how the data changes over time. 
+
+<i><font size=1>*Note: we include up to 1950 because the income starts to exponentially increase after those years. This causes for a very skewed animation for the first 150 years.</i></font>
+
+The animated graph will have the following specifications:
+
+1. Cycle through each `year` from 1800 to 1950.
+2. Highlight the relationship between `life expectancy` and `population` size.
+3. Use a custom, color-blind friendly color palette.
+4. Have the size of a given marker proportional to the `population` size.
+5. Provide additional metadata when hovering over a marker.
+
+The code is very similar to the previous interactive graph, with the following additions:
+
+- A much larger input data set.
+- Add the binding for custom colors
+- Cycle through the `year`
+
+Please view the code & animated plot below:
+
+```{r}
+up_to_1950 <- subset(initial_data, Year <= 1950)
+
+region_colors <- c("Africa" = "#000000", "Americas"="#E69F00", "Asia"="#56B4E9", "Europe"="#009E73", "Oceania"="#CC79A7");
+
+# Create the animated scatter plot
+animated_plot <- plot_ly(data = up_to_1950,
+                x = ~Income,
+                y = ~life_expectancy,
+                # Iterate through each year.
+                frame = ~Year,
+                text = ~paste("Country: ", Country, "<br>Population Size: ", population),
+                color = ~region, 
+                # Custom color-blind friendly colos.
+                colors = region_colors,
+                size = ~population, sizes = c(10, 100), 
+                marker = list(opacity = 0.6, line = list(color = 'black', width = 1))) %>%
+        layout(title = "Relationship between Life Expectancy and Income Over the Years",
+               xaxis = list(title = "Income"),
+               yaxis = list(title = "Life Expectancy"),
+               hovermode = "closest")
+
+# Show the plot
+animated_plot
+```
+
+## Narration - Animated Plot
+From 1800-1900 we can see that the life expectancy (~20-40) and income (<20k) really does not change that much for a given region. Of course, there are a couple of exceptions in the late 1800s where a few European countries start to increase their average life expectancy into the mid 50s. What's really interesting is how the life expectancy starts to dramatically increase in the early 1900's with the introduction of penicillin and modern medicine. It is no surprise that first world regions are the first to increase their life expectancy as they have access to more doctors and modern medicine than a 3rd world regions.
+\
+\
+A fascinating pattern emerges if you examine the life expectancy from 1915 - 1925. The average life expectancy drops for every region by a large margin. This is because of WW1. We see a similar pattern for life expectancy from 1930 - 1950 with WW2. Initially, in the early 1930s, only a few regions lower their life expectancy because of the isolated invasions of Germany. However, by 1944, many regions drop dramatically. 
+\
+\
+This goes to show that war has quite an effect on life expectancy changes. This makes a lot of practical sense.
