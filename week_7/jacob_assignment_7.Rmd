@@ -1,0 +1,447 @@
+---
+title: "Week 7 - Geo Spacial Data Visualization"
+author: "Jacob Martin"
+date: "West Chester University "
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    fig_width: 6
+    number_sections: yes
+    toc_collapsed: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: true
+    theme: readable
+    fig_height: 4
+---
+
+```{=html}
+<style type="text/css">
+
+div#TOC li {
+    list-style:none;
+    background-color:lightgray;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #780c0c;
+}
+
+/* mouse over link */
+div#TOC a:hover {
+  color: red;
+}
+
+/* unvisited link */
+div#TOC a:link {
+  color: blue;
+}
+
+
+
+h1.title {
+  font-size: 24px;
+  color: Darkblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant-caps: normal;
+}
+h4.author { 
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { 
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h3 { 
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+</style>
+```
+```{r setup, include=FALSE}
+# code chunk specifies whether the R code, warnings, and output 
+# will be included in the output files.
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("cowplot")) {
+   install.packages("cowplot")
+   library(cowplot)
+}
+if (!require("latex2exp")) {
+   install.packages("latex2exp")
+   library(latex2exp)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("gapminder")) {
+   install.packages("gapminder")
+   library(gapminder)
+}
+if (!require("png")) {
+    install.packages("png")             # Install png package
+    library("png")
+}
+if (!require("RCurl")) {
+    install.packages("RCurl")           # Install RCurl package
+    library("RCurl")
+}
+if (!require("colourpicker")) {
+    install.packages("colourpicker")              
+    library("colourpicker")
+}
+if (!require("gifski")) {
+    install.packages("gifski")              
+    library("gifski")
+}
+if (!require("magick")) {
+    install.packages("magick")              
+    library("magick")
+}
+if (!require("grDevices")) {
+    install.packages("grDevices")              
+    library("grDevices")
+}
+### ggplot and extensions
+if (!require("ggplot2")) {
+    install.packages("ggplot2")              
+    library("ggplot2")
+}
+if (!require("gganimate")) {
+    install.packages("gganimate")              
+    library("gganimate")
+}
+if (!require("ggridges")) {
+    install.packages("ggridges")              
+    library("ggridges")
+}
+if (!require("graphics")) {
+    install.packages("graphics")              
+    library("graphics")
+}
+if (!require("tidyr")) {
+   install.packages("tidyr", dependencies = TRUE)
+   library(tidyr)
+}
+if (!require("reshape2")) {
+   install.packages("reshape2", dependencies = TRUE)
+   library(reshape2)
+}
+if (!require("leaflet")) {
+   install.packages("leaflet", dependencies = TRUE)
+   library(leaflet)
+}
+if (!require("htmltools")) {
+   install.packages("htmltools", dependencies = TRUE)
+   library(htmltools)
+}
+
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+```
+
+
+## Overview
+In this weeks assignment we will show how to create maps which contain geo spacial information. First, we will build a scatter map which shows information about various gas stations in the United States. After that, we will narrow down our view to the city of Philadelphia; analyzing crime data from the years of 2014-2015. Let's see what kind of story we can extract by visualizing our data sets.
+
+## Gas Station Source Data
+It's important to describe any data set before working with it, so let's begin by analyzing the raw gas station data. 
+In the previous weeks assignements, we have loaded our data via having the csv in a local working directory. For this week, data was uploaded to my github. Here is how we can load the data via https. 
+
+```{r echo=TRUE}
+gas_data <- read.csv("https://jmartin12.github.io/STAT553/data/gas_station_data.csv", header = TRUE)
+```
+
+Simple as that! First, let's view the raw data in it's table format, along with seeing how many rows we have. 
+
+```{r echo=FALSE}
+head(gas_data, 2)
+nrow(gas_data)
+```
+
+While there are many columns in this data set, what's important to notice for this weeks lesson is that we have two columns titled as `ycoord` and `xcoord`. These columns represent the coordinates in `latitude` and `longitude`, respectively. We will use both of these columns later when creating our map.
+
+It's also important to note the size of the data set; a mere 70K rows! If we plotted all of these on our map, it would be cluttered and difficult to interpret. Let's reduce our data set size to simply 500 random rows. The code below demonstrates how we do this:
+
+```{r echo = TRUE}
+# Set the seed so you get the same rows I got.
+set.seed(123)
+
+# Get the 500 random rows
+reduced_gas_data <- gas_data[sample(nrow(gas_data), 500), ]
+
+# Print the row count
+print(nrow(reduced_gas_data))
+```
+
+Success! We have reduced our data to 500 random rows.
+
+## Creating a Basic Geo Spacial Informative Scatter Map
+For this week, we will focus on creating maps using the `leaflet` library. Please view the generated map, while reading an explanation of the code below. 
+
+```{r echo=TRUE}
+# Create a leaflet map
+gas_map <- leaflet() %>%
+  addTiles() %>%
+  setView(lng = -98.5795, lat = 39.8283, zoom = 3)
+
+# Add markers for each gas station
+for (i in 1:nrow(reduced_gas_data)) {
+  gas_meta = paste('state: ',reduced_gas_data$STATE[i], '\n county: ', reduced_gas_data$county[i], '\n city: ' ,reduced_gas_data$CITY[i] ,'\n address: ', reduced_gas_data$ADDRESS[i])
+  
+  gas_map <- addMarkers(
+    map = gas_map,
+    lng = reduced_gas_data$xcoord[i],
+    lat = reduced_gas_data$ycoord[i],
+    label = htmltools::HTML(htmlEscape(gas_meta))
+    )
+}
+
+gas_map
+```
+
+Walking through the code, we first start out with `gas_map <- leaflet() %>% addTiles() %>% setView(lng = -98.5795, lat = 39.8283, zoom = 3)`.
+\
+The one thing that should be noted is that the default view was taken as the center point of the USA. Since our reduced data was randomly taken from the original 70K rows, using the mean of the lng and lat values will not give us a consistently good view, because the view is then subject to what gas stations we have randomly chosen. To circumvent this, the center point of the USA was used. 
+
+Aside to that, we then use a basic `for` loop control structure, in combination with the `paste(...)` function to add location metadata using the `city`, `state`, `county`, and `address` from our data set.
+
+This is a primitive example of how the `leaflet` library can be used to graph geographical information. Let's move onto a more advanced example so that we are able to extract more useful information and decipher a story therein.
+
+## Philly Crime Data
+
+First, we will need a new data set that is hosted on my github. 
+
+```{r echo=TRUE}
+philly_data <- read.csv("https://jmartin12.github.io/STAT553/data/PhillyCrimeSince2015.csv", header = TRUE)
+```
+
+An example few rows are given: 
+
+```{r echo=FALSE}
+head(philly_data, 2)
+```
+
+The total amount of rows are: 
+
+```{r echo=FALSE}
+nrow(philly_data)
+```
+
+Philly is definitely known for crime in certain areas. Let's focus in on the year 2023. To accomplish this, we will have to perform some data transformations against the original `date` column. First, the following code parses out the `year` portion, and stores it in a vector.
+
+
+```{r echo=TRUE}
+years <- character(nrow(philly_data))
+
+for (i in 1:nrow(philly_data)) {
+  date_string <- philly_data$date[i]
+  date_object <- strptime(date_string, "%m/%d/%Y %H:%M")
+  years[i] <- format(date_object, "%Y")
+}
+
+head(years)
+```
+
+Great! Now we have all the years. Let's add it as a new column to our original philly crime dataset.
+
+```{r echo=TRUE}
+philly_data$year <- years
+head(philly_data, 2)
+```
+
+Easy as that! We can see the year column is now added to the data set. 
+To narrow down a subset of 2023 data only, we can reduce our data set by filtering on the newly added `year` column.
+
+```{r echo=TRUE}
+philly_data_2023 <- subset(philly_data, year == 2023)
+head(philly_data_2023$date, 5)
+```
+
+Only the `date` column is shown in the above example -- the remaining columns are still stored in memory. We can clearly see there are only dates in `2023`. 
+\
+
+## Philly Crimes - Mapped
+Now that we have our 2023 data, let's go ahead and use leafly to map our data. The code below adds two additional columns to the dataset so we can easily determine what colors to use, and in addition generating the label information. 
+
+From there, a title along with a legend is added to the graph. 
+
+```{r echo=TRUE}
+colors <- character(nrow(philly_data_2023))
+labels <- character(nrow(philly_data_2023))
+ 
+for (i in 1:nrow(philly_data_2023)) {
+  # Handle the colors
+  if (philly_data_2023$fatal[i] == 'Fatal') {
+    colors[i] <- '#000000'
+  }
+  else {
+    colors[i] <- '#CC79A7'    
+  }
+  
+  # Handle the info to display in the label
+  labels[i] <- paste('Gender: ', philly_data_2023$sex[i], 'Neighborhood: ', philly_data_2023$neighborhood[i], 'Block Number: ', philly_data_2023$block_number[i])
+}
+
+philly_data_2023$crime_type_color <- colors
+philly_data_2023$label <- labels
+
+## Map title
+title <- tags$div( HTML('<font color = "darkred" size =4><b>Philly Fatal and Non-Fatal Crimes 2023</b></font>')
+)
+
+# Create a Leaflet map
+m <- leaflet(philly_data_2023) %>%
+  addTiles() %>%
+  setView(lat = 40, lng = -75.1652, zoom = 11) %>%
+  addCircleMarkers(
+    lng = ~lng,
+    lat = ~lat,
+    color = ~crime_type_color,
+    radius = 3,
+    label = ~label,
+    labelOptions = labelOptions(noHide = FALSE, textOnly = FALSE)) %>%
+  addControl(title, position = "topright") %>%
+  addLegend(position = "bottomleft", 
+            colors = c("#CC79A7", "#000000"),
+            labels= c("Non Fatal", "Fatal"),
+            title= "Crime Type",
+            opacity = 0.8)
+
+m
+```
+
+\
+\
+
+## Narration
+
+It is particularly interesting to see the distribution of crimes across the city of Philly. There are a few hotspots of fatal crimes. The primary hotspot being the southwest region of the city, followed by a smaller hotspot just north of the city.
+
+The dataset itself can tell us more with different graphs. Let's view the % of crimes committed by gender.
+
+``` {r echo=TRUE}
+# Count the number of crimes per gender
+crimes_per_gender <- philly_data_2023 %>%
+  group_by(sex) %>%
+  summarise(crime_count = n())
+
+# Calculate the percentage of each gender
+crimes_per_gender$percentage <- (crimes_per_gender$crime_count / sum(crimes_per_gender$crime_count)) * 100
+
+# Create a pie chart
+p3 <- plot_ly(crimes_per_gender, labels = ~sex, values = ~percentage, type = 'pie') %>%
+  layout(title = "% of Crimes Committed by Males vs. Females")
+
+# Print the plot
+p3
+```
+
+
+
+It seems that males commit most of the crimes in the city of Philadelphia. Something else of interest could be to analyze which school districts have the highest crime count. In particular, parents could find this data to be of use when determining what school district to send their kids to.   
+
+```{r echo=TRUE}
+  # Count the number of crimes per school district
+  crimes_per_district <- philly_data_2023 %>%
+    group_by(school_catchment) %>%
+    summarise(crime_count = n()) %>%
+    top_n(10, crime_count)
+
+  
+  # Create a bar graph
+  p <- plot_ly(crimes_per_district, y = ~school_catchment, x = ~crime_count, type = 'bar') %>%
+    layout(title = "Number of Crimes per School District in Philadelphia (2023)",
+           xaxis = list(title = "School District"),
+           yaxis = list((title = "Number of Crimes")))
+  
+  # Print the plot
+  p
+  
+```
+
+These ten schools are the schools with the highest number of reported crimes, indicating a potentially higher crime rate in these areas. This data could be influential when informing parents about the safety risks associated with a particular school district, helping them make informed decisions about their children's education and well-being.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
