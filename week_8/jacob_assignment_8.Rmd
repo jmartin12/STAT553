@@ -1,0 +1,480 @@
+---
+title: "Week 8 - Advanced Maps"
+author: "Jacob Martin"
+date: "West Chester University "
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    fig_width: 6
+    number_sections: yes
+    toc_collapsed: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: true
+    theme: readable
+    fig_height: 4
+---
+
+```{=html}
+<style type="text/css">
+
+div#TOC li {
+    list-style:none;
+    background-color:lightgray;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #780c0c;
+}
+
+/* mouse over link */
+div#TOC a:hover {
+  color: red;
+}
+
+/* unvisited link */
+div#TOC a:link {
+  color: blue;
+}
+
+
+
+h1.title {
+  font-size: 24px;
+  color: Darkblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant-caps: normal;
+}
+h4.author { 
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { 
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h3 { 
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+</style>
+```
+```{r setup, include=FALSE}
+# code chunk specifies whether the R code, warnings, and output 
+# will be included in the output files.
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("cowplot")) {
+   install.packages("cowplot")
+   library(cowplot)
+}
+if (!require("latex2exp")) {
+   install.packages("latex2exp")
+   library(latex2exp)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("gapminder")) {
+   install.packages("gapminder")
+   library(gapminder)
+}
+if (!require("png")) {
+    install.packages("png")             # Install png package
+    library("png")
+}
+if (!require("RCurl")) {
+    install.packages("RCurl")           # Install RCurl package
+    library("RCurl")
+}
+if (!require("colourpicker")) {
+    install.packages("colourpicker")              
+    library("colourpicker")
+}
+if (!require("gifski")) {
+    install.packages("gifski")              
+    library("gifski")
+}
+if (!require("magick")) {
+    install.packages("magick")              
+    library("magick")
+}
+if (!require("grDevices")) {
+    install.packages("grDevices")              
+    library("grDevices")
+}
+### ggplot and extensions
+if (!require("ggplot2")) {
+    install.packages("ggplot2")              
+    library("ggplot2")
+}
+if (!require("gganimate")) {
+    install.packages("gganimate")              
+    library("gganimate")
+}
+if (!require("ggridges")) {
+    install.packages("ggridges")              
+    library("ggridges")
+}
+if (!require("graphics")) {
+    install.packages("graphics")              
+    library("graphics")
+}
+if (!require("tidyr")) {
+   install.packages("tidyr", dependencies = TRUE)
+   library(tidyr)
+}
+if (!require("reshape2")) {
+   install.packages("reshape2", dependencies = TRUE)
+   library(reshape2)
+}
+if (!require("leaflet")) {
+   install.packages("leaflet", dependencies = TRUE)
+   library(leaflet)
+}
+if (!require("leaflet.extras")) {
+   install.packages("leaflet.extras", dependencies = TRUE)
+   library(leaflet.extras)
+}
+if (!require("leaflet.extras")) {
+   install.packages("leafpop", dependencies = TRUE)
+   library(leafpop)
+}
+if (!require("htmltools")) {
+   install.packages("htmltools", dependencies = TRUE)
+   library(htmltools)
+}
+if (!require("htmlwidgets")) {
+   install.packages("htmlwidgets", dependencies = TRUE)
+   library(htmlwidgets)
+}
+if (!require("sf")) {
+   install.packages("sf", dependencies = TRUE)
+   library(sf)
+}
+if (!require("dplyr")) {
+   install.packages("dplyr", dependencies = TRUE)
+   library(dplyr)
+}
+if (!require("viridis")) {
+   install.packages("viridis", dependencies = TRUE)
+   library(viridis)
+}
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+```
+
+# Introduction
+This weeks walk through will be similar to last week, with the addition of many enhancements for geographical data mapping. Throughout the lesson, the code will always be using `leaflet` for it's plotting capabilities. We will first revisit the Philly crime data in a much more visually pleasing way. After that, typical data transformations will be demonstrated against two presidential election datasets. Lastly, we will create a choropleth map which can help us easily visualize which states are primarily republican, primarily democrat, and which states were swing states in the 2020 election. Let's get started.
+
+# Philly Crimes
+
+## Data Transformation
+
+The Philly crime data set does not support the capability to make a choropleth map. However, the dataset holds info at the neighborhood level (amongst other levels). The idea in this section is to come up with a map that imitates a choropleth map by leveraging grouping mechanisms at the neighborhood level. First, we start out by retrieving our neighborhood shape file along with the crime data itself.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+philly_data <- read.csv("https://jmartin12.github.io/STAT553/data/PhillyCrimeSince2015.csv", header = TRUE)
+neighborhood_shape_file <- st_read("https://pengdsci.github.io/STA553VIZ/w08/Neighborhoods_Philadelphia.geojson", quiet=TRUE)
+```
+
+Here are the two data sets visualized in table format, the first is the philly crime data, and the latter is the shape file. 
+
+```{r echo=TRUE}
+kable(head(philly_data, 1), row.names = FALSE)
+kable(head(neighborhood_shape_file, 1), row.names = FALSE)
+```
+
+We won't be merging these two datasets as there aren't any common values between them. The important column to note on the shapefile is the `geometry` column. These hold the sets of long/lat coordinates to make the multipolygons required for a given shape. 
+
+\
+
+We can clean up our Philly data as we won't use many of the column listed. Please see the filtered dataset below which includes only the columns that we will use in this excercise.
+
+```{r}
+
+filtered_philly <- philly_data %>%
+  select(race, sex, fatal, date, age, zip_code, neighborhood, school_catchment, lng, lat)
+
+kable(head(filtered_philly, 2), row.names = FALSE)
+```
+
+
+Next, we need a dataset which includes a crime count for a given zipcode.
+These transformations allow the program to determine the total amount of fatal vs non-fatal crimes that have been committed in a given zip.
+The lines to note are the `aggregate` functions and the `merge` functions.
+In addition there are simple column renames and `select` statements to provide a clean dataset.
+
+```{r}
+zip_lon = aggregate(filtered_philly$lng, by=list(filtered_philly$zip_code), FUN=mean)
+zip_lat = aggregate(filtered_philly$lat, by=list(filtered_philly$zip_code), FUN=mean)
+zip_location = merge(zip_lon, zip_lat, by = "Group.1")
+names(zip_location) = c("zip", "lon", "lat")
+
+
+crime_by_zip = data.frame(
+                      zip=as.numeric(names(table(filtered_philly$zip_code))), 
+                      fatal = table(filtered_philly$fatal, filtered_philly$zip_code)[1,],
+                      nonfatal = table(filtered_philly$fatal, filtered_philly$zip_code)[2,],
+                      total_crime = table(filtered_philly$zip_code) 
+                      )
+
+# Remove extra columns that we from the merges. 
+dedupe_zip_column <- crime_by_zip %>%
+  select(zip, fatal, nonfatal, total_crime.Freq)
+
+# Rename the columns to something simple.
+colnames(dedupe_zip_column) = c("zip", "fatal", "nonfatal", "total_crime_count")
+
+# Finally, merge the grouped zipcode crime count dataset with the location itself.
+zip_crime_with_location = merge(zip_location, dedupe_zip_column, by = "zip")
+kable(head(zip_crime_with_location, 2), row.names = FALSE)
+
+```
+
+While the following code is not displayed by default, this uses the two datasets of the transformed crime counts and neighborhood shape file. We then simply plot the crime locations based on their long/lat, and show some information about the crime counts themselves in the popup. 
+This map will be used as a popup in the main map.
+```{r echo=FALSE}
+
+
+# Colors for the bubble plots
+color_range <- colorNumeric(palette = viridis(256, option = "B"), domain = range(zip_crime_with_location$total_crime_count))
+
+crime_by_zip_map <- leaflet(filtered_philly) %>%
+  setView(lng=-75.1527, lat=39.9707, zoom = 11) %>%
+  addTiles() %>%
+  addProviderTiles(providers$Esri.WorldGrayCanvas) %>%
+  # The neighborhoods.
+  addPolygons(data = neighborhood_shape_file,
+            color = 'skyblue',
+            weight = 1)  %>%
+  addCircleMarkers(data = zip_crime_with_location,
+                   radius = ~((total_crime_count)^(1/3)),
+                   color = ~color_range(total_crime_count),
+                   stroke = FALSE, 
+                   fillOpacity = 0.5,
+                   popup = ~paste('Zip Code:', zip, 
+                      '<br>Total Crime:', total_crime_count, 
+                      '<br>Fatal Crime:', fatal,
+                      '<br>Nonfatal Crime:', nonfatal)) 
+
+# Save to temp file for future reference in main map.
+fl = tempfile(fileext = ".html")
+saveWidget(crime_by_zip_map, file = fl)
+
+# Where to put the map, trial and error.
+crime_by_zip_popup_location = st_as_sf(data.frame(x = -75.3477, y = 39.9168),
+                coords = c("x", "y"),
+                crs = 4326)
+```
+
+
+## Philly Graph
+
+Now that we have all of our data, and subplot, we can go ahead and create our bubble map. 
+This bubble map has some custom features to make it look visually appealing to the user. 
+Please see comments in the code for specifics of what is occurring. 
+
+```{r echo=TRUE}
+
+# Main map.
+
+# A simple title, styled to be darkred.
+title <- tags$div(
+  HTML('<font color = "darkred" size =4 style="background-color: transparent;"><b>Philly Fatal and Non-Fatal Crimes</b></font>')
+)
+
+# Color mapping, use wongs pallete
+pal <- colorFactor(c("#000000", "#CC79A7"), domain = c("Fatal", "Nonfatal"))
+
+main_map <- leaflet() %>%
+  # The center of the map, via trial and error.
+  setView(lng=-75.15092, lat=40.00995, zoom = 10) %>%
+  # Viewing Options for the user.
+  addProviderTiles(providers$CartoDB.DarkMatter, group="Dark") %>%
+  addProviderTiles(providers$CartoDB.DarkMatterNoLabels, group="DarkLabel") %>%  
+  addProviderTiles(providers$Esri.NatGeoWorldMap, group = "Esri") %>%
+  # Title
+  addControl(title, position = "bottomleft") %>%
+  # Mini-map
+  addMiniMap() %>%
+  # Neighborhoods, using the shapefile. 
+  addPolygons(data = neighborhood_shape_file,
+            color = 'skyblue',
+            weight = 1)  %>%
+  # Note the `radius` and `color` logic. 
+  addCircleMarkers(data = filtered_philly,
+             radius = ~ifelse(fatal == "Fatal", 5, 3),
+             color = ~pal(fatal),
+             stroke = FALSE,
+             fillOpacity = 0.5,
+             # To allow the points not to clutter the screen, group them.
+             clusterOptions = markerClusterOptions(maxClusterRadius = 40)) %>%
+  # Use the previously created scatter map.
+  addCircleMarkers(data = crime_by_zip_popup_location, 
+                  color = "white",
+                  weight = 2,
+                  label = "ZIP Location",
+                  stroke = FALSE, 
+                  fillOpacity = 0.95,
+                  group = "ziploc") %>%
+  # Add it as an HTML iFrame popup.
+  leafpop:::addPopupIframes(
+                 source = fl,
+                 width = 500,
+                 height = 400,
+                 group = "ziploc" ) %>%
+  # Give many viewing options
+  addLayersControl(baseGroups = c('Dark', 'DarkLabel', 'Esri'),
+             options = layersControlOptions(collapsed = TRUE)) %>%
+  ## Remove most of the junk at the bottom
+  browsable()
+    
+main_map
+```
+
+# 2020 Election Resuts
+
+## Data Transformation
+
+This section's data transformation is actually much simpler than the previous data transformation section. We will reach out and obtain the required metadata to aggregate and show results, merge datasets so we have only one common dataframe to work with, and then provide filtering to only include the columns our graph will use. The code below demonstrates all of this; please see the individual comments for what each line performs.
+
+```{r echo=TRUE}
+# Get our data sets.
+fips_meta <- read.csv("https://jmartin12.github.io/STAT553/data/fips2geocode.csv", header = TRUE)
+election_meta <- st_read("https://jmartin12.github.io/STAT553/data/election_data.csv", quiet=TRUE)
+stateShape <- st_read("https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json", quiet=TRUE) %>%
+  rename(state = name) %>%
+  mutate(state = toupper(state))
+
+# Used for debugging.
+#kable(head(fips_meta, 2), row.names = FALSE)
+#kable(head(election_meta, 2), row.names = FALSE)
+
+# Filter down to democrats and republicans, with the relevant voting data.
+filtered_election <- election_meta %>%
+  filter(year == 2020, party %in% c("REPUBLICAN", "DEMOCRAT")) %>%
+  select(state, state_po, county_name, county_fips, party, candidatevotes)
+
+# Used for debugging.
+# kable(head(filtered_election, 2), row.names = FALSE)
+
+# Merge the datasets to be able to include the lon / lat of votes for each state. 
+election_with_location <- merge(filtered_election, fips_meta, by.x = "county_fips", by.y = "fips") %>%
+ select(county_fips,	state_po,	county_name,	party,	candidatevotes,	county,	state.x,	lon,	lat)
+
+# Used for debugging.
+#kable(head(election_with_location, 2), row.names = FALSE)
+#kable(head(stateShape, 2), row.names = FALSE)
+
+# Merge so that we include our shape metadata.
+election_with_shape <- merge(stateShape, election_with_location, by.x = "state", by.y = "state.x") %>%
+  select(state, county_fips, state_po, county_name, party, candidatevotes, lon, lat, geometry)
+
+# Transformation to a very specific datatype that leaflet wants to use when mapping choropleth maps. 
+election_final <- st_as_sf(election_with_shape, coords = c("lon", "lat"), crs = 4326)
+
+# Show our final dataset,
+kable(head(election_final, 2), row.names = FALSE)
+```
+
+Nice! We have a transformed dataset that can be used with the purpose of showing which states are primarly democratic or republican.
+
+## Election Choropleth Map
+
+The purpose of the visualization below is to show which states are more biased towards being republican or democrat. The states that are a bright red are considered to be heavily biased towards being republican. The states that are a bright blue are considered to be heavily biased towards being democratic. The states which are a purple-ish color represent a divide of republicans and democrats. We leverage the total amount of candidate votes in a given state, grouped by their party to determine the color intensity.   
+
+```{r}
+
+get_color <- function(party) {
+  if (party == "REPUBLICAN") {
+    return("red")
+  } else {
+    return("blue")
+  }
+}
+
+# Plot the election results with customized polygon features.
+election_map <- leaflet() %>%
+  setView(lng = -98.5833, lat = 39.8333, zoom = 4) %>%   # Centered on the US 
+  addPolygons(data = election_final,
+              fillColor = ifelse(election_final$party == "REPUBLICAN", "red", "blue"),
+              fillOpacity = 0.5,
+              color = "white",
+              weight = 1,
+              label = ~paste('State: ', state))
+
+# Add a simple legend.
+election_map <- addLegend(
+  election_map,
+  position = "topright",
+  colors = c("blue", "red"),
+  labels = c("Democrat", "Republican"),
+  title = "Election Outcome"
+)
+
+
+election_map
+```
