@@ -226,68 +226,107 @@ knitr::opts_chunk$set(echo = TRUE,
                       comment = NA)
 ```
 
+# Introduction
+
+For this week we will be exploring choropleth maps using <i>Tableau Public</i>. There will be two data sets which will be prepared so we can utilize Tableau's capabilities. The first will ultimately transform into aggregate county-level election data. Similarly, we will transform into aggregate state-level election data. The data transformations will be reviewed in detail. For the visualization process, we will proceed utilizing the two datasets within tableau, a point-and-click type of software. Lastly, we will finish with a short narrative about the data. 
+
+# Data Management
+
+## County Level Transformations
+
+First, let's read in our data using https; two example rows are shown with the total amount of rows in the dataset.
 
 ```{r}
 election_initial_county <- st_read("https://jmartin12.github.io/STAT553/data/election_data.csv", quiet=TRUE)
-kable(nrow(election_initial_county))
+kable(head(election_initial_county, 2), row.names = FALSE)
+head(nrow(election_initial_county))
+```
 
-#kable(head(election_initial, 10), row.names = FALSE)
+The goal is to transform this data into something that is use-able for choropleth maps. By definition, we need to have our data aggregated at the county level for this to be possible. The following code block performs some of the required transformations:
 
+```{r}
 election_with_percentage_votes_county <- election_initial_county %>%
+  # Remove rows we don't need.
   select(-version, -mode, -office) %>%
+  # Group by each year and county so we can view YoY results per county.
   group_by(year, county_fips) %>%
+  # Add in the percentage of votes in the context of all parties for a given county. 
   mutate(
       candidatevotes = as.numeric(candidatevotes),
       totalvotes = as.numeric(totalvotes),
       percent_total_votes = (candidatevotes / totalvotes) * 100)
 
-#kable(head(election_with_percentage_votes_county, 5), row.names = FALSE)
+kable(head(election_with_percentage_votes_county, 5), row.names = FALSE)
+```
 
+At a high level, the above code performs the following transformations: 
 
+ - Removes columns we don't need.
+ - Groups by the year and county
+ - Adds in the relative % vote for a given county and year
+
+Continuing on, please view the code below for additional transformations.
+```{r}
+# Per assignment guidelines, we only want to keep the winning party. We can do this by keeping the row with the highest candidate votes for a given year and county. 
 election_county_meta <- election_with_percentage_votes_county %>%
   group_by(year, county_fips) %>%
   slice(which.max(candidatevotes))
 
+
 kable(head(election_county_meta, 5))
 kable(nrow(election_county_meta))
 
-write.csv(election_county_meta, "election_data_county_final.csv", row.names = FALSE)
+# One time use.
+#write.csv(election_county_meta, "election_data_county_final.csv", row.names = FALSE)
 ```
 
+We can now view our final county-level data set that will be uploaded to Tableau. It is quite clean. 
+It's important to note that we have ~18k rows. There are six elections worth of data, and there are ~3k counties in the states. Therefore, this row count is expected and tell us that the transformations were indeed performed as intended. 
 
+## State Level Data Transformations
+The second data set will be very similar to the first. All the transformations are nearly identical, with the exception of, this time grouping by `year` and `state` instead of `year` and `county`. The processes are extremely similar, so all the transformations will be shown in the following code block:
 
 ```{r}
+# The same starting data set as county.
 election_initial_state <- st_read("https://jmartin12.github.io/STAT553/data/election_data.csv", quiet=TRUE)
-#kable(head(election_initial, 10), row.names = FALSE)
 
 election_with_percentage_votes_state <- election_initial_state %>%
+  # Remove columns we don't need.
   select(-version, -mode, -county_fips, -county_name, -office) %>%
+  # Group by the year and state
   group_by(year, state_po) %>%
+  # Add in the % votes for a given year, state, and party. 
   mutate(
       candidatevotes = as.numeric(candidatevotes),
       totalvotes = as.numeric(totalvotes),
       percent_total_votes = (candidatevotes / totalvotes) * 100)
 
-#kable(head(election_with_percentage_votes_state, 5), row.names = FALSE)
-#kable(nrow(election_with_percentage_votes_state))
-
+# Only keep the winning party.
 election_meta_state <- election_with_percentage_votes_state %>%
   group_by(year, state_po) %>%
   slice(which.max(candidatevotes))
 
+# Verify our output.
 kable(head(election_meta_state, 5), row.names = FALSE)
 kable(nrow(election_meta_state))
 
-write.csv(election_meta_state, "election_data_state_final.csv", row.names = FALSE)
+# One time use.
+#write.csv(election_meta_state, "election_data_state_final.csv", row.names = FALSE)
 ```
 
-# Introduction
+Let's note that we have ~300 rows. This checks out because 50 states x 6 years = 300. We can also see a smaller data set due to removing the county level columns. This final data set is very clean and is ready for use in Tableau.   
 
-# Data Management
 
 # Interactive Maps Using Tableau
 ## County Level Election Map
 
+The following map utilizes the county-level data set:
+
+ - Color based off winning party
+ - Various hover message metadata info
+ - Filter based off the year
+ - Aggregate county level
+ 
 <div class='tableauPlaceholder' id='viz1712004369460' style='position: relative'><noscript><a href='#'><img alt='Election Results Per County ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YP&#47;YPB29JP97&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;YPB29JP97' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YP&#47;YPB29JP97&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>    
 
 
@@ -295,9 +334,23 @@ write.csv(election_meta_state, "election_data_state_final.csv", row.names = FALS
 
 ## State Level Election Map
 
+The following map utilizes the state-level data set, it has the following features:
+
+ - Color based off winning party
+ - Various hover message metadata info
+ - Filter based off the year
+ - Aggregate state level
+ 
+
 <div class='tableauPlaceholder' id='viz1712004872058' style='position: relative'><noscript><a href='#'><img alt='Election Results Per State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;ElectionResultsState&#47;ElectionResultsPerState&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ElectionResultsState&#47;ElectionResultsPerState' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;ElectionResultsState&#47;ElectionResultsPerState&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>         
 
 
 <script type='text/javascript'>                    var divElement = document.getElementById('viz1712004872058');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 # Inferences
+
+In the context of the state choropleth map, if we look at the results of the winning party year by year, starting in 2000 and ending in 2020, it's very interesting to see how many states ended up red / blue. In 2000 and 20004, the republican party won the elections. However, the amount of states that ended up red and blue are very close to each other. This is an interesting contrast that the democrats won in 2016 and 2020, we can see that almost the entire country ended up blue! 
+
+Another interesting pattern we see at the county level is that there are a high amount of counties that are republican. Those counties are considered much more rural. This leads to a high amount of red on the map, but since the population level is so low, the democratic counties that include high population ultimately outweigh many small counties. This is why, at the county level, we can see much more red even though a democratic won the election. This starts to touch on how the electoral college system functions. 
+
+
