@@ -226,15 +226,74 @@ knitr::opts_chunk$set(echo = TRUE,
                       comment = NA)
 ```
 
+# Introduction
+
+This weeks lesson will focus on using visualization tools such as a dashboard and a story using <i>Tableau</i>. 
+
+\
+Tableau dashboards and stories are a powerful tool for data visualization and analysis for several reasons. Firstly, they provide a visually appealing and interactive way to explore and present data, making it easier for users to understand complex datasets at a glance. The ability to create dynamic visualizations that update in real-time as data changes allows for more informed decision-making and a deeper understanding of trends and patterns.
+\
+\
+Additionally, Tableau dashboards are highly customizable, allowing users to tailor the visualizations to their specific needs and preferences. This flexibility enables users to create dashboards that effectively communicate their data insights to a wide range of audiences.
+\
+\
+Furthermore, Tableau's intuitive drag-and-drop interface makes it easy for users with varying levels of technical expertise to create professional-looking dashboards without the need for extensive training or programming skills.
+\
+\
+Overall, Tableau dashboards are a valuable tool for organizations looking to harness the power of their data to drive better business outcomes, thanks to their visual appeal, interactivity, customization options, and ease of use.
+
+
+# Dataset
+
+## Description
+
+The data set being used is relatively straight forward. The set contains general information about loans that could have been defaulted on. It contains three initial categorical variables including `gender`, `marriage status`, and `employment status`. It also has many numerical variables. No data manipulation was done <i>before</i> uploading it to Tableau. Once in Tableau, many calculated fields were made, and  a new categorical variable called `age group` was made. This grouping stemmed from a numerical variable, and went through two transformation to be considered an attribute to group on within Tableau. The initial raw data set is below, along with the total row count. 
+
+```{r echo=FALSE}
+loan_data <- st_read("https://jmartin12.github.io/STAT553/data/BankLoanDefaultDataset.csv", quiet=TRUE)
+kable(head(loan_data, 5), row.names = FALSE)
+kable(nrow(loan_data))
+```
+
+## Variable Explanation
+ - `Checking_Amount` (Numeric)
+ - `Term` (In Months) (Numeric)
+ - `Credit_Score` (Numeric) 
+ - `Gender` (Categorical)
+ - `Marital_status` (Categorical)
+ - `Car_loan` (1 - Has loan type, 0 - Does not have loan type) (Numeric)
+ - `Personal_loan` (1 - Has loan type, 0 - Does not have loan type) (Numeric)
+ - `Home_loan` (1 - Has loan type, 0 - Does not have loan type) (Numeric)
+ - `Education_Loan` (1 - Has loan type, 0 - Does not have loan type) (Numeric)
+ - `Emp_status` (Categorical)
+ - `Age` (In Years) (Numeric)
+ - `No_of_credit_account` (Numeric)
+ - `Default` (1 - Did default, 0 - Did not default) (Target Variable)
+
+## Tableau Calculated Field Description
+ - CheckingToSavingsRatio (proportionality of bank accounts) (Numeric)
+ - SavingsToCheckingsRatio (proportionality of bank accounts) (Numeric)
+ - Age Group (Age Range By Decade) (Grouping Attribute)
+
+
+# Tableau Dashboard
 
 <div class='tableauPlaceholder' id='viz1712688827048' style='position: relative'><noscript><a href='#'><img alt='Informative Financial Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ST&#47;STAT553FinancialDashboard&#47;InformativeFinancialDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='STAT553FinancialDashboard&#47;InformativeFinancialDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ST&#47;STAT553FinancialDashboard&#47;InformativeFinancialDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                
 
 <script type='text/javascript'>                    var divElement = document.getElementById('viz1712688827048');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1020px';vizElement.style.maxWidth='1750px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1187px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1020px';vizElement.style.maxWidth='1750px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1187px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1677px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-## ANOTHER
-
-
+# Tableau Story
 
 <div class='tableauPlaceholder' id='viz1712694835542' style='position: relative'><noscript><a href='#'><img alt='Financial Information Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ST&#47;STAT553FinancialStory&#47;FinancialInformationStory&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='STAT553FinancialStory&#47;FinancialInformationStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ST&#47;STAT553FinancialStory&#47;FinancialInformationStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>              
 
 <script type='text/javascript'>                    var divElement = document.getElementById('viz1712694835542');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+# Inferences
+Here are some note-worthy observations from the dataset:
+
+ - Females across all age groups own less loans than their male counterparts.
+ - Defaulting typically occurs in the `thirties` age group. This makes sense given that the term would typically have to run through to it's end, making the individual owner older in age.
+ - `Credit Score` and `Age` do not seem to be correlated.
+ - `Avg checkings amount` seems to be correlated with `age`, in the sense that the amount increases as age increases.
+ - `Avg savings amount` seems to be correlated with `age`, in the sense that the amount increases as age increases.
+ - Regardless of `gender`, people tend to take `home loans` in their late twenties to mid thirties.
