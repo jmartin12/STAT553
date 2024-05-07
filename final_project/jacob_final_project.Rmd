@@ -1,52 +1,117 @@
 ---
-title: "Week 13 Visual Analyses of Penguin Data Using FlexDashboard - Jacob Martin"
-output: 
-  flexdashboard::flex_dashboard:
-    theme: spacelab
-    # available themes include: default, cerulean, journal, flatly, darkly, 
-    #                           readable, spacelab, united, cosmo, lumen, 
-    #                           paper, sandstone, simplex, yeti.
-    orientation: columns
-    vertical_layout: fill
-runtime: shiny
+title: "Case Study: Background Checks and Turnaround Time - Final Project"
+author: "Jacob Martin"
+date: "West Chester University "
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    fig_width: 6
+    number_sections: yes
+    toc_collapsed: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: true
+    theme: readable
+    fig_height: 4
 ---
-
+```{=html}
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
-body {
-  background-color: lightgray;
-  color: darkgreen; /* text color */
-  text-align: left;
+div#TOC li {
+    list-style:none;
+    background-color:lightgray;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #780c0c;
 }
 
-.navbar {
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	width: 100%;
+/* mouse over link */
+div#TOC a:hover {
+  color: red;
 }
 
-/* Make text visible on inputs */
-.shiny-input-container {
-  color: purple;
+/* unvisited link */
+div#TOC a:link {
+  color: blue;
 }
 
-.navbg {
-  background-color: blue;
-  color: white;
+
+
+h1.title {
+  font-size: 24px;
+  color: Darkblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant-caps: normal;
+}
+h4.author { 
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { 
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
 }
 
-</style>                    
+h3 { 
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
 
-\
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+</style>
+```
 
 
 ```{r setup, include=FALSE}
-if (!require("flexdashboard")) {
-   install.packages("flexdashboard")
-   library(flexdashboard)
-}
 if (!require("shiny")) {
    install.packages("shiny")
    library(shiny)
@@ -63,223 +128,452 @@ if (!require("tidyverse")) {
    install.packages("tidyverse")
    library(tidyverse)
 }
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+} 
+if (!require("dplyr")) {
+  install.packages("dplyr")
+  library(dplyr)
+}
+if (!require("lubridate")) {
+  install.packages("lubridate")
+  library(lubridate)
+}
+
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
 ```
 
+# Introduction
 
-```{r data}
-pengData = read.csv("https://jmartin12.github.io/STAT553/data/penguins.csv", header = TRUE)
-configurableResponseVars = colnames(pengData)[c(4,5,6,7)]
+For this final project, we will be analyzing background check data for a company called [Checkr](https://checkr.com/). Checkr is the company I work for as a senior software engineer, and we are the world-wide leader in background checks. 
+\
+The overall project will have a few sections. First, we will review terms that the reader should know with the purpose of providing context for the graphs and statistics. Following that, we will go into the means of data acquisition and subsequent transformations. Then, a shiny web app is created and will be linked to with all the visualizations that were taught in this class. After that, a choropleth map using Tableau will be shown which highlights geo spacial data at the county level. Lastly, we will try and determine if there are any statistical inferences to be made based off the visualization. Let's dive into the world of background checks with real, accurate, production data!
+
+
+## Terminology
+
+Here are some various terms which will be referenced throughout this case study: 
+
+  - <b>Turnaround time (TaT)</b>
+    - How long it took for a background check to complete.
+  - <b>County Criminal Check</b>
+    - A criminal background check where a given county courthouse is the data source. Information is typically harvested by scraping a counties website, or a person with the title of "<i>court runner</i>" will go to the physical courthouse and ask for John Doe's criminal record.
+  - <b>National Criminal Check</b>
+    - A criminal background check where the <i>national criminal database</i> is the data source. This database holds almost every criminal record in existence. 
+  - <b>Sex Offender Check</b>
+    - A criminal background check which specifically searches for any kind of sexual crime.
+  - <b>State Criminal Check</b>
+    - A criminal background check where the scope of the search is limited to all counties in a given state.
+  - <b>Federal Criminal Check</b>
+    - A criminal background check where the scope of the search is the entirety of the USA, and looks for felonies only.
+  - <b>Motor Vehicle Check</b>
+    - A background check where a drivers license number is ran against a given states DMV database to determine the driving history, license status, etc.
+  - <b>Education Verification Check</b>
+    - A verification background check where the education of a candidate is confirmed. Typically the education information comes from a candidates resume. Checkr partners with many universities to automate the verification process. For the lesser known universities, an in-house team of customer support agents call the university to verify degree status & degree timeline. 
+  - <b>Employment Verification Check</b>
+    - A verification background check where the employment of a candidate is confirmed. Typically the employment information comes from a candidates resume. Checkr utilizes an in-house team which is responsible for calling the employer to verify the title and tenure.
+  - <b>Report</b>
+    - This is the end product we provide to a customer. A report is comprised of the legal, reportable results for a given background check.
+  - <b>Result</b>
+    - <i>Clear</i> if the candidate did not have any records returned on a search, <i>Consider</i> if records were found on the search.
+  - <b>Exception</b>
+    - <i>Yes</i> if there was an issue with the PII the candidate/customer submitted. <i>No</i> if there are no issues with PII.
+
+# Raw Data Overview
+
+The overall purpose of this data is to determine how variables like type of background checks, and / or price, have an affect on turnaround time. Additionally, county-specific geo-spacial metadata will be leveraged to gain insights into how county courthouses operate.
+
+There are two main working datasets that we will be using:
+
+1. Report Turnaround Time
+2. County Criminal Checks Turnaround Time
+
+The source for the three datasets are the same, checkrs production database. 
+
+## Data Aquisition
+
+There were a couple challenges during data collection.
+
+1. Checkr's report and county check volume are extremely high.
+2. R shiny app needs to be able to process this data efficiently. 
+
+
+To give an idea of volume, Checkr runs roughly 40 million county criminal checks every year; this is not including all the other types we want to analyze. Fourty million rows produced an output file of ~3GB uncompressed-- it was just too much data for this analysis.
+
+
+Therefore, I was not able to just collect all the individual rows. 
+
+
+The subsections below go into detail of what sampling method was chosen, and the underlying sql to support the method. 
+
+### Report TaT SQL Pattern
+ 
+For the report turnaround time dataset, a <i>stratified sampling method</i> was chosen. The groups were by <i>background check type</i> and <i>year</i>. Then, for every group, we select a random 10,000 rows. This was repeated for the years 2019, 2020, 2021, 2022, and 2023.
+
+To accomplish this, the sql pattern below was implemented:
+
+```{html echo=TRUE}
+WITH some_background_check_type AS (
+  SELECT  ACCOUNT_URI_NAME,
+          CREATED_AT,
+          RESULT,
+          TAT_SECONDS,
+          PRICE,
+          HAD_EXCEPTION,
+          'Some BGC Type Here' as TYPE
+  FROM REDACTED
+  WHERE EMPLOYMENT_VERIFICATION = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+),
+some_background_check_type_sample AS (
+    SELECT *
+    FROM some_background_check_type 
+    ORDER BY random()
+    LIMIT 10000
+),
+SELECT * 
+FROM some_background_check_type_sample
 ```
 
-
-
-
-Column {.sidebar .navbg data-width=200}
--------------------------------------------------------------------
-
-<br><br>
+This pattern was implemented for every check type and provides a starting point for us to transform the data in R. The full query is listed below:
 
 ```{r}
-# Start Defining all things input.
-radioButtons(inputId = "species",
-            label = strong("Species"),
-            choices = c("Adelie",
-                        "Chinstrap",
-                        "Gentoo",
-                        "All"),
-            selected = "All")
-
-
-radioButtons(inputId = "island", 
-                              label = "Island",
-                              choices = c("Torgersen",
-                                          "Dream",
-                                          "Biscoe",
-                                          "All"),
-                              selected = "All")
-
-radioButtons(inputId = "sex", 
-                              label = "Sex",
-                              choices = c("Male",
-                                          "Female",
-                                          "All"),
-                              inline = FALSE,
-                              selected = "All")
-
-br()
-
-selectInput(inputId = "Y",
-             label = "Response Variable: Y",
-             choices = configurableResponseVars)
-
-
- # Numerical reponse X.
- selectInput(inputId = "X",
-             label =  "Predictor Variable: X",
-             choices = configurableResponseVars,
-             selected = configurableResponseVars[2])
- hr()
- # Dynamic range plotting for predictive plot.
- sliderInput(inputId = "newX", 
-             label = "New Value for Prediction:", 
-             value = 2.5, 
-             min = 0, 
-             max = 20, 
-             step = 0.1)
+#WITH employment_checks AS (
+#    SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'Employment Verification' as TYPE
+#  FROM REDACTED 
+#  WHERE EMPLOYMENT_VERIFICATION = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),
+#education_checks AS (
+#    SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'Education Verification' as TYPE
+#  FROM REDACTED 
+#  WHERE EDUCATION_VERIFICATION = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),
+#motor_vehicle_checks AS (
+#    SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'Motor Vehicle' as TYPE
+#  FROM REDACTED
+#  WHERE MOTOR_VEHICLE_REPORT = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),    
+#state_criminal_checks AS (
+#    SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'State Criminal' as TYPE
+#  FROM REDACTED
+#  WHERE STATE_CRIMINAL_SEARCH = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),sex_offender_checks AS (
+#    SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'Sex Offender' as TYPE
+#  FROM REDACTED
+#  WHERE SEX_OFFENDER_SEARCH = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),federal_criminal_checks AS (
+#    SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'Federal Criminal' as TYPE
+#  FROM REDACTED
+#  WHERE FEDERAL_CRIMINAL_SEARCH = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),
+#county_checks AS (
+#  SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'County Criminal' as TYPE
+#  FROM REDACTED
+#  WHERE COUNTY_CRIMINAL_SEARCH = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),
+#national_criminal_checks AS (
+#  SELECT ACCOUNT_URI_NAME,
+#        CREATED_AT,
+#        RESULT,
+#        TAT_SECONDS,
+#        PRICE,
+#        HAD_EXCEPTION,
+#        'National Criminal' as TYPE
+#  FROM REDACTED
+#  WHERE NATIONAL_CRIMINAL_SEARCH = true and created_at BETWEEN '2019-01-01' AND '2019-12-31'
+#),
+#county_crim_sample AS (
+#    select * from county_checks 
+#    order by random()
+#    limit 10000
+#),
+#national_crim_sample AS (
+#    select * from national_criminal_checks 
+#    order by random()
+#    limit 10000
+#),
+#federal_crim_sample AS (
+#    select * from federal_criminal_checks 
+#    order by random()
+#    limit 10000
+#),
+#sex_offender_sample AS (
+#    select * from sex_offender_checks 
+#    order by random()
+#    limit 10000
+#),
+#state_criminal_sample AS (
+#    select * from state_criminal_checks 
+#    order by random()
+#    limit 10000
+#),
+#motor_vehicle_sample AS (
+#    select * from motor_vehicle_checks 
+#    order by random()
+#    limit 10000
+#),
+# education_sample AS (
+#     select * from education_checks 
+#     order by random()
+#     limit 10000
+# ),
+# employment_sample AS (
+#     select * from employment_checks 
+#     order by random()
+#     limit 10000
+# )
+# SELECT * 
+# FROM county_crim_sample
+# UNION ALL
+# SELECT *
+# FROM national_crim_sample
+# UNION ALL
+# SELECT *
+# FROM federal_crim_sample
+# UNION ALL
+# SELECT *
+# FROM sex_offender_sample
+# UNION ALL
+# SELECT *
+# FROM state_criminal_sample
+# UNION ALL
+# SELECT *
+# FROM motor_vehicle_sample
+# UNION ALL
+# SELECT *
+# FROM employment_sample
+# UNION ALL
+# SELECT *
+# FROM education_sample;
 ```
 
-<hr>
+### County Criminal Check Turnaround Time
 
+For the county turnaround time dataset, a <i>stratified sampling method</i> was chosen. The groups were by <i>fips code</i> and <i>year</i>, and 100 random rows were chosen. This was repeated for the years 2019, 2020, 2021, 2022, and 2023.
 
+The SQL below demonstrates how the sampling method was enforced:
+
+```{html echo=TRUE}
+WITH grouped_counties AS (
+  SELECT fips_code, tat, county_search_created, county_search_completed, provider, county, state,
+    ROW_NUMBER() OVER(PARTITION BY fips_code ORDER BY random()) as row_num
+  FROM REDACTED 
+  WHERE county_search_created BETWEEN '2019-01-01' and '2019-12-31'
+)
+SELECT *
+FROM grouped_counties
+WHERE row_num <= 100;
+```
+\
 \
 
-<!-- WCUPA Logo-->
-<center>
-  <img src="https://github.com/pengdsci/sta553/blob/main/image/goldenRamLogo.png?raw=true" width="80" height="80">
-</center>
+## Data Transformation & Validation
 
-```{r}
-# Choose our dataset based off what is being filtered on.
-    getcurrentData = function(){
-    
-    wipMeta = pengData
-    
-    # Filter by species.
-    if (input$species == "Gentoo") {
-      wipMeta = wipMeta[which(wipMeta$species == "Gentoo"),]
-    } else if (input$species == "Chinstrap") {
-      wipMeta = wipMeta[which(wipMeta$species == "Chinstrap"),]
-    } else if (input$species == "Adelie") {
-      wipMeta = wipMeta[which(wipMeta$species == "Adelie"),]
-    }
-    
-    # Filter by island.
-    if (input$island == "Torgersen") {
-      wipMeta = wipMeta[which(wipMeta$island == "Torgersen"),]
-    } else if (input$island == "Dream") {
-      wipMeta = wipMeta[which(wipMeta$island == "Dream"),]
-    } else if (input$island == "Biscoe") {
-      wipMeta = wipMeta[which(wipMeta$island == "Biscoe"),]
-    }
-    
-    # Filter by sex.
-    if (input$sex == "Male") {
-      wipMeta = wipMeta[which(wipMeta$sex == "male"),]
-    }
-    else if (input$sex == "Female") {
-      wipMeta = wipMeta[which(wipMeta$sex == "female"),]
-    }
-    
-    wipMeta[,-1]
-  }
+The raw data sets are hosted on my github, but are split out into many individual files due to size limitations by github. 
+
+### Report TaT Data
+
+First, let's retrieve the report level dataset and ensure we have the amount of rows we expect. 
+Recall that 10,000 rows were gathered for each check type. 
+There are 8 total check types. 
+Therefore, for a given year we would have:
+8 check types * 10000 rows = 80000 total. 
+Then, for all 5 years, ~400,000 rows are to be expected.
+\
+The code below gathers all five years worth of data and combines them into one final dataframe. A few example rows are printed, along with the total amount of rows. 
+
+```{r echo=TRUE}
+# Get each report year.
+reports_2019 = read.csv("https://jmartin12.github.io/STAT553/data/2019_reports_tat.csv", header = TRUE)
+reports_2020 = read.csv("https://jmartin12.github.io/STAT553/data/2020_reports_tat.csv", header = TRUE)
+reports_2021 = read.csv("https://jmartin12.github.io/STAT553/data/2021_reports_tat.csv", header = TRUE)
+reports_2022 = read.csv("https://jmartin12.github.io/STAT553/data/2022_reports_tat.csv", header = TRUE)
+reports_2023 = read.csv("https://jmartin12.github.io/STAT553/data/2023_reports_tat.csv", header = TRUE)
+
+# Aggregate.
+reports_final <- data.frame()
+reports_final <- rbind(reports_final, reports_2019)
+reports_final <- rbind(reports_final, reports_2020)
+reports_final <- rbind(reports_final, reports_2021)
+reports_final <- rbind(reports_final, reports_2022)
+reports_final <- rbind(reports_final, reports_2023)
+
+# Spot check.
+kable(tail(reports_final, 3), row.names = FALSE)
+nrow(reports_final)
 ```
 
-
-<!--
-Start First Tab
--->
-Column {data-width=450  .tabset .tabset-pills}
--------------------------------------------------------------------
-
-### **GGPlot Scatterplot**
-
-```{r}
-renderPlot({
-    # Create a color palette for the species using wongs colorblind palette.
-    species_palette <- c("Adelie" = "#E69F00", "Chinstrap" = "#56B4E9", "Gentoo" = "#009E73")
-    
-    ggplot(getcurrentData(), aes(x = !!sym(input$X), y = !!sym(input$Y), color = input$species)) +
-      geom_point() +
-      xlab(input$X) +
-      ylab(input$Y) +
-      ggtitle(paste("Relationship between", input$Y, "and", input$X)) +
-      scale_color_manual(values = species_palette) +
-      geom_smooth(method = "lm", se = FALSE, color = "#0072B2", lwd = 1) +
-      theme(plot.title = element_text(color = "black", face = "bold", hjust = 0.5, size=24))
-
-  })
-```
-
-<!-- Second Tab -->
-### **Regression** 
+Success! We have 400,000 rows. There is only one additional transformation we will do to this dataset. To keep TATs across datasets consistent, we will convert the <i>TAT_IN_SECONDS</i> column to <i>TAT_IN_MINUTES</i>.
 
 
 ```{r}
-renderPlot({
-  m1 = lm(getcurrentData()[[input$Y]]~getcurrentData()[[input$X]])
-  plot(getcurrentData()[[input$X]], getcurrentData()[[input$Y]],
-    main = "",
-    type = "p",
-    pch = 19,
-    col = "blue",
-    xlab = input$X,
-    ylab = input$Y
-    )
-  abline(m1, lwd = 2, col = "red")
-})
+# Remove TAT IN SECONDS, add TAT IN MINUTES.
+reports_final <- reports_final %>%
+  mutate(TAT_IN_MINUTES = TAT_SECONDS / 60) %>%
+  select(-TAT_SECONDS)
+
+kable(tail(reports_final, 3), row.names = FALSE)
 ```
 
+Our final version of the data set is now in working order! Let's move onto the next one.
 
-<!-- Third Tab -->
-### **Residual Plots**
+\
+\
+
+### County Criminal TaT Data
+
+The county level dataset will give us the option to plot TaT metadata in a geo-spacial sense. Recall that the groups were by county fips, and year. We also retrieved 100 rows for each group. Therefore, the total amount of rows we should have in the final, aggregated dataset is:
+
+3100 counties * 100 rows * 5 years = ~1.51M rows. 
+
+The code below retrieves and aggregates the county specific tat data:     
+
+```{r echo=TRUE}
+# Get each county.
+county_2019 = read.csv("https://jmartin12.github.io/STAT553/data/2019_county_specific_tat.csv", header = TRUE)
+county_2020 = read.csv("https://jmartin12.github.io/STAT553/data/2020_county_specific_tat.csv", header = TRUE)
+county_2021 = read.csv("https://jmartin12.github.io/STAT553/data/2021_county_specific_tat.csv", header = TRUE)
+county_2022 = read.csv("https://jmartin12.github.io/STAT553/data/2022_county_specific_tat.csv", header = TRUE)
+county_2023 = read.csv("https://jmartin12.github.io/STAT553/data/2023_county_specific_tat.csv", header = TRUE)
+
+# Aggregate.
+county_final <- data.frame()
+county_final <- rbind(county_final, county_2019)
+county_final <- rbind(county_final, county_2020)
+county_final <- rbind(county_final, county_2021)
+county_final <- rbind(county_final, county_2022)
+county_final <- rbind(county_final, county_2023)
+
+# Spot check.
+kable(tail(county_final, 3), row.names = FALSE)
+nrow(county_final)
+```
+
+Great, we can now see the final count of rows roughly matches up with what we were expecting. Let's move into some transformations.
+
+
+Notice the <i>TAT</i> column in the dataset. For this data, Checkr calculates the TAT in days. However, based on my experience, many of these county checks complete in the seconds/minutes/hours timeframe. Because of this reasoning, we are going to drop and re-calculate the TaT down to the minute granularity.
+
+
+Furthermore, we have two timestamp columns:
+
+  - <i>COUNTY_SEARCH_CREATED</i> 
+  - <i>COUNTY_SEARCH_COMPLETED</i>.
+
+These provide timestamps in the format of YYYY-mm-DD T HHMMssSSS. This is a standard time stamp format which is granular to the milliseconds. This is what will be used to calculate our new TaT.
+
+
+Let's produce a final, transformed dataset which includes the following: 
+
+  - Removes original <i>TAT</i> column.
+  - Include our new, self-calculated new TaT column. 
+    - It will be granular to the minute.
+    - If a search completed in < 1 minute, we will adjust this value to be 1 minute instead of 0 minutes.
+  - Remove the two timestamp columns
+  - Add a new <i>CREATED_AT</i> date column, with granularity YYYYmmDD
+  - Remove <i>ROW_NUM</i> column.
+
+The code below demonstrates the aforementioned transformations.
+
 
 ```{r}
-renderPlot({
-  LM = lm(getcurrentData()[[input$Y]]~getcurrentData()[[input$X]])
- par(mfrow = c(2,2))
- plot(LM)
-})
+# Remove TAT and ROW NUM. 
+county_remade <- county_final %>% select(-TAT, -ROW_NUM)
+
+# Remake the timestamps into something we can easily work with.
+county_remade$COUNTY_SEARCH_CREATED <- as.POSIXct(county_remade$COUNTY_SEARCH_CREATED, format = "%Y-%m-%dT%H:%M:%OS")
+county_remade$COUNTY_SEARCH_COMPLETED <- as.POSIXct(county_remade$COUNTY_SEARCH_COMPLETED, format = "%Y-%m-%dT%H:%M:%OS")
+
+# Calculate the difference in minutes, down to two decimals.
+county_remade$TAT_IN_MINUTES <- round(difftime(county_remade$COUNTY_SEARCH_COMPLETED, county_remade$COUNTY_SEARCH_CREATED, units = "mins"), 2)
+
+# Add in a new date just to the YYYYmmDD granularity.
+county_remade$CREATED_AT <- as.Date(county_remade$COUNTY_SEARCH_CREATED)
+
+# Drop timestamps. 
+county_remade <- county_remade %>% select(-COUNTY_SEARCH_COMPLETED, -COUNTY_SEARCH_CREATED)
+
+kable(head(county_remade, 3), row.names = FALSE)
 ```
 
-<!-- Fourth Tab -->
-### **Prediction**
+At this point, the data set is very clean. We can now move onto the visualization portion of the project.
 
-```{r}
-renderPlot({
-    dataset = getcurrentData()   # define the working data set
+\
+\
 
-    ###
-    m3 = lm(dataset[,input$Y] ~ dataset[,input$X])
+# <a href="https://jm1007796.shinyapps.io/final_project_jacob_martin/">*Link to Shiny Web App</a>
+ *the app takes ~1 minute to load due to the large data size. 
 
-    pred.y = coef(m3)[1] + coef(m3)[2]*input$newX
-         #####
-    plot(dataset[,input$X], dataset[,input$Y],
-         ylab = input$Y,
-         main = ""
-       )
+# County Level Chloropleth
 
-     abline(m3,
-            col = "red",
-            lwd = 1,
-            lty=2)
-    points(input$newX, pred.y, pch = 19, col = "red", cex = 2)
-  })
-```
+<div class='tableauPlaceholder' id='viz1715088749046' style='position: relative'><noscript><a href='#'><img alt='County Specific TaT in Days ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CountySpecificTaTinDays&#47;CountySpecificTaTinDays&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;CountySpecificTaTinDays&#47;CountySpecificTaTinDays?:language=en-US&amp;:embed=true&amp;publish=yes&amp;:sid=' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CountySpecificTaTinDays&#47;CountySpecificTaTinDays&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>               
 
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1715088749046');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);             
+</script>
 
-<!-- Start third panel, default page -->
-Column {data-width=350}
--------------------------------------------------------------------
+# Inferences
 
+The following inferences can be extrapolated from our visualization:
 
-### **ggplot**-Boxplot
+  - Cost does not appear to be dependent on turnaround time
+  - In 2020, county check TaT increases across the board. This is due to COVID court closures.
+  - In 2023, for Kansas, county check TaT increases immensely. This is due to Kansas having issues with their courthouses resulting in data delays. 
+  - The price for Education Verifications and Employment Verifications is consistently higher than the criminal counterparts.
+  - The exception rate for Education Verifications and Employment Verifications are dramatically higher than the criminal counterparts.
+  - Based on the density curve for criminal checks, the bulk of the searches fall into the \$10-\$20 range.
+    - The reason the price differs in the first place is because pricing is done on a per-customer, contractual basis. Factors of price include volume and frequency, amongst others. 
+  - When predicting TaT, a more sophisticated model must be used aside to regression. More analysis must be done to determine factors which affect TaT that are not included in this dataset. 
+    - To highlight complexity, there is an entire team at Checkr dedicated to solving this problem.
+  
+# Closing Remarks
 
-
-```{r fig.align='center', fig.width=4, fig.height=6}
-renderPlot({
- ggplot(data=getcurrentData(), aes(x=getcurrentData()$species, y=getcurrentData()[[input$X]])) +
-        geom_boxplot(aes(fill=getcurrentData()$species)) +
-        ylab(input$X) +
-        xlab("Species") +
-        labs(fill = "Species") +
-        stat_summary(fun=mean, geom="point", shape=5, size=4)
-})
-```
-
-<br>
+Thank you for teaching data visualization in a really intuitive way. In my career I have had to produce many large data sets in csv format. There are many times where the knowledge taught in this class would have been useful for displaying information to my peers and/or bosses. I personally plan on using .Rmd for data visualization given the "one-off" nature of data analysis that I perform. It was an extremely insightful class that was relevant to real world problems. Thanks again and have a great summer. 
 
 
-
-
-
-
+-Jacob.
