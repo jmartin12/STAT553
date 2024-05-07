@@ -1,0 +1,285 @@
+---
+title: "Week 13 Visual Analyses of Penguin Data Using FlexDashboard - Jacob Martin"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: spacelab
+    # available themes include: default, cerulean, journal, flatly, darkly, 
+    #                           readable, spacelab, united, cosmo, lumen, 
+    #                           paper, sandstone, simplex, yeti.
+    orientation: columns
+    vertical_layout: fill
+runtime: shiny
+---
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body {
+  background-color: lightgray;
+  color: darkgreen; /* text color */
+  text-align: left;
+}
+
+.navbar {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+/* Make text visible on inputs */
+.shiny-input-container {
+  color: purple;
+}
+
+.navbg {
+  background-color: blue;
+  color: white;
+}
+
+</style>                    
+
+\
+
+
+```{r setup, include=FALSE}
+if (!require("flexdashboard")) {
+   install.packages("flexdashboard")
+   library(flexdashboard)
+}
+if (!require("shiny")) {
+   install.packages("shiny")
+   library(shiny)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("ggplot2")) {
+   install.packages("ggplot2")
+   library(ggplot2)
+}
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+```
+
+
+```{r data}
+pengData = read.csv("https://jmartin12.github.io/STAT553/data/penguins.csv", header = TRUE)
+configurableResponseVars = colnames(pengData)[c(4,5,6,7)]
+```
+
+
+
+
+Column {.sidebar .navbg data-width=200}
+-------------------------------------------------------------------
+
+<br><br>
+
+```{r}
+# Start Defining all things input.
+radioButtons(inputId = "species",
+            label = strong("Species"),
+            choices = c("Adelie",
+                        "Chinstrap",
+                        "Gentoo",
+                        "All"),
+            selected = "All")
+
+
+radioButtons(inputId = "island", 
+                              label = "Island",
+                              choices = c("Torgersen",
+                                          "Dream",
+                                          "Biscoe",
+                                          "All"),
+                              selected = "All")
+
+radioButtons(inputId = "sex", 
+                              label = "Sex",
+                              choices = c("Male",
+                                          "Female",
+                                          "All"),
+                              inline = FALSE,
+                              selected = "All")
+
+br()
+
+selectInput(inputId = "Y",
+             label = "Response Variable: Y",
+             choices = configurableResponseVars)
+
+
+ # Numerical reponse X.
+ selectInput(inputId = "X",
+             label =  "Predictor Variable: X",
+             choices = configurableResponseVars,
+             selected = configurableResponseVars[2])
+ hr()
+ # Dynamic range plotting for predictive plot.
+ sliderInput(inputId = "newX", 
+             label = "New Value for Prediction:", 
+             value = 2.5, 
+             min = 0, 
+             max = 20, 
+             step = 0.1)
+```
+
+<hr>
+
+
+\
+
+<!-- WCUPA Logo-->
+<center>
+  <img src="https://github.com/pengdsci/sta553/blob/main/image/goldenRamLogo.png?raw=true" width="80" height="80">
+</center>
+
+```{r}
+# Choose our dataset based off what is being filtered on.
+    getcurrentData = function(){
+    
+    wipMeta = pengData
+    
+    # Filter by species.
+    if (input$species == "Gentoo") {
+      wipMeta = wipMeta[which(wipMeta$species == "Gentoo"),]
+    } else if (input$species == "Chinstrap") {
+      wipMeta = wipMeta[which(wipMeta$species == "Chinstrap"),]
+    } else if (input$species == "Adelie") {
+      wipMeta = wipMeta[which(wipMeta$species == "Adelie"),]
+    }
+    
+    # Filter by island.
+    if (input$island == "Torgersen") {
+      wipMeta = wipMeta[which(wipMeta$island == "Torgersen"),]
+    } else if (input$island == "Dream") {
+      wipMeta = wipMeta[which(wipMeta$island == "Dream"),]
+    } else if (input$island == "Biscoe") {
+      wipMeta = wipMeta[which(wipMeta$island == "Biscoe"),]
+    }
+    
+    # Filter by sex.
+    if (input$sex == "Male") {
+      wipMeta = wipMeta[which(wipMeta$sex == "male"),]
+    }
+    else if (input$sex == "Female") {
+      wipMeta = wipMeta[which(wipMeta$sex == "female"),]
+    }
+    
+    wipMeta[,-1]
+  }
+```
+
+
+<!--
+Start First Tab
+-->
+Column {data-width=450  .tabset .tabset-pills}
+-------------------------------------------------------------------
+
+### **GGPlot Scatterplot**
+
+```{r}
+renderPlot({
+    # Create a color palette for the species using wongs colorblind palette.
+    species_palette <- c("Adelie" = "#E69F00", "Chinstrap" = "#56B4E9", "Gentoo" = "#009E73")
+    
+    ggplot(getcurrentData(), aes(x = !!sym(input$X), y = !!sym(input$Y), color = input$species)) +
+      geom_point() +
+      xlab(input$X) +
+      ylab(input$Y) +
+      ggtitle(paste("Relationship between", input$Y, "and", input$X)) +
+      scale_color_manual(values = species_palette) +
+      geom_smooth(method = "lm", se = FALSE, color = "#0072B2", lwd = 1) +
+      theme(plot.title = element_text(color = "black", face = "bold", hjust = 0.5, size=24))
+
+  })
+```
+
+<!-- Second Tab -->
+### **Regression** 
+
+
+```{r}
+renderPlot({
+  m1 = lm(getcurrentData()[[input$Y]]~getcurrentData()[[input$X]])
+  plot(getcurrentData()[[input$X]], getcurrentData()[[input$Y]],
+    main = "",
+    type = "p",
+    pch = 19,
+    col = "blue",
+    xlab = input$X,
+    ylab = input$Y
+    )
+  abline(m1, lwd = 2, col = "red")
+})
+```
+
+
+<!-- Third Tab -->
+### **Residual Plots**
+
+```{r}
+renderPlot({
+  LM = lm(getcurrentData()[[input$Y]]~getcurrentData()[[input$X]])
+ par(mfrow = c(2,2))
+ plot(LM)
+})
+```
+
+<!-- Fourth Tab -->
+### **Prediction**
+
+```{r}
+renderPlot({
+    dataset = getcurrentData()   # define the working data set
+
+    ###
+    m3 = lm(dataset[,input$Y] ~ dataset[,input$X])
+
+    pred.y = coef(m3)[1] + coef(m3)[2]*input$newX
+         #####
+    plot(dataset[,input$X], dataset[,input$Y],
+         ylab = input$Y,
+         main = ""
+       )
+
+     abline(m3,
+            col = "red",
+            lwd = 1,
+            lty=2)
+    points(input$newX, pred.y, pch = 19, col = "red", cex = 2)
+  })
+```
+
+
+<!-- Start third panel, default page -->
+Column {data-width=350}
+-------------------------------------------------------------------
+
+
+### **ggplot**-Boxplot
+
+
+```{r fig.align='center', fig.width=4, fig.height=6}
+renderPlot({
+ ggplot(data=getcurrentData(), aes(x=getcurrentData()$species, y=getcurrentData()[[input$X]])) +
+        geom_boxplot(aes(fill=getcurrentData()$species)) +
+        ylab(input$X) +
+        xlab("Species") +
+        labs(fill = "Species") +
+        stat_summary(fun=mean, geom="point", shape=5, size=4)
+})
+```
+
+<br>
+
+
+
+
+
+
